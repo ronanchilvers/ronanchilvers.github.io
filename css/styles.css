@@ -8,25 +8,33 @@
 .clearfix:after {
     clear: both;
 }
+html {
+    font-size: 18px;
+}
 body {
     font-family: 'Raleway', sans-serif;
-    font-size: 100%;
+    font-size: 18px;
     color: #47a3da;
 }
 header {
     width: 100%;
     margin: 0 auto;
     padding: 40px 100px;
-    font-size: 1.8em;
+    font-size: 1.6rem;
 }
-header a > svg {
-    width: 32px;
-    height: 32px;
-    color: #47a3da;
-}
-header .social {
-    float: right;
-}
+    header h2 {
+        font-size: 1rem;
+        margin: 0 0 -1rem 0;
+        padding: 0;
+    }
+    header a > svg {
+        width: 32px;
+        height: 32px;
+        color: #47a3da;
+    }
+    header .social {
+        float: right;
+    }
 a {
     text-decoration: none;
     color: #47a3da;
@@ -44,7 +52,7 @@ a {
 }
 article {
     padding: 40px 100px 60px 100px;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     line-height: 1.5;
 }
 article.alt {
@@ -56,8 +64,8 @@ article.alt {
     }
     article .date {
         float: right;
-        margin-top: -2em;
-        font-size: 0.75em;
+        margin-top: -2rem;
+        font-size: 0.9rem;
     }
 footer {
     width: 100%;
@@ -71,5 +79,9 @@ footer p.right {
     float: right;
 }
 pre {
-    padding: 20px;
+    margin: 1.5rem 0;
+    padding: 1.5rem 2rem;
+    background-color: #EEE;
+    font-family: monospace;
+    font-size: 1rem;
 }
