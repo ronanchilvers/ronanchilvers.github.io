@@ -8,6 +8,16 @@ layout: default
         <p class="date">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
     </hgroup>
 
-    {{ content }}
+    {% if content contains '<!--more-->' %}
+        {{ content | split:'<!--more-->' | first }}
+    {% endif %}
+
+    ============================
+
+    {% if content contains '<!--more-->' %}
+        {{ content | split:'<!--more-->' | last }}
+    {% else %}
+        {{ content }}
+    {% endif %}
 </article>
 

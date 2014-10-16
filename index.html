@@ -11,7 +11,11 @@ layout: default
             </h2>
             <p class="date">{{ post.date | date: "%b %-d, %Y" }}</p>
         </hgroup>
-        <p>{{ post.excerpt }}</p>
+{% if post.content contains '<!--more-->' %}
+    {{ post.content | split:'<!--more-->' | first }}
+{% else %}
+    <p>{{ post.excerpt }}</p>
+{% endif %}
     </article>
 {% endfor %}
 </div>
