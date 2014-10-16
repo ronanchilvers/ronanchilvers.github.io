@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<div class="list">
+{% for post in site.posts %}
+    <article{% cycle '', ' class="alt"' %}>
+        <hgroup>
+            <h2>
+                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            </h2>
+            <p class="date">{{ post.date | date: "%b %-d, %Y" }}</p>
+        </hgroup>
+        <p>{{ post.excerpt }}</p>
+    </article>
+{% endfor %}
+</div>

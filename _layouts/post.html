@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<article>
+    <hgroup>
+        <h1>{{ page.title }}</h1>
+        <p class="date">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+    </hgroup>
+
+    {{ content }}
+</article>
+
