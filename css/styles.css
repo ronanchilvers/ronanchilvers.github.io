@@ -9,7 +9,7 @@
     clear: both;
 }
 html {
-    font-size: 18px;
+    font-size: 16px;
 }
 body {
     font-family: 'Raleway', sans-serif;
@@ -78,10 +78,24 @@ footer p {
 footer p.right {
     float: right;
 }
+
+/** Syntax highlighting **/
 pre {
     margin: 1.5rem 0;
-    padding: 1.5rem 2rem;
+    padding: 1rem 1.5rem;
+    padding-left: 1rem;
     background-color: #EEE;
     font-family: monospace;
     font-size: 1rem;
 }
+.highlighttable {
+    width: 100%;
+}
+    .linenos {
+        width: 2rem;
+    }
+    .linenos pre {
+        padding: 1rem;
+        background-color: #DDD;
+        color: #999;
+    }

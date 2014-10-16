@@ -1,8 +1,6 @@
 ---
-layout: post
 title:  "Another test post"
 date:   2014-10-14 21:05:00
-categories: test
 ---
 This post should be in the theme. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo

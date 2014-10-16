@@ -4,7 +4,6 @@ layout: default
 
 <article>
     <p class="date">{{ page.date | date: "%b %-d, %Y" }}</p>
-
     {% if content contains '<!--more-->' %}
         {{ content | split:'<!--more-->' | first }}
         {{ content | split:'<!--more-->' | last }}

@@ -1,7 +1,7 @@
 # Site settings
 title: TheLittleDot
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://thelittledot.com" # the base hostname & protocol for your site
+baseurl: ""
+url: "http://thelittledot.com"
 email: hallo@thelittledot.com
 twitter: ronanchilvers
 github:  ronanchilvers
@@ -9,3 +9,17 @@ rss: ronanchilvers
 
 # Build settings
 markdown: kramdown
+
+# Defaults
+defaults:
+  -
+    scope:
+        path: ""
+    values:
+        layout: "default"
+  -
+    scope:
+        path: ""
+        type: "posts"
+    values:
+        layout: "post"
