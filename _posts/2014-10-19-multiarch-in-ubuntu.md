@@ -73,3 +73,4 @@ Happy 32 bitting!
 [ia32-debian]: https://www.google.co.uk/search?q=ia32-libs+missing+debian
 [ia32-ubuntu]: https://www.google.co.uk/search?q=ia32-libs+missing+ubuntu
 [ldd]: http://en.wikipedia.org/wiki/Ldd_(Unix)
+[multiarch-debian]: https://wiki.debian.org/Multiarch
