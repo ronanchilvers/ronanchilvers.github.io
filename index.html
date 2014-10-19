@@ -5,11 +5,11 @@ layout: index
 <div class="list">
 {% if site.posts.size > 0 %}
 {% for post in site.posts %}
-    <article{% cycle '', ' class="alt"' %}>
+    <article{% cycle '', ' class="alt"' %} data-href="{{ post.url | prepend: site.baseurl }}">
         <hgroup>
-            <h2>
+            <h1>
                 <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-            </h2>
+            </h1>
             <p class="date">{{ post.date | date: "%b %-d, %Y" }}</p>
         </hgroup>
 {% if post.content contains '<!--more-->' %}

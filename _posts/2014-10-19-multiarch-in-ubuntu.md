@@ -1,7 +1,6 @@
 ---
 title: Multiarch in Ubuntu
 published: True
-categories: []
 tags: [ubuntu android]
 ---
 
