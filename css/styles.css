@@ -67,6 +67,12 @@ article.alt {
         margin-top: -2rem;
         font-size: 0.9rem;
     }
+    article a {
+        text-decoration: underline;
+    }
+    article p {
+        margin-bottom: 1rem;
+    }
 footer {
     width: 100%;
     padding: 40px 100px;
@@ -78,6 +84,10 @@ footer p {
 footer p.right {
     float: right;
 }
+footer p svg {
+    width: 14px;
+    height: 14px;
+}
 
 /** Syntax highlighting **/
 pre {
@@ -87,6 +97,11 @@ pre {
     background-color: #EEE;
     font-family: monospace;
     font-size: 1rem;
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 .highlighttable {
     width: 100%;

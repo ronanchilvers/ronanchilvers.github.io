@@ -1,7 +1,9 @@
 ---
+layout: index
 ---
 
 <div class="list">
+{% if site.posts.size > 0 %}
 {% for post in site.posts %}
     <article{% cycle '', ' class="alt"' %}>
         <hgroup>
@@ -17,4 +19,7 @@
 {% endif %}
     </article>
 {% endfor %}
+{% else %}
+    <article><p>Soz! No posts yet</p></article>
+{% endif %}
 </div>
