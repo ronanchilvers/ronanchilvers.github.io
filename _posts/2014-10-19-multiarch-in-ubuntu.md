@@ -41,7 +41,7 @@ sudo dpkg --add-architecture i386
 {% endhighlight %}
 
 Now update the apt cache
-{% highlight linenos=table bash%}
+{% highlight bash linenos=table %}
 sudo apt-get update
 {% endhighlight %}
 
