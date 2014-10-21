@@ -1,11 +1,11 @@
 # Site settings
-title: TheLittleDot
+title: bitconkers
 baseurl: ""
-url: "http://thelittledot.com"
-email: hallo@thelittledot.com
+url: "http://bitconkers.net"
+email: hallo@bitconkers.net
 twitter: ronanchilvers
 github:  ronanchilvers
-rss: ronanchilvers
+rss: true
 
 # Build settings
 markdown: kramdown
