@@ -18,7 +18,7 @@ to allow you to install 32bit i386 packages.
 
 This is exactly what you now need to do to install 32bit application support. I
 hit this recently with a new install of Android Studio / Android SDK on an Ubuntu
-14.04 laptop. When run from the command line, adb reported the following:
+14.04 laptop. When run from the command line, ADB reported the following:
 
 {% highlight bash %}
 ronan@tintin:~$ ~/bin/android-studio/sdk/platform-tools/adb
@@ -48,7 +48,7 @@ sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1
 Note the use of the ':386' notation after the package name. This tells apt-get
 that we're after the i386 package rather than the default amd64.
 
-Now when I run adb (output snipped for brevity):
+Now when I run ADB (output snipped for brevity):
 
 {% highlight bash %}
 ronan@tintin:~$ ~/bin/android-studio/sdk/platform-tools/adb
@@ -56,17 +56,20 @@ Android Debug Bridge version 1.0.32
 
  -a                            - directs adb to listen on all interfaces for a connection
  -d                            - directs command to the only connected USB device
+
 *** SNIPPED ***
+
   ANDROID_SERIAL               - The serial number to connect to. -s takes priority over this if given.
   ANDROID_LOG_TAGS             - When used with the logcat option, only these debug tags are printed.
 
 {% endhighlight %}
 
-ADB now runs correctly in 32bit mode.
+It now runs correctly in 32bit mode.
 
 Thus far this is the only 32bit binary I've needed to run. My guess is that to
 get other binaries running, you would need to detect and install the various
-libraries that they need. [ldd][ldd] may be your friend here.
+libraries that they need. [ldd][ldd] may be your friend here. I gleaned handy
+hints [from][askubuntu-1] [askubuntu][askubuntu-2].
 
 Happy 32 bitting!
 
@@ -74,3 +77,5 @@ Happy 32 bitting!
 [ia32-ubuntu]: https://www.google.co.uk/search?q=ia32-libs+missing+ubuntu
 [ldd]: http://en.wikipedia.org/wiki/Ldd_(Unix)
 [multiarch-debian]: https://wiki.debian.org/Multiarch
+[askubuntu-1]: http://askubuntu.com/questions/454253/how-to-run-android-sdk-in-ubuntu-64-bits
+[askubuntu-2]: http://askubuntu.com/questions/396473/error-with-libz-so-1-on-android-studio
