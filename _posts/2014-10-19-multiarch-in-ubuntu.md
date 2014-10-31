@@ -1,7 +1,7 @@
 ---
 title: Multiarch in Ubuntu
 published: True
-tags: [ubuntu android]
+tags: [ubuntu]
 ---
 
 Getting 32 bit application support in a 64 bit install of Ubuntu or Debian
