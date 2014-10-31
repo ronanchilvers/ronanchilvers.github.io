@@ -1,0 +1,34 @@
+---
+layout: index
+---
+
+{% capture tags %}
+  {% for tag in site.tags %}
+    {{ tag[0] }}
+  {% endfor %}
+{% endcapture %}
+{% assign sortedtags = tags | split:' ' | sort %}
+
+<div id="tags">
+
+    <section class="tag-list">
+        <!-- <h2>Tags</h2> -->
+        <ul class="cf">
+        {% for tag in sortedtags %}
+            <li><a href="#{{ tag }}">{% comment %}{% include svg-icons/tag.html %}{% endcomment %}{{ tag }} <span>{{ site.tags[tag].size }}</span></a></li>
+        {% endfor %}
+        </ul>
+    </section>
+
+    {% for tag in sortedtags %}
+    <section class="tag-articles">
+        <h2>{{ tag }}</h2>
+        <ul>
+        {% for post in site.tags[tag] %}
+            <li><a href="{{ post.url }}"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time> - {{ post.title }}</a></li>
+        {% endfor %}
+        </ul>
+    </section>
+    {% endfor %}
+
+</div>

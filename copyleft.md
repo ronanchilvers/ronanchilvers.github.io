@@ -1,6 +1,5 @@
 ---
 title: Copyleft
-permalink: /copyleft/
 ---
 You may or may not find the content on this site useful. If you do all the
 content that is not attributed to other sources is licensed under the

@@ -5,7 +5,7 @@ layout: index
 <div class="list">
 {% if site.posts.size > 0 %}
 {% for post in site.posts %}
-    <article{% cycle '', ' class="alt"' %} data-href="{{ post.url | prepend: site.baseurl }}">
+    <article class="{% cycle '', 'alt' %}" data-href="{{ post.url | prepend: site.baseurl }}">
         <hgroup>
             <h1>
                 <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
