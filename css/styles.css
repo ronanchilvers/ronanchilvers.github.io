@@ -32,25 +32,11 @@ header {
         margin: 0 0 -1rem 0;
         padding: 0;
     }
-    /*header a > svg {
-        width: 32px;
-        height: 32px;
-        color: #47a3da;
-    }*/
-    /*header .social,*/
     header .links {
         float: right;
         font-size: 1rem;
         margin-top: 20px;
     }
-    /*header .social {
-        float: right;
-        margin-top: -10px;
-    }*/
-    /*header .links {
-        margin-top: 5px;
-        float: left;
-    }*/
         header .links a {
             border-radius: 3px;
             background-color: #47a3da;
@@ -93,13 +79,16 @@ article {
         }
     article .date {
         float: right;
-        margin-top: -2.5rem;
+        margin-top: 0.5rem;
         padding: 4px 8px;
         font-size: 0.9rem;
         border-radius: 3px;
         background-color: #47a3da;
         color: #FFF;
     }
+        .list article .date {
+            margin-top: -2.5rem;
+        }
     article a {
         text-decoration: underline;
     }
@@ -109,7 +98,6 @@ article {
     article ul {
         list-style: disc;
         padding-left: 2rem;
-        /*margin-left: 2rem;*/
         margin-bottom: 1rem
     }
 footer {
