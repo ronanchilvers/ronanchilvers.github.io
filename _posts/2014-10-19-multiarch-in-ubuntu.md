@@ -2,6 +2,7 @@
 title: Multiarch in Ubuntu
 published: True
 tags: [ubuntu]
+date: 2014-10-19
 ---
 
 Getting 32 bit application support in a 64 bit install of Ubuntu or Debian
