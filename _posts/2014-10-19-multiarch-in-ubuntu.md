@@ -3,13 +3,13 @@ title: Multiarch in Ubuntu
 published: True
 tags: [ubuntu]
 date: 2014-10-19
+excerpt: Missing ia32-libs? A starter in how to get 32 bit applications running on 64 bit architecture using Debian's multiarch system
 ---
 
 Getting 32 bit application support in a 64 bit install of Ubuntu or Debian
 used to be a case of installing the ia32-libs package. However this package
 disappeared from both [upstream debian][ia32-debian] and [ubuntu 64bit][ia32-ubuntu]
 some time ago in favour of the more flexible multiarch system.
-<!--more-->
 
 Debian multiarch is explained [in detail here][multiarch-debian]. Essentially the
 idea is that additional architectures can be added to a base install and

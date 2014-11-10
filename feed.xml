@@ -15,11 +15,7 @@ layout: null
       <item>
         <title>{{ post.title | xml_escape }}</title>
         <description>
-            {% if post.content contains '<!--more-->' %}
-                {{ post.content | split:'<!--more-->' | first | xml_escape }}
-            {% else %}
-                {{ post.excerpt |xml_excape }}
-            {% endif %}
+            {{ post.excerpt | strip_html | xml_escape }}
         </description>
         <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
         <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>

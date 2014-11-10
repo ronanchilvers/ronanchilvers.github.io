@@ -12,11 +12,7 @@ layout: index
             </h1>
             <p class="date">{{ post.date | date: "%b %-d, %Y" }}</p>
         </hgroup>
-{% if post.content contains '<!--more-->' %}
-    {{ post.content | split:'<!--more-->' | first | strip_html }}
-{% else %}
-    <p>{{ post.excerpt | strip_html}}</p>
-{% endif %}
+        <p>{{ post.excerpt | strip_html }}</p>
     </article>
 {% endfor %}
 {% else %}
