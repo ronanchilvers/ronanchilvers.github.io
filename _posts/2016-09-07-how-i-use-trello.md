@@ -1,7 +1,7 @@
 ---
 title:  "How I use Trello"
 description: A workflow using trello, github, JIRA and IFTTT
-## date: add a date when publishing
+date: 2016-09-07
 ---
 
 I recently decided that I needed to get a better handle on my daily tasks at work. We use github pull requests and JIRA (migrating from Basecamp) for project management and code storage, both of which generate a steady flow of tasks. There's also the day to day maintenance that needs to happen in any modest network and of course the sundry flow of ad-hoc stuff that crops up. Since my memory is marginally worse at retaining information than a sieve, I decided I needed some help!
