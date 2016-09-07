@@ -58,6 +58,24 @@ At the moment, initialising the sync is a manual task. However if I stump up the
 
 This little power up just gives me the 'quick glance' information that's handy on Github PRs. Has it been merged? Is it passing CI tests?
 
+# My process
+
+To keep it all humming along I have several 'checkpoints'.
+
+- Once a week I do a trawl of the Inbox. I remove anything that is no longer relevant (done by someone else, no longer needed, etc). I move tasks that are becoming more pressing into 'This Week'.
+- Once a day I archive yesterday's Done list and create a new Done list for today. I move tasks out of 'This Week' and 'Pull Requests' that I need to do today into the 'Today' list.
+- During the day I monitor the 'Pull Requests' list and move any that I can action immediately into 'Today'. Otherwise they stay where they are.
+
+IFTTT and Zapier have made sure that github issues, pull requests and JIRA tickets are popping into the relevant lists so I'm always up to date with things that are pressing.
+
+I'm also now using Google's Inbox instead of vanilla GMail and am seeing the benefit of an empty inbox. I'm much more aggressive about actioning emails as quickly as possible - they either get replied to, get deleted / archived or are sent to Trello as future tasks.
+
+# Conclusions
+
+My setup has worked well over the past few weeks. I'm still looking for ways to automate it more. It would be great to have a two-way sync between Jira and Trello but in some ways the split is a good one.
+
+If you try a similar setup, let me know. If you find ways to make it better definitely let me know!!
+
 [google task management]: https://www.google.co.uk/?q=task%20management%20tool
 [kanban]: https://www.google.co.uk/?q=kanban
 [trello]: https://trello.com/
