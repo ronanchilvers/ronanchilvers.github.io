@@ -1,0 +1,45 @@
+name: twaddle
+description: Stuff I thought of
+meta_description: "Stuff I thought of"
+
+aboutPage: true
+
+markdown: kramdown
+highlighter: rouge
+
+gems:
+  - jekyll-paginate
+  # - jekyll-gravatar
+paginate: 20
+baseurl: /
+domain_name: 'http://ronanchilvers.github.io'
+# google_analytics: 'UA-XXXXXXXX-X'
+disqus: false
+disqus_shortname: 'your-disqus-shortname'
+
+# Details for the RSS feed generator
+url:            'http://ronanchilvers.github.io'
+author:         'Ronan Chilvers'
+authorTwitter:  'ronanchilvers'
+
+permalink:       /:year/:title/
+
+defaults:
+    -
+        scope:
+            path: "" # empty string for all files
+            type: pages
+        values:
+            layout: default
+    -
+        scope:
+            path: "" # empty string for all files
+            type: posts
+        values:
+            layout: post
+    -
+        scope:
+            path: ""
+            type: drafts
+        values:
+            layout: post
