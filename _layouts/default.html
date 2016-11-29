@@ -4,8 +4,10 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <link rel="author" href="https://twitter.com/{{ site.authorTwitter }}"/>
 
-  <title>{{ site.name }}{% if page.title %} - {{ page.title }}{% endif %}</title>
+  <title>{% if page.title %}{{ page.title }} - {{ site.name }}{% else %}{{ site.name }}{% endif %}</title>
   <link rel="shortcut icon" href="{{ site.baseurl }}assets/images/favicon.ico">
   <link rel="stylesheet" href="{{ site.baseurl }}assets/css/style.css?time=2016-11-2922:19:05">
   <link rel="alternate" type="application/rss+xml" title="My Blog" href="{{ site.baseurl }}feed.xml">
