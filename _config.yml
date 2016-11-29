@@ -9,6 +9,7 @@ highlighter: rouge
 
 gems:
   - jekyll-paginate
+  - jekyll-sitemap
   # - jekyll-gravatar
 paginate: 20
 baseurl: /
