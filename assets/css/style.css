@@ -186,7 +186,7 @@ ul 	{ margin:0; margin-bottom: 20px; padding:0; }
 li	{ list-style-type:circle; list-style-position:inside; }
 
 /* Line Height */
-#post-body, p { line-height:1.7; }
+#post-body, p { line-height:1.7; font-weight: 300; }
 
 b, strong { font-weight: 500;
   color: #1E2025; }
@@ -491,6 +491,13 @@ Post List
 #sharing a:hover {
 	/*color: #444;*/
 	opacity: 0.8;
+}
+
+.callout {
+    margin: 10px 0 20px 0;
+    padding: 20px 25px;
+    border-radius: 4px;
+    background-color: #e8f3fd;
 }
 
 /* Post Navigation */
