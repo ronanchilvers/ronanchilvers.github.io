@@ -13,7 +13,7 @@ gems:
 paginate: 20
 baseurl: /
 domain_name: 'http://ronanchilvers.github.io'
-# google_analytics: 'UA-XXXXXXXX-X'
+google_analytics: 'UA-88193273-1'
 disqus: true
 disqus_shortname: 'ronanchilvers-github-io'
 
