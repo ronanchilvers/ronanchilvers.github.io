@@ -19,7 +19,7 @@ With these key points in mind I worked out a set of lists, [kanban stylee][kanba
 
 # The toolkit
 
-I've ended up using a set of tools that work together. [Trello] is the backbone and gives me the task management tools. [IFTTT] allows me to automatically create cards from Github issues and pull requests, Basecamp assignment emails and add recurring cards ([Trello] have just add this as a power up so if you don't need Github integration you could use that instead). [Zapier] creates tickets for me from Jira tickets. Jeremy Seitz's [Jira Tracker for Trello] syncs Jira ticket information onto Trello cards automatically. Finally [Trello's Github power up][trello github] lets me attach pull request data to cards.
+I've ended up using a set of tools that work together. [Trello] is the backbone and gives me the task management tools. [IFTTT] allows me to automatically create cards from Github issues and pull requests, Basecamp assignment emails and add recurring cards. [Zapier] creates tickets for me from Jira tickets. Jeremy Seitz's [Jira Tracker for Trello] syncs Jira ticket information onto Trello cards automatically. Finally [Trello's Github power up][trello github] lets me attach pull request data to cards.
 
 Read on for the low-down.
 
