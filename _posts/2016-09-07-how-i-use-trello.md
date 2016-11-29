@@ -19,15 +19,17 @@ With these key points in mind I worked out a set of lists, [kanban stylee][kanba
 
 # The toolkit
 
-I've ended up using two main tools. [Trello] gives me the task management. [IFTTT] allows me to automatically create cards from Github issues and pull requests, Basecamp assignment emails and recurring cards. [Zapier] creates tickets for me from Jira tickets. Jeremy Seitz's [Jira Tracker for Trello] syncs Jira ticket information onto Trello cards automatically. Finally [Trello's Github power up][trello github] lets me attach pull request data to cards.
+I've ended up using a set of tools that work together. [Trello] is the backbone and gives me the task management tools. [IFTTT] allows me to automatically create cards from Github issues and pull requests, Basecamp assignment emails and add recurring cards ([Trello] have just add this as a power up so if you don't need Github integration you could use that instead). [Zapier] creates tickets for me from Jira tickets. Jeremy Seitz's [Jira Tracker for Trello] syncs Jira ticket information onto Trello cards automatically. Finally [Trello's Github power up][trello github] lets me attach pull request data to cards.
 
 Read on for the low-down.
 
 ## Trello
 
-In creating my Trello board, the four requirements above were the main focus. I have six standard lists.
+Trello is the top dog. It gives me the lists and cards that make up the interface for my workflow. In creating my Trello board, the four requirements above were the main focus.
 
 ![Example ToDo Board][image-board-thumbnail]
+
+I have six standard lists:
 
 - **Inbox** - this is my "don't forget anything" list. All new tasks get thrown in here. I also use Trello's [email to card / comment] and feature to create cards from incoming emails if required.
 - **This Week** - these are the curated tasks, moved out of the Inbox list, that I need to get done soon
