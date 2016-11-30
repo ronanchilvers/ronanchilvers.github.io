@@ -84,7 +84,7 @@ My setup has worked well over the past few weeks. I'm still looking for ways to 
 
 If you try a similar setup, let me know. If you find ways to make it better definitely let me know!!
 
-[google task management]: https://www.google.co.uk/?q=task%20management%20tool
+[google task management]: https://www.google.co.uk/search?q=task%20management%20tool
 [kanban]: https://www.google.co.uk/?q=kanban
 [trello]: https://trello.com/
 [ifttt]: https://ifttt.com
