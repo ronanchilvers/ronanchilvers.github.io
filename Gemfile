@@ -23,5 +23,6 @@ gem "minima"
 group :jekyll_plugins do
   gem 'jekyll-paginate'
   gem 'jekyll-sitemap'
+  gem 'jekyll-seo-tag'
   # gem "jekyll-github-metadata", "~> 1.0"
 end
