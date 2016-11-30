@@ -109,15 +109,15 @@ h2 {
 }
 
 nav.main-nav {
-	padding: 20px 20px 0;
+	padding: 10px 20px;
 
 	/*max-width: 600px;*/
-	/*width:100%;*/
+	width:100%;
 	background: #fff;
-	background: rgba(255,255,255,.90);
+	background: rgba(240,240,240,.80);
 	margin: 0 auto;
 	text-align: right;
-	/*position: fixed;*/
+	position: fixed;
 	z-index: 100;
 }
 
@@ -442,6 +442,7 @@ Post List
 
 .post {
 	margin: 80px 0 0 0;
+    position: relative;
 }
 
 #post-meta {
@@ -649,4 +650,33 @@ h2.month {
 	.post h2.headline { font-size: 13px; }
 	.post h1 { font-size:24px; }
 	.post h2 { font-size:20px; }
+}
+
+/** Tags **/
+.tags {
+    list-style: none;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.tags__index {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+}
+.tags__posts {
+    width: 100%;
+}
+.tags li {
+    list-style: none;
+}
+.tag {
+    padding: 5px 10px;
+    margin: 0 3px;
+    float: left;
+    background-color: #EEE;
+    color: #666;
+}
+.tag:hover {
+  background-color: #5badf0;
+  color: white;
 }

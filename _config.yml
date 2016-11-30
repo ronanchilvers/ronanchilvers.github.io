@@ -18,7 +18,7 @@ exclude:
 
 paginate: 20
 baseurl: /
-permalink: /:year/:title/
+permalink: /:year/:title.html
 domain_name: https://ronanchilvers.github.io
 google_analytics: UA-88193273-1
 disqus: true
