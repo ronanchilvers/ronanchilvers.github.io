@@ -17,13 +17,13 @@ exclude:
 
 paginate: 20
 baseurl: /
-domain_name: 'http://ronanchilvers.github.io'
+domain_name: 'https://ronanchilvers.github.io'
 google_analytics: 'UA-88193273-1'
 disqus: true
 disqus_shortname: 'ronanchilvers-github-io'
 
 # Details for the RSS feed generator
-url:            'http://ronanchilvers.github.io'
+url:            'https://ronanchilvers.github.io'
 author:         'Ronan Chilvers'
 authorTwitter:  'ronanchilvers'
 
