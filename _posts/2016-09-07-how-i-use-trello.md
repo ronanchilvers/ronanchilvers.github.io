@@ -3,7 +3,7 @@ title:  "How I use Trello"
 description: A workflow using trello, github, JIRA and IFTTT
 date: 2016-09-07
 image: /assets/posts/how-i-use-trello/example-board-thumbnail.png
-tags: trello jira zapier ifttt
+tags: [trello, jira, zapier, ifttt]
 ---
 
 <p class="callout">

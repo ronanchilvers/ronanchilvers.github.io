@@ -3,7 +3,7 @@ title: Trello - Two Months On
 description: Two months with Trello as my main workflow tool - here's the skinny
 date: 2016-11-29
 image: /assets/posts/how-i-use-trello/example-board-thumbnail.png
-tags: trello jira zapier ifttt
+tags: [trello, jira, zapier, ifttt]
 ---
 
 It's been a couple of months since I started [using Trello to manage my task list](/2016/how-i-use-trello.html) at work. Overall its been really successful. Its allowed me to keep track of what I'm doing much more effectively than I have before. I've tweaked things a bit and I thought it would be worth documenting what's changed.
