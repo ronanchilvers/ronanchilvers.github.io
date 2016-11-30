@@ -23,7 +23,7 @@ permalink: tags.html
 {% capture this_word %}{{ tag_words[item] }}{% endcapture %}
 
 <a id="{{ this_word | cgi_escape }}"></a>
-### {{ this_word }} ({{ site.tags[this_word].size }})
+<h3>{{ this_word }} ({{ site.tags[this_word].size }})</h3>
 
 <table class="tags__posts">
 {% for post in site.tags[this_word] %}{% if post.title != null %}
