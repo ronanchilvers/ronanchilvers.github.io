@@ -1,6 +1,7 @@
 name: twaddle
 description: Stuff I thought of
 meta_description: Stuff I thought of
+environment: production
 
 aboutPage: true
 
