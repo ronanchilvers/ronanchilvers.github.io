@@ -1,8 +1,13 @@
 ---
 title: Google Calendar events as Trello cards
-description: A simple way of generating Trello cards from Google Calendar events using PHP
-image: /assets/posts/google-calendar-events-as-trello-cards/calendar-event-as-a-trello-card.png
-tags: [trello, google, php]
+date: 2016-12-09 21:45:12.186000000 Z
+tags:
+- trello
+- google
+- php
+description: A simple way of generating Trello cards from Google Calendar events using
+  PHP
+image: "/assets/posts/google-calendar-events-as-trello-cards/calendar-event-as-a-trello-card.png"
 ---
 
 So far in my Trello task list adventures ([here]({% post_url 2016-09-07-how-i-use-trello %}) and [here]({% post_url 2016-11-29-trello-two-months-on %})), one of the niggling little shortcomings has been not having google calendar events in my Today list. We use [Harvest] at work and the [Harvest Chrome extension] handly integrates with Trello, giving you a 'Track Time' button when you open a card.

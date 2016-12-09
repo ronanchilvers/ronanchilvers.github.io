@@ -1,0 +1,3 @@
+environment: development
+google_analytics: false
+disqus: false
