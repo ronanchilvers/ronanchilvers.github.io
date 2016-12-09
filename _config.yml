@@ -1,53 +1,53 @@
+---
+title: Ronanchilvers.Github.Io
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: pages
+  values:
+    layout: default
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
+- scope:
+    path: ''
+    type: drafts
+  values:
+    layout: post
 name: twaddle
 description: Stuff I thought of
 meta_description: Stuff I thought of
 environment: production
-
 aboutPage: true
-
 markdown: kramdown
 highlighter: rouge
-
 gems:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-seo-tag
-
+- jekyll-paginate
+- jekyll-sitemap
+- jekyll-seo-tag
 exclude:
-  - Gemfile
-  - Gemfile.lock
-
+- Gemfile
+- Gemfile.lock
 paginate: 20
-baseurl: /
-permalink: /:year/:title.html
+baseurl: "/"
+permalink: "/:year/:title.html"
 domain_name: https://ronanchilvers.github.io
 google_analytics: UA-88193273-1
 disqus: true
 disqus_shortname: ronanchilvers-github-io
-
 url: https://ronanchilvers.github.io
 author: ronanchilvers
 authorTwitter: ronanchilvers
 twitter:
   username: ronanchilvers
-logo: /assets/images/avatar@2x.png
-
-defaults:
-    -
-        scope:
-            path: "" # empty string for all files
-            type: pages
-        values:
-            layout: default
-    -
-        scope:
-            path: "" # empty string for all files
-            type: posts
-        values:
-            layout: post
-    -
-        scope:
-            path: ""
-            type: drafts
-        values:
-            layout: post
+logo: "/assets/images/avatar@2x.png"
