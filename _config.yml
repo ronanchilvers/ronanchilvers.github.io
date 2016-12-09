@@ -51,6 +51,8 @@ authorTwitter: ronanchilvers
 twitter:
   username: ronanchilvers
 logo: /assets/images/avatar@2x.png
+sass:
+  sass_dir: _resources/sass
 
 defaults:
     -

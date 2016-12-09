@@ -1,0 +1,28 @@
+/** Tags **/
+.tags {
+    list-style: none;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.tags__index {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+}
+.tags__posts {
+    width: 100%;
+}
+.tags li {
+    list-style: none;
+}
+.tag {
+    padding: 5px 10px;
+    margin: 0 3px;
+    float: left;
+    background-color: #EEE;
+    color: #666;
+}
+.tag:hover {
+  background-color: #5badf0;
+  color: white;
+}
