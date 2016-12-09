@@ -35,5 +35,3 @@ permalink: tags.html
 </table>
 
 {% endunless %}{% endfor %}
-
-{% include footer.html %}

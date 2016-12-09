@@ -24,6 +24,10 @@
 
   <section id="wrapper" class="{% if page.profile %}home{% endif %}">
     {{ content }}
+
+{% if page.footer %}
+    {% include footer.html %}
+{% endif %}
   </section>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
