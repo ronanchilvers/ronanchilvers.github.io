@@ -1,6 +1,6 @@
 ---
 title: Google Calendar events as Trello cards
-date: 2016-12-09 21:45:12.186000000 Z
+date: 2016-12-12 17:04:22
 tags:
 - trello
 - google
@@ -29,7 +29,7 @@ My little scipt needed to do two things:
 - For a given date, read a list of calendar events out of Google Calendar
 - Add a card for each event into a Trello list preserving the event title, description, date/time and attendees.
 
-A simple, schmimple bit of hacking. The result is [google-calendar-to-trello], a little CLI tool written in PHP that does exactly the above.
+There are a couple of other bells and whistles (and some quirks! Hey - its alpha!) but that's pretty much it. A simple, schmimple bit of hacking. The result is [google-calendar-to-trello], a little CLI tool written in PHP that does exactly the above.
 
 ![A calendar event as a Trello card][calendar-event-in-trello]
 
