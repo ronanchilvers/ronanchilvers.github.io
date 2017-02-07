@@ -24,7 +24,7 @@ I've found that the best way to keep tasks moving is not getting distracted. Its
 
 Only a few things have been tweaked.
 
-* I've dropped the Pull Requests list. It wasn't very useful as all I was doing most of the time was moving the PR cards straight into my Today list. I now just shove PRs straight into my Today list.
+* I've dropped the Pull Requests list. It wasn't very useful as all I was doing most of the time was moving the PR cards straight into my Today list. Now they just go into Today by default.
 * I'm using [Zapier] more. Zapier is better than [IFTTT] in that it allows you build much more sophisticated rules. But... it ain't free. While the pricing is perfectly reasonable I haven't yet decided that I like it enough to commit hard cash. It is good though!
 * I'm using the [Shortcuts For Trello] Chrome extension to add some keyboard shortcuts that are missing. I have one for sending a card to the top of a list and another to open the notifications sidebar. It works well.
 
@@ -34,7 +34,7 @@ The one thing that I really want to add is the ability to create cards for calen
 
 # Conclusion
 
-Trello is great and Zapier / IFTTT / JIRA Tracker for Trello are all great, Combined together they've made a really good workflow system that suits me well. With a bit of extra polish it could really shine.
+Trello is great and Zapier / IFTTT / JIRA Tracker for Trello are all great. Combined they've made a really good workflow system that suits me well. With a bit of extra polish it could really shine.
 
 [keyboard shortcuts]: https://trello.com/shortcuts
 [ifttt]: https://ifttt.com
