@@ -1,3 +1,4 @@
 environment: development
 google_analytics: false
+facebook_pixel: false
 disqus: false
