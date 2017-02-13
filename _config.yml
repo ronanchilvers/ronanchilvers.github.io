@@ -43,7 +43,8 @@ baseurl: "/"
 permalink: "/:year/:title.html"
 domain_name: https://ronanchilvers.github.io
 google_analytics: UA-88193273-1
-facebook_pixel: 1861408827472792
+# facebook_pixel: 1861408827472792
+facebook_pixel: false
 disqus: true
 disqus_shortname: ronanchilvers-github-io
 url: https://ronanchilvers.github.io
