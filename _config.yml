@@ -14,16 +14,19 @@ defaults:
     type: pages
   values:
     layout: default
+    footer: true
 - scope:
     path: ''
     type: posts
   values:
     layout: post
+    footer: true
 - scope:
     path: ''
     type: drafts
   values:
     layout: post
+    footer: true
 name: twaddle
 description: Stuff I thought of
 meta_description: Stuff I thought of
@@ -43,7 +46,6 @@ baseurl: "/"
 permalink: "/:year/:title.html"
 domain_name: https://ronanchilvers.github.io
 google_analytics: UA-88193273-1
-# facebook_pixel: 1861408827472792
 facebook_pixel: false
 disqus: true
 disqus_shortname: ronanchilvers-github-io
@@ -52,29 +54,6 @@ author: ronanchilvers
 authorTwitter: ronanchilvers
 twitter:
   username: ronanchilvers
-logo: /assets/images/avatar@2x.png
+logo: "/assets/images/avatar@2x.png"
 sass:
   sass_dir: _resources/sass
-
-defaults:
-    -
-        scope:
-            path: "" # empty string for all files
-            type: pages
-        values:
-            layout: default
-            footer: true
-    -
-        scope:
-            path: "" # empty string for all files
-            type: posts
-        values:
-            layout: post
-            footer: true
-    -
-        scope:
-            path: ""
-            type: drafts
-        values:
-            layout: post
-            footer: true
