@@ -10,9 +10,7 @@ description: A workflow using trello, github, JIRA and IFTTT
 image: "/assets/posts/how-i-use-trello/example-board-thumbnail.png"
 ---
 
-<p class="callout">
-Update: This system has worked really well for me. I've evolved it a little and you can <a href="/2016/trello-two-months-on.html">read about the changes in here</a>.
-</p>
+> Update: This system has worked really well for me. I've evolved it a little > and you can [read about the changes in here](/2016/trello-two-months-on.html).
 
 I recently decided that I needed to get a better handle on my daily tasks at work. We use github pull requests and JIRA (migrating from Basecamp) for project management and code storage, both of which generate a steady flow of tasks. There's also the day to day maintenance that needs to happen in any modest network and of course the sundry flow of ad-hoc stuff that crops up. Since my memory is marginally worse at retaining information than a sieve, I decided I needed some help!
 
