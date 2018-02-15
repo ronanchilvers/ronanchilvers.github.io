@@ -1,6 +1,6 @@
 ---
 title: Google Calendar events as Trello cards
-date: 2016-12-12 17:04:22 Z
+date: 2016-12-12 17:04:22
 tags:
 - trello
 - google
