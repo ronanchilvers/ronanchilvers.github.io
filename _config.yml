@@ -1,64 +1,62 @@
 ---
-title: ronanchilvers.github.io
-timezone: UTC
-collections:
-  posts:
-    title: Posts
-    output: true
-  uploads:
-    title: Uploads
-    output: true
-name: twaddle
-description: Stuff I thought of
-meta_description: Stuff I thought of
-environment: production
 aboutPage: true
-markdown: kramdown
-highlighter: rouge
-gems:
-- jekyll-paginate
-- jekyll-sitemap
-- jekyll-seo-tag
-exclude:
-- Gemfile
-- Gemfile.lock
-paginate: 20
-baseurl: "/"
-permalink: "/:year/:title.html"
-domain_name: https://ronanchilvers.github.io
-google_analytics: UA-88193273-1
-# facebook_pixel: 1861408827472792
-facebook_pixel: false
-disqus: true
-disqus_shortname: ronanchilvers-github-io
-url: https://ronanchilvers.github.io
 author: ronanchilvers
 authorTwitter: ronanchilvers
-twitter:
-  username: ronanchilvers
-logo: /assets/images/avatar@2x.png
-sass:
-  sass_dir: _resources/sass
-
+baseurl: /
+collections:
+  posts:
+    output: true
+    title: Posts
+  uploads:
+    output: true
+    title: Uploads
 defaults:
   -
     scope:
-        path: "" # empty string for all files
-        type: pages
+      path: ""
+      type: pages
     values:
-        layout: default
-        footer: true
+      footer: true
+      layout: default
   -
     scope:
-        path: "" # empty string for all files
-        type: posts
+      path: ""
+      type: posts
     values:
-        layout: post
-        footer: true
+      footer: true
+      layout: post
   -
     scope:
-        path: ""
-        type: drafts
+      path: ""
+      type: drafts
     values:
-        layout: post
-        footer: true
+      footer: true
+      layout: post
+description: "Stuff I thought of"
+disqus: true
+disqus_shortname: ronanchilvers-github-io
+domain_name: "https://ronanchilvers.github.io"
+environment: production
+exclude:
+  - Gemfile
+  - Gemfile.lock
+facebook_pixel: false
+gems:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-seo-tag
+google_analytics: UA-88193273-1
+highlighter: rouge
+logo: /assets/images/avatar@2x.png
+markdown: kramdown
+meta_description: "Stuff I thought of"
+name: twaddle
+paginate: 20
+permalink: "/:year/:title.html"
+sass:
+  sass_dir: _resources/sass
+timezone: UTC
+title: ronanchilvers.github.io
+twitter:
+  username: ronanchilvers
+url: "https://ronanchilvers.github.io"
