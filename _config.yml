@@ -1,5 +1,5 @@
 ---
-title: Ronanchilvers.Github.Io
+title: ronanchilvers.github.io
 timezone: UTC
 collections:
   posts:
@@ -8,22 +8,6 @@ collections:
   uploads:
     title: Uploads
     output: true
-defaults:
-- scope:
-    path: ''
-    type: pages
-  values:
-    layout: default
-- scope:
-    path: ''
-    type: posts
-  values:
-    layout: post
-- scope:
-    path: ''
-    type: drafts
-  values:
-    layout: post
 name: twaddle
 description: Stuff I thought of
 meta_description: Stuff I thought of
@@ -57,24 +41,24 @@ sass:
   sass_dir: _resources/sass
 
 defaults:
-    -
-        scope:
-            path: "" # empty string for all files
-            type: pages
-        values:
-            layout: default
-            footer: true
-    -
-        scope:
-            path: "" # empty string for all files
-            type: posts
-        values:
-            layout: post
-            footer: true
-    -
-        scope:
-            path: ""
-            type: drafts
-        values:
-            layout: post
-            footer: true
+  -
+    scope:
+        path: "" # empty string for all files
+        type: pages
+    values:
+        layout: default
+        footer: true
+  -
+    scope:
+        path: "" # empty string for all files
+        type: posts
+    values:
+        layout: post
+        footer: true
+  -
+    scope:
+        path: ""
+        type: drafts
+    values:
+        layout: post
+        footer: true
