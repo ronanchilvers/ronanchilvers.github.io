@@ -1,6 +1,6 @@
 ---
 title: Trello - Two Months On
-date: 2016-11-29 00:00:00 Z
+date: 2016-11-29
 published: false
 tags:
 - trello
