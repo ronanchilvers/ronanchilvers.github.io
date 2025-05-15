@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 date: 2025-05-15
 title: What makes a good TTRPG session?
 ---
