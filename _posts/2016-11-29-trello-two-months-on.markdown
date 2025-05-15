@@ -2,11 +2,6 @@
 title: Trello - Two Months On
 date: 2016-11-29
 published: false
-tags:
-- trello
-- jira
-- zapier
-- ifttt
 description: Two months with Trello as my main workflow tool - here's the skinny
 image: "/assets/posts/how-i-use-trello/example-board-thumbnail.png"
 ---
