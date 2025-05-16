@@ -1,0 +1,15 @@
+baseURL: https://ronanchilvers.github.io/
+languageCode: en-gb
+title: One Seat Canoe
+theme: hyde
+params:
+  description: Ruminations on role playing games for both groups and solo adventurers
+  layoutReverse: false
+menu:
+  main:
+    - name: Home
+      url: "/"
+      weight: 1
+    - name: About
+      url: "/about/"
+      weight: 2
