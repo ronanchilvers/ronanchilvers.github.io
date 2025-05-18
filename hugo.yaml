@@ -5,11 +5,32 @@ theme: hyde
 params:
   description: Ruminations on role playing games for both groups and solo adventurers
   layoutReverse: false
+
+# Main menu entries
 menu:
   main:
     - name: Home
       url: "/"
       weight: 1
-    - name: About
-      url: "/about/"
-      weight: 2
+    # - name: About
+      # url: "/about/"
+      # weight: 2
+    - name: Posts
+      url: "/posts/"
+      weight: 3
+    - name: Tags
+      url: "/tags/"
+      weight: 4
+
+# By default, only output HTML
+outputs:
+  home:
+    - html
+  page:
+    - html
+  section:
+    - html
+  taxonomy:
+    - html
+  term:
+    - html
