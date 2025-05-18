@@ -1,7 +1,7 @@
 ---
-date: 2025-05-18T06:37:12+01:00
 draft: true
+date: 2025-05-18
 title: West Marches Shadowdark
-tags: ["west marches", "shadowdark"]
 summary: Experiences running a West Marches style game with Shadowdark.
 ---
+After finishing up a long running 5th edition campaign, I wanted to do something a little different.
