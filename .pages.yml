@@ -5,7 +5,14 @@ content:
     type: collection
     path: 'content/posts'
     view:
-      fields: [ title, draft, date, summary ]
+      fields: 
+        - title
+        - date
+        - tags
+        - summary
+        - draft
+    exclude:
+      - _index.md
     fields:
       - name: date
         label: Date
