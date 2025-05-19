@@ -3,8 +3,10 @@ publishDate:
 date: 2025-05-16T13:52:39+01:00
 draft: true
 title: A Travel System
-tags: ["travel", "shadowdark"]
 summary: A simple travel system for use with OSR games such as Shadowdark.
+tags:
+  - travel
+  - shadowdark
 ---
 When a journey is undertaken the following steps are followed:
 

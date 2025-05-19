@@ -1,6 +1,6 @@
 ---
-draft: true
 date: 2025-05-18
+draft: true
 title: West Marches Shadowdark
 summary: Experiences running a West Marches style game with Shadowdark.
 tags:
