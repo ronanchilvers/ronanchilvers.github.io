@@ -1,8 +1,10 @@
 ---
-date: 2025-05-17T12:18:44+01:00
-draft: false
+draft: true
 title: Travelling in Role Playing Games
-summary: In many classic novels, the journey is part (if not all) of the adventure. Yet in many games we handwave it, covering hundreds of miles of potentially adventurous terrain in moments. How can we make travel more exciting?
+summary: In many classic novels, the journey is part (if not all) of the
+  adventure. Yet in many games we handwave it, covering hundreds of miles of
+  potentially adventurous terrain in moments. How can we make travel more
+  exciting?
 tags:
   - travel
   - shadowdark
