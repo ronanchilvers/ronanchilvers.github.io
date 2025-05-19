@@ -7,14 +7,14 @@ content:
     view:
       fields: [ title, draft, date, summary ]
     fields:
-      - name: draft
-        label: Draft
-        type: boolean
-        default: true
       - name: date
         label: Date
         type: date
         format: yyyy-MM-dd
+      - name: draft
+        label: Draft
+        type: boolean
+        default: true
       - name: title
         label: Title
         type: string
