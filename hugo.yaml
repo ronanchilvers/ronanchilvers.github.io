@@ -30,6 +30,9 @@ params:
     name: Ronan Chilvers
   stylesheets:
     - css/tags.css
+  theme:
+    overlay: true
+    reverse: true
 
 # Main menu entries
 menu:
