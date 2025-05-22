@@ -28,6 +28,8 @@ params:
     url: https://github.com/ronanchilvers
     email: ronan@thelittledot.com
     name: Ronan Chilvers
+  stylesheets:
+    - css/tags.css
 
 # Main menu entries
 menu:

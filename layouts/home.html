@@ -8,13 +8,14 @@
 {{ define "main" -}}
 <h1>{{ .Title }}</h1>
 {{ .Content }}
+
 <div class="related">
     <ul class="related-pages">
         {{ range $p := (.Paginate (where site.RegularPages "Type" "posts")).Pages }}
         <li>
             <h3>
                 <a href="{{ .RelPermalink }}">
-                {{ .Title }}
+                {{- if .Draft -}}[DRAFT] {{ end -}}{{ .Title }}
                 <small>{{ .Date | dateFormat ":date_long" }}</small>
                 </a>
             </h3>

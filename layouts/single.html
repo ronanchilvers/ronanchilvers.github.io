@@ -1,11 +1,17 @@
 {{/*{{ define "masthead" -}}
     <h1 class="masthead-title">
-        <a href="{{ .Site.BaseURL }}" title="Home">{{ .Title }}</a>
+        <a href="{{ .Site.BaseURL }}" title="Home">
+            {{- if .Draft -}}[DRAFT] {{ end -}}
+            {{ .Title }}
+        </a>
         <small>- {{ .Site.Title }}</small>
     </h1>
 {{ end -}}*/}}
 
 {{ define "main" -}}
-{{- if .Draft -}}{{ partial "draft-label.html" . }}{{- end -}}
+<h1>{{- if .Draft -}}[DRAFT] {{ end -}}{{ .Title }}</h1>
 {{ .Content }}
+<div class="tags">
+{{ partial "tags.html" . }}
+</div>
 {{ end -}}
