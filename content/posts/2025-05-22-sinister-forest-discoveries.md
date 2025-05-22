@@ -1,6 +1,6 @@
 ---
 date: 2025-05-22
-draft: true
+draft: false
 title: Sinister Forest Discoveries
 tags:
   - random tables
