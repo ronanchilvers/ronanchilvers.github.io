@@ -1,3 +1,21 @@
 {{ define "main" -}}
 {{ .Content }}
+<div class="related">
+<ul class="related-pages">
+    {{ range $p := (.Paginate (where site.RegularPages "Type" "posts")).Pages }}
+    <li>
+        <h3>
+            <a href="{{ .RelPermalink }}">
+            {{ .Title }}
+            <small>{{ .Date | dateFormat ":date_long" }}</small>
+            </a>
+        </h3>
+        {{ .Summary }}
+        {{ if .Truncated }}
+        <a href="{{ .RelPermalink }}" class="read-more">Read more...</a>
+        {{ end }}
+    </li>
+    {{ end }}
+</ul>
+</div>
 {{ end -}}

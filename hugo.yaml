@@ -1,9 +1,13 @@
 baseURL: https://ronanchilvers.github.io/
 languageCode: en-gb
-title: One Seat Canoe
+title: Between Rolls
 theme: lanyon
 params:
-  description: Ruminations on role playing games for both groups and solo adventurers
+  tagline: Thoughts on Playing TTRPGs
+  description: false
+  sidebar:
+    show_title: true
+  addtoany: false
   cookies:
     palette:
       popup:

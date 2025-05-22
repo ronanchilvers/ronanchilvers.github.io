@@ -3,20 +3,21 @@ publishDate:
 date: 2025-05-16T13:52:39+01:00
 draft: true
 title: A Travel System
-summary: A simple travel system for use with OSR games such as Shadowdark.
 tags:
   - travel
   - shadowdark
 ---
 When a journey is undertaken the following steps are followed:
 
-1. **Plan The Route**
+**Plan The Route**
 The party selects a route they want to take to their destination, determining how long it will take and what waypoints, if any, they will aim for. If they are at the Kaer, the Guild may be able to help them with maps and historical knowledge of the area.
 
-2. **Prepare To Start**
+<!-- more -->
+
+**Prepare To Start**
 The party assigns the journey roles - Guide, Scout, Quartermaster, Wrangler - and gather equipment, rations, etc. They must decide if they are going to use horses or not - if so, the Guild can supply hardy ponies.
 
-3. **Make The Journey**
+**Make The Journey**
 Each leg of the journey is handled by the various roles using ability checks to determine if anything untoward happens. Encounters are resolved as they happen.
 
 ## How far can you go?
