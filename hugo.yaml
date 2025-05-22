@@ -1,10 +1,15 @@
 baseURL: https://ronanchilvers.github.io/
 languageCode: en-gb
 title: One Seat Canoe
-theme: hyde
+theme: lanyon
 params:
   description: Ruminations on role playing games for both groups and solo adventurers
   layoutReverse: false
+  github:
+    repo: false
+  author:
+    email: ronan@thelittledot.com
+    name: Ronan Chilvers
 
 # Main menu entries
 menu:
