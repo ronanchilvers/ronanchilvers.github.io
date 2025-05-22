@@ -4,19 +4,17 @@ title: One Seat Canoe
 theme: lanyon
 params:
   description: Ruminations on role playing games for both groups and solo adventurers
-  layoutReverse: false
-  github:
-    repo: false
   author:
+    url: https://github.com/ronanchilvers
     email: ronan@thelittledot.com
     name: Ronan Chilvers
 
 # Main menu entries
 menu:
   main:
-    - name: Home
-      url: "/"
-      weight: 1
+    # - name: Home
+    #   url: "/"
+    #   weight: 1
     # - name: About
       # url: "/about/"
       # weight: 2

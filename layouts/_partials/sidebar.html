@@ -1,0 +1,33 @@
+{{"<!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular styles, `#sidebar-checkbox` for behavior. -->"
+| safeHTML}}
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+{{"<!-- Toggleable sidebar -->" | safeHTML}}
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>{{ .Site.Params.description | safeHTML }}</p>
+  </div>
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item
+    {{- if .IsHome }} active{{ end -}}" href="{{ .Site.BaseURL }}">Home</a>
+    {{ "<!-- Automagic links. Having some empty lines due to Liquid + Jekyll. -->" | safeHTML }}
+    {{- /*
+    The code below dynamically generates a sidebar nav of pages with `layout: page` in the front-matter. See
+    readme for usage.
+    */ -}}
+    {{- $currentPage := . -}}
+    {{- $pages := where site.RegularPages "Type" "pages" -}}
+    {{- range $pages.ByTitle }}
+    <a class="sidebar-nav-item
+      {{- if .Eq $currentPage }} active{{ end -}}" href="{{ .RelPermalink }}">
+      {{- .Title -}}
+    </a>
+    {{- end }}
+  </nav>
+  <div class="sidebar-item">
+    <p>
+      <a href="{{  .Site.Params.author.url }}">{{ .Site.Params.author.name }}</a>
+      (<a href="mailto:{{ .Site.Params.author.email}}">e-mail</a>)
+    </p>
+    <p><a href="https://creativecommons.org/licenses/by-nc/4.0/">License CC BY-NC 4.0</a></p>
+  </div>
+</div>
