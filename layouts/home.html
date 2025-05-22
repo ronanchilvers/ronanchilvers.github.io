@@ -1,21 +1,31 @@
+{{/*{{ define "masthead" }}
+    <h3 class="masthead-title">
+        <a href="{{ .Site.BaseURL }}" title="Home">{{ .Site.Title }}</a>
+        <small>- {{ .Site.Params.tagline }}</small>
+    </h3>
+{{ end }}*/}}
+
 {{ define "main" -}}
+<h1>{{ .Title }}</h1>
 {{ .Content }}
 <div class="related">
-<ul class="related-pages">
-    {{ range $p := (.Paginate (where site.RegularPages "Type" "posts")).Pages }}
-    <li>
-        <h3>
-            <a href="{{ .RelPermalink }}">
-            {{ .Title }}
-            <small>{{ .Date | dateFormat ":date_long" }}</small>
-            </a>
-        </h3>
-        {{ .Summary }}
-        {{ if .Truncated }}
-        <a href="{{ .RelPermalink }}" class="read-more">Read more...</a>
+    <ul class="related-pages">
+        {{ range $p := (.Paginate (where site.RegularPages "Type" "posts")).Pages }}
+        <li>
+            <h3>
+                <a href="{{ .RelPermalink }}">
+                {{ .Title }}
+                <small>{{ .Date | dateFormat ":date_long" }}</small>
+                </a>
+            </h3>
+            {{/*
+            {{ .Summary }}
+            {{ if .Truncated }}
+            <a href="{{ .RelPermalink }}" class="read-more">Read more...</a>
+            {{ end }}
+            */}}
+        </li>
         {{ end }}
-    </li>
-    {{ end }}
-</ul>
+    </ul>
 </div>
 {{ end -}}

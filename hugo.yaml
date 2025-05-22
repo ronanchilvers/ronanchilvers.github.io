@@ -45,6 +45,10 @@ menu:
       url: "/tags/"
       weight: 4
 
+# Taxonomy Definitions
+taxonomies:
+  tag: tags
+
 # By default, only output HTML
 outputs:
   home:

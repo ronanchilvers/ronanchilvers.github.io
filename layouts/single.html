@@ -1,4 +1,11 @@
+{{/*{{ define "masthead" -}}
+    <h1 class="masthead-title">
+        <a href="{{ .Site.BaseURL }}" title="Home">{{ .Title }}</a>
+        <small>- {{ .Site.Title }}</small>
+    </h1>
+{{ end -}}*/}}
+
 {{ define "main" -}}
-THIS IS A PAGE
+{{- if .Draft -}}{{ partial "draft-label.html" . }}{{- end -}}
 {{ .Content }}
 {{ end -}}
