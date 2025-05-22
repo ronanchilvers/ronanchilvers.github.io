@@ -1,8 +1,10 @@
 # Generated files by hugo
-/public/.gitkeep1
+/public/
+!/public/.gitkeep
 /resources/_gen/
 /assets/jsconfig.json
 hugo_stats.json
 
 # Temporary lock file while building
 /.hugo_build.lock
+.DS_Store
