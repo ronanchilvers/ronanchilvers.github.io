@@ -8,7 +8,7 @@ tags:
   - discoveries
   - d20
 ---
-I often have the need for strange, non-combat discoveries that characters can stumble across on their way somewhere. This list is intended for use in mysterious forests, such as \[Davokar from Free League's Symbaroum\]([https://freeleaguepublishing.com/shop/symbaroum/](https://freeleaguepublishing.com/shop/symbaroum/))
+I often have the need for strange, non-combat discoveries that characters can stumble across on their way somewhere. This list is intended for use in mysterious forests, such as Davokar from Free League's \[Symbaroum\]
 
 1.  A circle of weathered stones covered in strange runes
     
@@ -49,3 +49,6 @@ I often have the need for strange, non-combat discoveries that characters can st
 19.  A grave marked by a simple stone, overgrown with vines
     
 20.  A haunting melody that echoes through the trees, sung by a spectral figure
+    
+
+Symbaroum: https://freeleaguepublishing.com/shop/symbaroum/
