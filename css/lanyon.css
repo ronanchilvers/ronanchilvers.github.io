@@ -44,6 +44,10 @@ html {
   font-family: "PT Serif", Georgia, "Times New Roman", serif;
 }
 
+body {
+  color: #333333;
+}
+
 h1,
 h2,
 h3,
@@ -54,6 +58,10 @@ h6 {
   font-weight: 400;
   color: #313131;
   letter-spacing: -.025rem;
+}
+
+a {
+  color: #000;
 }
 
 
@@ -360,7 +368,8 @@ a.sidebar-nav-item:focus {
 .related {
   padding-top: 2rem;
   padding-bottom: 2rem;
-  border-top: 1px solid #eee;
+  /* border-top: 1px solid #eee; */
+  border-top: none;
 }
 
 .related-posts,
@@ -374,10 +383,16 @@ a.sidebar-nav-item:focus {
   margin-top: 0;
 }
 
+.related-posts li,
+.related-pages li {
+  margin-bottom: 1rem;
+}
+
 .related-posts li small,
 .related-pages li small {
   font-size: 75%;
   color: #999;
+  margin-left: 1rem;
 }
 
 .related-posts li a:hover,
@@ -391,7 +406,12 @@ a.sidebar-nav-item:focus {
   color: inherit;
 }
 
-
+.related-posts li a.read-more,
+.related-pages li a.read-more {
+  display: block;
+  width: 100%;
+  text-align: right;
+}
 /*
  * Pagination
  *
