@@ -4,6 +4,22 @@ title: One Seat Canoe
 theme: lanyon
 params:
   description: Ruminations on role playing games for both groups and solo adventurers
+  cookies:
+    palette:
+      popup:
+        background: '#f6f6f6'
+        text: '#202020'
+      button:
+        background: '#202020'
+        text: '#ffffff'
+        border: 'transparent'
+    content:
+      message: "This website use cookies for third party services including Google Analytics and Osana Cookie Consent."
+  github: false
+  license:
+    url: https://creativecommons.org/licenses/by-nc/4.0/
+    name: "CC-BY-NC 4.0"
+    text: "License:"
   author:
     url: https://github.com/ronanchilvers
     email: ronan@thelittledot.com
