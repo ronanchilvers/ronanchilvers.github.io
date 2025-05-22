@@ -8,21 +8,22 @@ tags:
   - discoveries
   - d20
 ---
-1\. \*\*Ancient Stone Circle\*\*: A circle of weathered stones covered in strange runes. Touching a stone causes visions of the past, revealing glimpses of the forest's history or the fate of those who once dwelled there.
+1\. A circle of weathered stones covered in strange runes
 
-2\. \*\*The Shadowy Figure\*\*: A fleeting shadow that appears just out of sight, always leading the characters deeper into the forest. Following it may reveal a hidden truth or a dangerous trap set by a malevolent entity.
+2\. A fleeting shadow that appears just out of sight, always leading the characters deeper into the forest
 
-3\. \*\*Whispering Stream\*\*: A small stream that seems to whisper secrets as it flows. Drinking from it grants insight into a character's future, but it also reveals a troubling truth about their past.
+3\. A small stream that seems to whisper secrets as it flows
 
-4\. \*\*Mushroom Grove\*\*: A grove filled with bioluminescent mushrooms that pulse with light. If harvested carefully, they can be used to create potions or provide illumination, but disturbing them may attract unwanted attention.
+4\. A grove filled with bioluminescent mushrooms that pulse with light
 
-5\. \*\*Forgotten Shrine\*\*: An overgrown shrine dedicated to an unknown deity. The characters can leave offerings to gain favour or receive a blessing, but they may also awaken dormant spirits tied to the shrine.
+5\. An overgrown shrine dedicated to an unknown deity
 
-6\. \*\*Echoing Cave\*\*: A cave that echoes back the characters' words in strange, distorted ways. Inside, they find remnants of past explorers, along with clues about the forest's dangers and treasures.
+6\. A cave that echoes back the characters' words in strange, distorted ways
 
-7\. \*\*Floating Lanterns\*\*: Mysterious lanterns that float through the air, leading the characters to a hidden path or a secret location. Following them could reveal a hidden treasure or a warning about a nearby threat.
+7\. Mysterious lanterns that float through the air, leading the characters to a hidden path
 
-8\. \*\*Giant's Footprint\*\*: A massive footprint in the ground, leading deeper into the forest. Investigating it reveals clues about the Colossi and their connection to the land, along with remnants of their past.
+8.  A massive footprint in the ground, leading deeper into the forest
+    
 
 9\. \*\*Fallen Tree with a Hollow\*\*: A massive fallen tree with a hollow trunk. Inside, the characters find a hidden cache of items left by previous travelers, including maps, notes, or magical artifacts.
 
