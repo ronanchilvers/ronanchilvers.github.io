@@ -49,6 +49,3 @@ I often have the need for strange, non-combat discoveries that characters can st
 19.  A grave marked by a simple stone, overgrown with vines
     
 20.  A haunting melody that echoes through the trees, sung by a spectral figure
-    
-
-I've found lists like this really help players immerse themselves in the atmosphere of a game by providing rich detail.
