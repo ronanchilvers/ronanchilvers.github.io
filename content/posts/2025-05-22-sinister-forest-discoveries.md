@@ -8,7 +8,7 @@ tags:
   - discoveries
   - d20
 ---
-I often have the need for strange, non-combat discoveries that characters can stumble across on their way somewhere. This list is intended for use in mysterious forests, such as \[Davokar from Free League's Symbaroum\]([https://freeleaguepublishing.com/shop/symbaroum/](https://freeleaguepublishing.com/shop/symbaroum/))
+I often have the need for strange, non-combat discoveries that characters can stumble across on their way somewhere. This list is intended for use in mysterious forests, such as \[Davokar from Free League's Symbaroum\](https://freeleaguepublishing.com/shop/symbaroum/)
 
 1.  A circle of weathered stones covered in strange runes
     
