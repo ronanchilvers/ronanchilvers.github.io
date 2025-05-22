@@ -1,5 +1,5 @@
 ---
-name: Deploy Hugo Site
+name: Hugo Site Build
 
 on:
   push:
