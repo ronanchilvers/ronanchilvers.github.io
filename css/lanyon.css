@@ -58,6 +58,7 @@ h6 {
   font-weight: 400;
   color: #313131;
   letter-spacing: -.025rem;
+  margin: 0 0 1rem 0;
 }
 
 a {
@@ -341,8 +342,18 @@ a.sidebar-nav-item:focus {
 
 .page,
 .post {
-  margin-bottom: 4em;
+  padding: 0 0 1rem 0;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+
+  p {
+    margin-bottom: 1rem;
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
 }
+
 
 /* Blog post or page title */
 .page-title,
@@ -366,10 +377,14 @@ a.sidebar-nav-item:focus {
 
 /* Related posts */
 .related {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  /* border-top: 1px solid #eee; */
+  padding: 0 0 1rem 0;
+  margin-bottom: 1rem;
   border-top: none;
+  border-bottom: 1px solid #eee;
+}
+
+.related .related_posts--title {
+  margin-bottom: 1rem;
 }
 
 .related-posts,
