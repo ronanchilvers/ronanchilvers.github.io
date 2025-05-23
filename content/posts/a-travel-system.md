@@ -1,5 +1,4 @@
 ---
-publishDate:
 date: 2025-05-16T13:52:39+01:00
 draft: true
 title: A Travel System
