@@ -9,7 +9,7 @@
 <h1>{{ .Title }}</h1>
 {{ .Content }}
 
-<div class="related">
+<div class="related related--no-border">
     <ul class="related-pages">
         {{ range $p := (.Paginate (where site.RegularPages "Type" "posts")).Pages }}
         <li>
@@ -19,12 +19,12 @@
                 <small>{{ .Date | dateFormat ":date_long" }}</small>
                 </a>
             </h3>
-            {{/*
+            {{/**/}}
             {{ .Summary }}
             {{ if .Truncated }}
             <a href="{{ .RelPermalink }}" class="read-more">Read more...</a>
             {{ end }}
-            */}}
+            {{/**/}}
         </li>
         {{ end }}
     </ul>

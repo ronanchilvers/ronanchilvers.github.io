@@ -29,7 +29,7 @@ params:
     email: ronan@thelittledot.com
     name: Ronan Chilvers
   stylesheets:
-    - css/tags.css
+    - css/local.css
   theme:
     overlay: true
     reverse: true
