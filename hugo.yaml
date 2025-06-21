@@ -1,7 +1,9 @@
 baseURL: https://ronanchilvers.github.io/
 languageCode: en-gb
 title: Between Rolls
-theme: lanyon
+theme:
+  - hugo-admonitions
+  - lanyon
 params:
   tagline: Thoughts on Playing TTRPGs
   description: false
