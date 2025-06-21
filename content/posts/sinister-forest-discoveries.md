@@ -2,6 +2,7 @@
 date: 2025-05-22
 draft: false
 title: Sinister Forest Discoveries
+summary: A d20 random table of discoveries characters might make in a sinister forest
 tags:
   - random tables
   - forests
