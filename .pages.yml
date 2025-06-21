@@ -1,3 +1,6 @@
+settings:
+  content:
+    merge: true
 media: assets
 content:
   - name: home
