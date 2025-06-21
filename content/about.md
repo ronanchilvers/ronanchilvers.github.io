@@ -1,7 +1,7 @@
 ---
 title: About
-draft: true
-menu: false
+draft: false
+menu: true
 description: About this site
 ---
 Hallo
