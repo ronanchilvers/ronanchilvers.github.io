@@ -6,6 +6,6 @@ tags:
   - Mountaintop Isolation
   - Wretched & Alone
 ---
-> Testing play of the solo journaling solo RPG game called Mountaintop Isolation
+> Actual play of the solo journaling solo RPG game called Mountaintop Isolation
 
 It's really cold. I'm not used to this much snow.
