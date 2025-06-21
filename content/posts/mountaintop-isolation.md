@@ -1,5 +1,5 @@
 ---
-date: 2025-06-21
+date: 2025-06-20
 title: Mountaintop Isolation
 summary: A quick introduction to the solo journalling game Mountaintop Isolation
 draft: false
