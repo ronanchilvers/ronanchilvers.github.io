@@ -1,8 +1,9 @@
 ---
-date: 2025-06-20
-draft: true
+date: 2025-06-21
 title: Mountaintop Isolation - Journal Entry One
-summary: The first journal entry in a play-through of the Mountaintop Isolation solo journalling game
+summary: The first journal entry in a play-through of the Mountaintop Isolation
+  solo journalling game
+draft: true
 tags:
   - Mountaintop Isolation
   - Wretched & Alone
