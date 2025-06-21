@@ -33,6 +33,8 @@ params:
   theme:
     overlay: true
     reverse: true
+  posts:
+    show_related: false
 
 # Main menu entries
 menu:
