@@ -1,4 +1,8 @@
 /** Local Styles **/
+a {
+    text-decoration: underline;
+}
+
 .related--no-border {
     border: 0;
 }
