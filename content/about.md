@@ -1,6 +1,6 @@
 ---
 title: About
-draft: false
+draft: true
 menu: true
 description: About this site
 ---
