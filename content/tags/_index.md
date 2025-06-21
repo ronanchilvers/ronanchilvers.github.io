@@ -1,4 +1,4 @@
 ---
-layout: page
+title: Tags Index
+menu: true
 ---
-adsksdl;

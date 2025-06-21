@@ -1,6 +1,7 @@
 ---
+title: Posts Index
 outputs:
     - html
     - rss
+menu: true
 ---
-aksjd AIDJCPWIJNCPWOAI
