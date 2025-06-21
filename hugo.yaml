@@ -39,22 +39,6 @@ params:
     show_related: false
   summaries: true
 
-# Main menu entries
-menu:
-  main:
-    # - name: Home
-    #   url: "/"
-    #   weight: 1
-    # - name: About
-      # url: "/about/"
-      # weight: 2
-    - name: Posts
-      url: "/posts/"
-      weight: 3
-    - name: Tags
-      url: "/tags/"
-      weight: 4
-
 # Taxonomy Definitions
 taxonomies:
   tag: tags
