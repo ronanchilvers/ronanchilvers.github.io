@@ -37,6 +37,7 @@ params:
     reverse: true
   posts:
     show_related: false
+  summaries: true
 
 # Main menu entries
 menu:

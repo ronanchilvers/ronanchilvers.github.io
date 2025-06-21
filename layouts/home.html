@@ -19,12 +19,12 @@
                 <small>{{ .Date | dateFormat ":date_long" }}</small>
                 </a>
             </h3>
-            {{/*
+        {{- if .Site.Params.Summaries }}
             {{ .Summary }}
             {{ if .Truncated }}
             <a href="{{ .RelPermalink }}" class="read-more">Read more...</a>
             {{ end }}
-            */}}
+        {{ end -}}
         </li>
         {{ end }}
     </ul>
