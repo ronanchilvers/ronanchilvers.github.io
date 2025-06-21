@@ -14,6 +14,7 @@ content:
       - name: body
         label: Body
         type: text
+        rows: 60
   - name: about
     label: About Page
     type: file
@@ -25,6 +26,7 @@ content:
       - name: body
         label: Body
         type: text
+        rows: 60
       - name: draft
         label: Draft
         type: boolean
@@ -61,7 +63,7 @@ content:
       - name: body
         label: Body
         type: text
-        rows: 40
+        rows: 60
       - name: draft
         label: Draft
         type: boolean
