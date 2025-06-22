@@ -64,7 +64,7 @@ content:
         label: Body
         type: text
         autoresize: false
-        rows: 60
+        rows: 20
       - name: draft
         label: Draft
         type: boolean
