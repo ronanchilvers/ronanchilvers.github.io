@@ -25,4 +25,4 @@ Tried to make some tea but there's no running water. I guess the pipes have froz
 
 ## Evening
 
-I can see now why they say you have to be an experienced outdoors person to be safe up here. 
+I can see now why they say you have to be an experienced outdoors person to be safe up here.  The storm hasn't stopped. I can't believe how long it's been going on for. It must be a mountains thing. I just heard a tearing sound from the back of the cabin and there was suddenly a massive gust of cold wind. Part of the frickin' roof has come away!!! The fire is kind of useless now - the whole cabin is freezing cold AND the sun is going down.
