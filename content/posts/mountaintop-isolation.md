@@ -15,4 +15,6 @@ Recently I listened to some episodes of [A Game of One's Own](https://snazzytapi
 
 I was immediately drawn into the character's situation - why are they there? how do they handle the increasingly bleak outlook? what do they discover in the cabin? The huge appeal of GM-less play is that, as a player, you can be surprised by your own imagination. A prompt or two can lead to twists and turns that would never have appeared if you had set out from the start to plan the story. GM-less play gives us a chance to explore our own imagination and experience a story exactly tailored to how we think.
 
-I'll be journalling a play through of Mountaintop Isolation as soon as I can. Watch this (spooky) space!
+## Mechanics 
+
+The game is played in a series of stages. Each stage represents a day during which various things happen (mostly pretty grim!).
