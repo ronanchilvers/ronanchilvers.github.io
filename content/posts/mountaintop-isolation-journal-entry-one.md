@@ -1,6 +1,6 @@
 ---
 date: 2025-06-21
-title: Mountaintop Isolation - Journal Entry One
+title: Mountaintop Isolation - Journal Entry Two
 summary: Second journal entry for Mountaintop Isolation play-through
 draft: false
 tags:
