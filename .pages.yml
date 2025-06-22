@@ -63,6 +63,7 @@ content:
       - name: body
         label: Body
         type: text
+        autoresize: false
         rows: 60
       - name: draft
         label: Draft
