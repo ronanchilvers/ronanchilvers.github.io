@@ -22,3 +22,7 @@ So much for a glorious dawn. Within an hour or so the sky was black again, snow 
 Anyway, the firewood is finished inside but there's a log pile by the cabin. "Easy!" Thinks city-boy - "I'll just grab some!". There's that episode of Scrubs where JD has an opera singer telling him he's making mistakes. I wish he'd been here! I think the pipes have burst at some point because there's an ice patch round the side of the cabin. Of course, I slipped over - stands to reason that would happen!!! I think my ankle is twisted or sprained or something. I can walk on it - just - but it hurts. I did manage to get some logs in though, so the fire is going again and I'm pretty sure the storm will blow over soon. It can't go on like this for long.
 
 Tried to make some tea but there's no running water. I guess the pipes have frozen or leaked or something. I'll have to ration my water bottle or I could be like one of those arctic explorers and have to melt some snow to drink.
+
+## Evening
+
+I can see now why they say you have to be an experienced outdoors person to be safe up here. 
