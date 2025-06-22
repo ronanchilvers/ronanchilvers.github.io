@@ -8,3 +8,7 @@ tags:
   - Wretched & Alone
   - Actual Play
 ---
+> [!abstract] Mechanics
+> D6 result: 5
+> Cards: King of Spades, Two of Hearts, Five of Spades, Seven of Diamonds, Nine of Clubs
+> Tower: Rolled three times, no sixes
