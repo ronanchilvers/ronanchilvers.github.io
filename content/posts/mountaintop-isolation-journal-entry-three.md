@@ -26,3 +26,7 @@ Tried to make some tea but there's no running water. I guess the pipes have froz
 ## Evening
 
 I can see now why they say you have to be an experienced outdoors person to be safe up here.  The storm hasn't stopped. I can't believe how long it's been going on for. It must be a mountains thing. I just heard a tearing sound from the back of the cabin and there was suddenly a massive gust of cold wind. Part of the frickin' roof has come away!!! The fire is kind of useless now - the whole cabin is freezing cold AND the sun is going down.
+
+No sign of the others at all! I don't know where the hell they are. I'm guessing that they've just been stranded somewhere and can't get through the drifts. Bit worried that no one knows if I made it here or not but I'm sure (I hope) they would work it out. It was really weird that Matt got back in touch with me after, what, 5 years of silence. Ellie too - I though Sam and Ellie had moved to Mars or something, the way they just vanished.
+
+Going to try to block the wind, stoke up the fire and get some sleep. Hopefully in a few hours the storm will have blown itself out and I'll be able to try to get to the car again.
