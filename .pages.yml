@@ -26,7 +26,8 @@ content:
       - name: body
         label: Body
         type: text
-        rows: 60
+        options:
+          rows: 60
       - name: draft
         label: Draft
         type: boolean
@@ -62,8 +63,9 @@ content:
       - name: body
         label: Body
         type: text
-        autoresize: false
-        rows: 10
+        options:
+          autoresize: false
+          rows: 10
       - name: draft
         label: Draft
         type: boolean
