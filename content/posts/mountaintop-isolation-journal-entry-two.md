@@ -4,7 +4,7 @@ title: Mountaintop Isolation - Journal Entry Two
 summary: Second journal entry for Mountaintop Isolation play-through
 draft: false
 tags:
-  - "Mountaintop Isolation "
+  - Mountaintop Isolation
   - Wretched & Alone
   - Actual Play
 ---
