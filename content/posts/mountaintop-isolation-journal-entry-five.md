@@ -11,4 +11,4 @@ draft: true
 > 
 > Tower: Two rolls, no sixes
 
-2 cl, 7 h, J s, 9 s
+I'm really hungry. Just been rooting about in the cupboards and found a few things. A packet of stale biscuits (ate them - they were ok and better than nothing) and a deck of cards. There was a note with the deck of cards that looks like it's the scores for a game - one player seems have done really well.
