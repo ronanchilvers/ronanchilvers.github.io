@@ -10,5 +10,7 @@ tags:
 ---
 > [!abstract] Mechanics
 > D6 result: 2
+>
 > Cards: Nine of Hearts, Three of Clubs
+>
 > Tower: Rolled twice, no sixes
