@@ -23,6 +23,6 @@ The game is played as a series of days during which various things happen (mostl
 
 To represent your character's mental state, a tower of blocks (think [Jenga](https://en.m.wikipedia.org/wiki/Jenga)) is built at the start of the game and at various points you are instructed to pull blocks from it. If the tower falls, you are lost to despair!
 
-# First Impression
+## First Impressions
 
 I like the idea of these games. When playing Ironsworn, Starforged or using the Mythic Gamemaster Emulator to run through solo adventures in other systems, I tend to veer towards bleaker, more desperate situations. Desperation brings tension and often conflict, without which there is often no story to tell! I like the mechanic and while I'm not sure how much longevity a particular game might have (given there are a finite number of choices and you're likely to get familiar with most of the prompts pretty fast), it would be fairly easy to adapt the system to any situation - an astronaut floating untethered in space, a marooned pirate alone on a tiny island, a desperate engineer in the cab of a runaway steam train. I love the concept of dramatising those moments and being with the characters through their struggle. A well written "Wretched & Alone" game could let you do just that.
