@@ -19,7 +19,7 @@ I was immediately drawn into the character's situation - why are they there? how
 
 ## Mechanics 
 
-The game is played as a series of days during which various things happen (mostly pretty grim!). The process is quite simple - each day a d6 is rolled and the result dictates how many cards are drawn from a shuffled, jokerless deck. An index of suits and values assigns meaning to each of the cards - water pipes have frozen, part of the cabin is destroyed, the weather worsens or improves and so on. Kings and Aces have special meaning with the former being rather a death knell, while the latter gives hope and, maybe, a chance of escape.
+The game is played as a series of days during which various things happen (mostly pretty grim!). The process is quite simple - each day a d6 is rolled and the result dictates how many cards are drawn from a shuffled, jokerless deck. An index of suits and values assign meaning to each of the cards - water pipes have frozen, part of the cabin is destroyed, the weather worsens or improves and so on. Kings and Aces have special meaning with the former being somewhat of a death knell, while the latter gives hope and, _maybe_, a chance of escape.
 
 To represent your character's mental state, a tower of blocks (think [Jenga](https://en.m.wikipedia.org/wiki/Jenga)) is built at the start of the game and at various points you are instructed to pull blocks from it. If the tower falls, you are lost to despair!
 
