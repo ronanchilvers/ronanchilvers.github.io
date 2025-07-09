@@ -1,11 +1,12 @@
 baseURL: https://ronanchilvers.github.io/
 languageCode: en-gb
-title: Between Rolls
+title: Stuff I Think About
 theme:
-  - hugo-admonitions
-  - lanyon
+  - xmin
+  # - hugo-admonitions
+  # - lanyon
 params:
-  tagline: Thoughts on Playing TTRPGs
+  tagline: Brain Clutter
   description: false
   sidebar:
     show_title: true
@@ -30,8 +31,8 @@ params:
     url: https://github.com/ronanchilvers
     email: ronan@thelittledot.com
     name: Ronan Chilvers
-  stylesheets:
-    - css/local.css
+  stylesheets: []
+    # - css/local.css
   theme:
     overlay: true
     reverse: true
