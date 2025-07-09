@@ -1,13 +1,13 @@
 ---
 date: 2025-05-22
-draft: false
 title: Sinister Forest Discoveries
 summary: A d20 random table of discoveries characters might make in a sinister forest
+draft: false
 tags:
-  - random tables
-  - forests
-  - discoveries
-  - d20
+  - Random Tables
+  - Forests
+  - Discoveries
+  - D20
 ---
 I often have the need for strange, non-combat discoveries that characters can stumble across on their way somewhere. This list is intended for use in mysterious forests, such as Davokar from Free League's [Symbaroum](https://freeleaguepublishing.com/shop/symbaroum/)
 

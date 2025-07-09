@@ -26,7 +26,8 @@ content:
       - name: body
         label: Body
         type: text
-        rows: 60
+        options:
+          rows: 60
       - name: draft
         label: Draft
         type: boolean
@@ -44,7 +45,6 @@ content:
       fields: 
         - title
         - date
-        - tags
         - summary
         - draft
     exclude:
@@ -63,7 +63,9 @@ content:
       - name: body
         label: Body
         type: text
-        rows: 60
+        options:
+          autoresize: false
+          rows: 10
       - name: draft
         label: Draft
         type: boolean
