@@ -1,58 +1,30 @@
-baseURL: https://ronanchilvers.github.io/
+baseurl: https://ronanchilvers.github.io/
 languageCode: en-gb
 title: Stuff I Think About
-theme:
-  - xmin
-  # - hugo-admonitions
-  # - lanyon
+
+permalinks:
+  note: "/note/:year/:month/:day/:slug/"
+  post: "/post/:year/:month/:day/:slug/"
+
+menu:
+  main:
+    - name: Home
+      pageRef: "/"
+      weight: 1
+    # - name: About
+    #   pageRef: "about/"
+    #   weight: 2
+    # - name: Categories
+    #   pageRef: "categories/"
+    #   weight: 3
+    - name: Tags
+      pageRef: "tags/"
+      weight: 4
+    # - name: Subscribe
+    #   pageRef: "index.xml"
+
 params:
-  tagline: Brain Clutter
-  description: false
-  sidebar:
-    show_title: true
-  addtoany: false
-  cookies:
-    palette:
-      popup:
-        background: '#f6f6f6'
-        text: '#202020'
-      button:
-        background: '#202020'
-        text: '#ffffff'
-        border: 'transparent'
-    content:
-      message: "This website use cookies for third party services including Google Analytics and Osana Cookie Consent."
-  github: false
-  license:
-    url: https://creativecommons.org/licenses/by-nc/4.0/
-    name: "CC-BY-NC 4.0"
-    text: "License:"
-  author:
-    url: https://github.com/ronanchilvers
-    email: ronan@thelittledot.com
-    name: Ronan Chilvers
-  stylesheets: []
-    # - css/local.css
-  theme:
-    overlay: true
-    reverse: true
-  posts:
-    show_related: false
-  summaries: true
-
-# Taxonomy Definitions
-taxonomies:
-  tag: tags
-
-# By default, only output HTML
-outputs:
-  home:
-    - html
-  page:
-    - html
-  section:
-    - html
-  taxonomy:
-    - html
-  term:
-    - html
+  footer: "[CC-BY-NV 4.0](https://creativecommons.org/licenses/by-nc/4.0/) 2017 -- {Year} | [Github](https://github.com/ronanchilvers)"
+  css:
+    - css/normalize.css
+    - css/local.css
