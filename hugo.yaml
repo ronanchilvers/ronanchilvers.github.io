@@ -14,9 +14,9 @@ menu:
     # - name: About
     #   pageRef: "about/"
     #   weight: 2
-    # - name: Categories
-    #   pageRef: "categories/"
-    #   weight: 3
+    - name: Posts
+      pageRef: "posts/"
+      weight: 3
     - name: Tags
       pageRef: "tags/"
       weight: 4
