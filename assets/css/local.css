@@ -20,8 +20,8 @@
         --link-hover-color: rgb(255,255,255);
         --nav-border-color: rgb(75,75,75);
         --article-header-color: rgb(225,225,225);
-        --alert-background-color: rgb(235,235,235);
-        --alert-heading-background-color: rgb(225, 225, 225);
+        --alert-background-color: rgb(130,130,130);
+        --alert-heading-background-color: rgb(110,110,110);
     }
 }
 
@@ -40,7 +40,6 @@ body {
     font-size: 1.2rem;
     color: var(--font-color);
     background-color: var(--background-color);
-    width: 100%;
     max-width: 1024px;
     margin: 0 auto;
     padding: 0 1rem;
@@ -62,7 +61,7 @@ body > header > nav {
     }
 }
 
-body > header{
+body > header {
     padding: 3rem 0 2rem 0;
     margin-bottom: 2rem;
     border-bottom: 1px solid var(--nav-border-color);
@@ -86,7 +85,7 @@ h1, h2, h3, h4 {
 blockquote {
     background-color: var(--alert-background-color);
     border-radius: 5px;
-    margin: 0;
+    margin: 0 0 1rem 0;
     padding: 0;
 
     h4 {

@@ -1,4 +1,8 @@
 {{ define "main" }}
+<section>
+  <header>
+    <h1>{{ .Title }}</h1>
+  </header>
   {{ .Content }}
   <ul>
   {{ range site.RegularPages }}
@@ -6,4 +10,5 @@
     {{ .Summary }}
   {{ end }}
   </ul>
+</section>
 {{ end }}

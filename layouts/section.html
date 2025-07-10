@@ -4,9 +4,13 @@
     <h1>{{ .Title }}</h1>
   </header>
   {{ .Content }}
+  <ul>
   {{ range .Pages }}
-    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-    {{ .Summary }}
+    <li>
+      <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a><br />
+      {{ .Summary }}
+    </li>
   {{ end }}
+  </ul>
 </section>
   {{ end }}
