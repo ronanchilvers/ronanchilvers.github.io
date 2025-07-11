@@ -1,10 +1,9 @@
 baseurl: https://ronanchilvers.github.io/
 languageCode: en-gb
-title: Stuff I Think About
+title: Stuff I Wrote
 
 permalinks:
-  note: "/note/:year/:month/:day/:slug/"
-  post: "/post/:year/:month/:day/:slug/"
+  posts: "/posts/:year/:month/:slug/"
 
 menu:
   main:
@@ -24,7 +23,8 @@ menu:
     #   pageRef: "index.xml"
 
 params:
-  footer: "[CC-BY-NV 4.0](https://creativecommons.org/licenses/by-nc/4.0/) 2017 -- {Year} | [Github](https://github.com/ronanchilvers)"
+  # footer: "[Licensing](/licensing/) | [Contact](/contact/) | [Subscribe](/posts/index.xml)"
+  footer: "[Licensing](/licensing/) | [Subscribe](/posts/index.xml)"
   css:
     - css/normalize.css
     - css/local.css

@@ -5,9 +5,8 @@ summary: The first journal entry in a play-through of the Mountaintop Isolation
   solo journalling game
 draft: false
 tags:
-  - Mountaintop Isolation
-  - Wretched & Alone
-  - Actual Play
+  - wretched-and-alone
+  - actual-play
 ---
 > [!abstract] Mechanics
 > Journal entry one starting the game narrative.
@@ -16,6 +15,6 @@ Wow! This place is amazing! It took a while to get here - snow on the roads and 
 
 There's no one else here yet - I suppose I did leave pretty early to get here sooner so the others will still be a little while. It does mean if get to choose my room first! Hooray!
 
-It's pretty cold so I'm going to light a fire (there's a big, old style fireplace) and get warm. Might crack open one of the bottles of wine I brought too - why not!? 
+It's pretty cold so I'm going to light a fire (there's a big, old style fireplace) and get warm. Might crack open one of the bottles of wine I brought too - why not!?
 
 Time to settle in - this is going to be a great weekend!

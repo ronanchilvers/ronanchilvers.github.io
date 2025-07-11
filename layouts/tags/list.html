@@ -1,0 +1,13 @@
+{{ define "main" }}
+<section>
+    {{ partial "components/title.html" . }}
+    {{ .Content }}
+    <ul>
+    {{ range .Site.Taxonomies.tags.ByCount }}
+        <li>
+            <a href="/tags/{{ .Name }}/">#{{ .Name }}</a> - {{ .Count }} {{ if lt 1 .Count}}posts{{ else }}post{{ end }}
+        </li>
+    {{- end }}
+    </ul>
+</section>
+{{ end }}

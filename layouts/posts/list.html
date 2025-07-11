@@ -1,0 +1,18 @@
+{{ define "main" }}
+<section>
+    {{ partial "components/title.html" . }}
+    {{ .Content }}
+    {{- range (where .Site.RegularPages "Type" "posts").GroupByDate "January 2006" }}
+    <section>
+        <h2>{{ .Key }}</h2>
+        <ul>
+        {{- range .Pages }}
+            <li>
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            </li>
+        {{- end }}
+        </ul>
+    </section>
+    {{- end }}
+</section>
+{{ end }}

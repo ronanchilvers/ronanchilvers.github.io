@@ -4,12 +4,11 @@ title: Mountaintop Isolation
 summary: A quick introduction to the solo journalling game Mountaintop Isolation
 draft: false
 tags:
-  - Mountaintop Isolation
-  - Wretched & Alone
+  - wretched-and-alone
 ---
 One of my favourite radio shows from the dim and distant past was [Nightfall](https://archive.org/details/CBC_NightfallOTR), creepy and disturbing stories of all sorts that used the power of radio and imagination to tell terrifying tales. The series often explored themes of isolation, loneliness and confusion with protagonists unsure what was going on or who they could trust. Characters were plunged into unfamiliar situations where the normal conveniences of life were out of reach. I've always enjoyed these stories as they tell us about a world outside our normal lives where the mysterious becomes tangible. This is a big part of the reason why I enjoy role playing games of all sorts - they give you a chance to live in other worlds, unchained from reality, where anything can happen.
 
-Recently I listened to some episodes of [A Game of One's Own](https://snazzytapir.com/581-2/podcasts/a-game-of-ones-own/) where the host [Maddy Searle](https://snazzytapir.com/581-2/about/) plays through a solo journalling game named [Mountaintop Isolation](https://lalionnepublishing.itch.io/mountaintop-isolation). Maddy is a very engaging storyteller and her play-through thoroughly hooked my interest in trying one of these games out. 
+Recently I listened to some episodes of [A Game of One's Own](https://snazzytapir.com/581-2/podcasts/a-game-of-ones-own/) where the host [Maddy Searle](https://snazzytapir.com/581-2/about/) plays through a solo journalling game named [Mountaintop Isolation](https://lalionnepublishing.itch.io/mountaintop-isolation). Maddy is a very engaging storyteller and her play-through thoroughly hooked my interest in trying one of these games out.
 
 Given that many of them are based on the "Wretched & Alone" system, its no surprise that the tone and setting are usually pretty bleak! As the introduction to the game says
 
@@ -17,7 +16,7 @@ Given that many of them are based on the "Wretched & Alone" system, its no surpr
 
 I was immediately drawn into the character's situation - why are they there? how do they handle the increasingly bleak outlook? what do they discover in the cabin? The huge appeal of GM-less play is that, as a player, you can be surprised by your own imagination. A prompt or two can lead to twists and turns that would never have appeared if you had set out from the start to plan the story. GM-less play gives us a chance to explore our own imagination and experience a story exactly tailored to how we think.
 
-## Mechanics 
+## Mechanics
 
 The game is played as a series of days during which various things happen (mostly pretty grim!). The process is quite simple - each day a d6 is rolled and the result dictates how many cards are drawn from a shuffled, jokerless deck. An index of suits and values assign meaning to each of the cards - water pipes have frozen, part of the cabin is destroyed, the weather worsens or improves and so on. Kings and Aces have special meaning with the former being somewhat of a death knell, while the latter gives hope and, _maybe_, a chance of escape.
 

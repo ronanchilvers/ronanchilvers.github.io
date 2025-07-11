@@ -1,0 +1,11 @@
+{{ define "main" }}
+<section>
+  {{ partial "components/title.html" . }}
+  {{ .Content }}
+  <ul>
+  {{ range .Pages }}
+    <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+  {{ end }}
+  </ul>
+</section>
+{{ end }}

@@ -1,0 +1,9 @@
+{{- $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+{{- $dateHuman := .Date | time.Format ":date_long" }}
+<header>
+    <h1>{{ .Title }}</h1>
+    <nav aria-labelledby="article-tags-navigation">
+        <div>Published: <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time></div>
+        <div>Tags: {{ partial "components/post-tags.html" (dict "taxonomy" "tags" "page" .) }}</div>
+    </nav>
+</header>

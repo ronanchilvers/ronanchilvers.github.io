@@ -4,9 +4,8 @@ title: Mountaintop Isolation - Journal Entry Five
 summary: Fifth journal entry for Mountaintop Isolation play-through
 draft: false
 tags:
-  - Mountaintop Isolation
-  - Wretched & Alone
-  - Actual Play
+  - wretched-and-alone
+  - actual-play
 ---
 > [!mechanics]
 > D6 result: 4

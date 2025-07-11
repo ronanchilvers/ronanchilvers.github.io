@@ -6,7 +6,7 @@
   {{ .Content }}
   <ul>
   {{ range .Pages }}
-    <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+    <li><a href="{{ .RelPermalink }}">{{ .LinkTitle | lower }}</a></li>
   {{ end }}
   </ul>
 </section>

@@ -1,14 +1,6 @@
 {{ define "main" }}
 <section>
-  <header>
-    <h1>{{ .Title }}</h1>
-  </header>
   {{ .Content }}
-  <ul>
-  {{ range site.RegularPages }}
-    <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
-    {{ .Summary }}
-  {{ end }}
-  </ul>
+  {{ partial "recent-posts.html" . }}
 </section>
 {{ end }}

@@ -4,9 +4,8 @@ title: Mountaintop Isolation - Journal Entry Two
 summary: Second journal entry for Mountaintop Isolation play-through
 draft: false
 tags:
-  - Mountaintop Isolation
-  - Wretched & Alone
-  - Actual Play
+  - wretched-and-alone
+  - actual-play
 ---
 Man it's cold!!! I must have fallen asleep last night. The fire's almost out and it looks like the snow really came down during the night as there are 6 foot drifts outside. It's around 6am I think - still dark. I'm going to have to get some more wood in at some point - I put the last couple of logs on the fire a few minutes ago.
 

@@ -1,4 +1,4 @@
 ---
-title: Tags Index
+title: Tag Index
 menu: true
 ---

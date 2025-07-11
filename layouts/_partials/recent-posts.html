@@ -1,0 +1,7 @@
+<h2>Latest Posts</h2>
+<ul>
+{{ range first 5 (where .Site.RegularPages "Type" "posts") }}
+<li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+{{ .Summary }}
+{{ end }}
+</ul>
