@@ -1,7 +1,7 @@
 settings:
   content:
     merge: true
-media: assets
+media: static
 content:
   - name: home
     label: Home Page
