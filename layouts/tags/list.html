@@ -2,10 +2,10 @@
 <section>
     {{ partial "components/title.html" . }}
     {{ .Content }}
-    <ul>
+    <ul class="tags">
     {{ range .Site.Taxonomies.tags.ByCount }}
-        <li>
-            <a href="/tags/{{ .Name }}/">#{{ .Name }}</a> - {{ .Count }} {{ if lt 1 .Count}}posts{{ else }}post{{ end }}
+        <li class="tags_item">
+            <a href="/tags/{{ .Name }}/" class="tag">#{{ .Name }} - {{ .Count }} {{ if lt 1 .Count}}posts{{ else }}post{{ end }}</a>
         </li>
     {{- end }}
     </ul>

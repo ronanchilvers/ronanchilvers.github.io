@@ -77,6 +77,24 @@ body > footer {
     padding: 3rem;
 }
 
+.content_wrapper {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 2rem;
+    flex-direction: row;
+}
+@media screen and (max-width: 1056px) {
+  .content_wrapper {
+    flex-direction: column;
+  }
+}
+
+.content {
+    flex-grow: 2;
+
+    /* border: 1px solid blue; */
+}
+
 section header,
 article header {
     margin-bottom: 3rem;
@@ -127,21 +145,4 @@ a, a:visited {
 }
 a:hover {
     color: var(--link-hover-color);
-}
-
-.separator {
-    margin: 0 0.25rem;
-}
-
-.tag {
-    padding: 0.15rem 0.75rem;
-    border-radius: 4px;
-    margin-right: 0.5rem;
-    text-decoration: none;
-    background-color: var(--tag-background-color);
-    transition: background-color 0.5s ease;
-
-    &:hover {
-        background-color: var(--tag-background-hover-color);
-    }
 }

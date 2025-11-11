@@ -16,15 +16,18 @@ menu:
     - name: Posts
       pageRef: "posts/"
       weight: 3
-    - name: Tags
-      pageRef: "tags/"
-      weight: 4
+    # - name: Tags
+    #   pageRef: "tags/"
+    #   weight: 4
     # - name: Subscribe
     #   pageRef: "index.xml"
 
 params:
   # footer: "[Licensing](/licensing/) | [Contact](/contact/) | [Subscribe](/posts/index.xml)"
-  footer: "[Licensing](/licensing/) | [Subscribe](/posts/index.xml)"
+  footer: "[Licensing](/licensing/) - [Subscribe](/posts/index.xml)"
   css:
     - css/normalize.css
+    - css/sidebar.css
+    - css/tags.css
+    - css/posts-list.css
     - css/local.css
