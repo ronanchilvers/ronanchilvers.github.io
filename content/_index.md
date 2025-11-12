@@ -1,5 +1,5 @@
 ---
-title: Ronan's Blog - Stuff I Wrote
+title: Ronan's Blog - Bits and Pieces
 ---
 This is a little blog about tabletop roleplaying games (mostly). You’ll find (eventually) thoughts on playstyles, homebrew stuff, and reflections on games old and new. I hugely enjoy exploring different systems, from rules-light indie RPGs to crunchy classics, and using them to fertilise my own ideas.
 

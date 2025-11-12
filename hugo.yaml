@@ -1,6 +1,6 @@
 baseurl: https://ronanchilvers.github.io/
 languageCode: en-gb
-title: Stuff I Wrote
+title: Bits and Pieces
 
 permalinks:
   posts: "/posts/:year/:month/:slug/"
@@ -10,12 +10,9 @@ menu:
     - name: Home
       pageRef: "/"
       weight: 1
-    # - name: About
-    #   pageRef: "about/"
-    #   weight: 2
     - name: Posts
       pageRef: "posts/"
-      weight: 3
+      weight: 2
     # - name: Tags
     #   pageRef: "tags/"
     #   weight: 4
