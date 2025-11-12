@@ -1,6 +1,6 @@
 ---
 date: 2025-11-12
-draft: true
+draft: false
 title: Odinson Games Chaotic Combat
 summary: Injecting more crazy into combat
 tags:
