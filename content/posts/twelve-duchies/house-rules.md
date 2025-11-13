@@ -4,8 +4,10 @@ title: House Rules
 summary: Some house rules that I'm using for the Twelve Duchies
 draft: false
 tags:
-  - twelve-duchies
   - actual-play
+  - ose
+categories:
+  - Twelve Duchies
 ---
 I'm using a few house rules while playing, several inspired by (or pinched from) sources such as [Tale of the Manticore]. I'm intending to keep this article up to date with any new or modified rules I might adopt in the future.
 

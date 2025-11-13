@@ -5,6 +5,7 @@ summary: An actual play experiment with D&D OSE
 draft: false
 tags:
   - actual-play
+  - ose
 categories:
   - Twelve Duchies
 ---
