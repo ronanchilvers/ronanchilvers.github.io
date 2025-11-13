@@ -1,1 +1,0 @@
-.tags{list-style:none;padding:0;margin:0;display:flex;justify-content:left;flex-wrap:wrap;.tags_item { margin-bottom: 1rem; }}.tag{padding:.15rem .75rem;border-radius:4px;margin-right:.5rem;text-decoration:none;background-color:var(--tag-background-color);transition:background-color .5s ease;&:hover { background-color:var(--tag-background-hover-color); }}
