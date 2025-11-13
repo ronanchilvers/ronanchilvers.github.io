@@ -1,0 +1,22 @@
+{{ define "main" }}
+{{ partial "components/title.html" . }}
+<section class="categories">
+    {{ .Content }}
+    {{ range .Site.Taxonomies.categories.ByCount }}
+    <section class="category">
+        <h2 class="category-title">{{ title .Name }}</h2>
+
+        <ul class="posts-list">
+        {{- range .Pages }}
+            {{- $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+            {{- $dateHuman := .Date | time.Format ":date_long" }}
+            <li class="posts-list-item">
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                {{/*<time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>*/}}
+            </li>
+        {{- end }}
+        </ul>
+    </section>
+    {{- end }}
+</section>
+{{ end }}

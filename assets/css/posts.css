@@ -1,0 +1,24 @@
+.post {
+    .post-header {
+        margin-bottom: 2rem 0;
+    }
+    .post-meta {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        /*.tag {
+            text-decoration: underline;
+        }*/
+    }
+}
+@media (max-width: 500px) {
+    .post {
+        .post-meta {
+            flex-direction: column;
+        }
+        .post-timestamp {
+            margin-bottom: 1rem;
+        }
+    }
+}
