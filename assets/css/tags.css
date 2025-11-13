@@ -2,23 +2,20 @@
     list-style: none;
     padding: 0;
     margin: 0;
+}
+.tags-flex {
     display: flex;
     justify-content: left;
     flex-wrap: wrap;
-    .tags_item {
-        margin-bottom: 1rem;
-    }
 }
 
 .tag {
-    padding: 0.15rem 0.75rem;
-    border-radius: 4px;
-    margin-right: 0.5rem;
+    padding: 0.25rem 0.75rem;
+    margin: 0 0.25rem;
     text-decoration: none;
+    border-radius: 4px;
     background-color: var(--tag-background-color);
-    transition: background-color 0.5s ease;
-
-    &:hover {
-        background-color: var(--tag-background-hover-color);
-    }
+}
+.sidebar .tag {
+    padding: 0.25rem 0.5rem;
 }

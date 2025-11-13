@@ -1,4 +1,4 @@
 ---
-title: Tag Index
-draft: true
+title: Tags
+draft: false
 ---

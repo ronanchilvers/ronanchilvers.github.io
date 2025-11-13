@@ -5,5 +5,6 @@ title: Twelve Duchies - Chapter 1, Day 1
 summary: Trouble at the Dancing Bear
 tags:
   - actual-play
-  - twelve-duchies
+categories:
+  - Twelve Duchies
 ---

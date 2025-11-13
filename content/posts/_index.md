@@ -1,5 +1,5 @@
 ---
-title: Post Index
+title: Posts
 outputs:
     - html
     - rss

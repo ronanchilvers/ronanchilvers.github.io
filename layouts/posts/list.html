@@ -1,14 +1,17 @@
 {{ define "main" }}
+{{ partial "components/title.html" . }}
 <section>
-    {{ partial "components/title.html" . }}
     {{ .Content }}
     {{- range (where .Site.RegularPages "Type" "posts").GroupByDate "January 2006" }}
     <section>
         <h2>{{ .Key }}</h2>
-        <ul>
+        <ul class="posts-list">
         {{- range .Pages }}
-            <li>
+            {{- $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+            {{- $dateHuman := .Date | time.Format ":date_long" }}
+            <li class="posts-list-item">
                 <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                <!--<time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>-->
             </li>
         {{- end }}
         </ul>

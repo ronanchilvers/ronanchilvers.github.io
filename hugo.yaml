@@ -1,25 +1,29 @@
 baseurl: https://ronanchilvers.github.io/
 languageCode: en-gb
-title: Bits and Pieces
+title: By Lantern Light
 
 permalinks:
   posts: "/posts/:year/:month/:slug/"
 
 menu:
   main:
-    - name: Home
-      pageRef: "/"
-      weight: 1
+    # - name: Home
+    #   pageRef: "/"
+    #   weight: 1
+    # - name: Posts
+    #   pageRef: "posts/"
+    #   weight: 2
     - name: Posts
-      pageRef: "posts/"
-      weight: 2
-    # - name: Tags
-    #   pageRef: "tags/"
-    #   weight: 4
+      pageRef: "categories/"
+      weight: 3
+    - name: Tags
+      pageRef: "tags/"
+      weight: 4
     # - name: Subscribe
     #   pageRef: "index.xml"
 
 params:
+  subtitle: Musings, imaginings and discoveries in tabletop RPGs
   # footer: "[Licensing](/licensing/) | [Contact](/contact/) | [Subscribe](/posts/index.xml)"
   footer: "[Licensing](/licensing/) - [Subscribe](/posts/index.xml)"
   css:
@@ -27,4 +31,6 @@ params:
     - css/sidebar.css
     - css/tags.css
     - css/posts-list.css
+    - css/posts.css
+    - css/categories.css
     - css/local.css
