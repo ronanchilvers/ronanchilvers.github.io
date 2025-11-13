@@ -1,22 +1,50 @@
 {{ define "main" }}
+{{ $cardColumns := $.Site.Params.cards.columns }}
 {{ partial "components/title.html" . }}
 <section class="categories">
     {{ .Content }}
-    {{ range .Site.Taxonomies.categories.ByCount }}
-    <section class="category">
-        <h2 class="category-title">{{ title .Name }}</h2>
 
-        <ul class="posts-list">
+    {{- range .Site.Taxonomies.categories.ByCount }}
+    {{- $categorySlug := (.Name | urlize) }}
+    {{- $categoryImagePath := (printf "/images/%s/thumbnail.png" $categorySlug) }}
+    {{- if not (fileExists (printf "static%s" $categoryImagePath)) }}
+        {{ $categoryImagePath = false }}
+    {{- end }}
+    <section class="category">
+        <h2 class="category-title">{{ title .Name  }}</h2>
+        <div class="cards">
         {{- range .Pages }}
             {{- $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
             {{- $dateHuman := .Date | time.Format ":date_long" }}
-            <li class="posts-list-item">
-                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-                {{/*<time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>*/}}
-            </li>
+            <div class="card">
+                <a href="{{ .RelPermalink }}">
+                {{- if $categoryImagePath }}
+                    <figure class="card-image">
+                        <img src="{{ $categoryImagePath }}" />
+                    </figure>
+                {{- end }}
+                    <div class="card-content">
+                        <a class="card-title" href="{{ .RelPermalink }}">{{ .Title }} </a>
+                        {{- if gt (.Summary | len) 0 -}}
+                        <div class="card-body">
+                            <p>{{ .Summary | truncate 100 }}</p>
+                        </div>
+                        {{- end -}}
+                        <div class="card-meta">
+                            <time class="card-meta-item" datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+                            {{- with .GetTerms "tags" }}
+                            <div class="card-meta-item">
+                            {{- range . }}<a href="{{ .RelPermalink }}" class="tag tag--bare">{{ .LinkTitle | lower }}</a>{{- end }}
+                            </div>
+                            {{- end }}
+                        </div>
+                    </div>
+                </a>
+            </div>
         {{- end }}
-        </ul>
+        </div>
     </section>
+
     {{- end }}
 </section>
 {{ end }}

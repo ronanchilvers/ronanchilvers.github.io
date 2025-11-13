@@ -1,6 +1,12 @@
+{{- $category := index (.GetTerms "categories") 0 }}
+{{- $categoryImagePath := (printf "/images/%s/banner.png" ($category.Name | urlize)) }}
+{{- if not (fileExists (printf "static%s" $categoryImagePath)) }}
+    {{ $categoryImagePath = false }}
+{{- end }}
 {{- $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
 {{- $dateHuman := .Date | time.Format ":date_long" }}
-<header class="post-header">
+<header{{ if or true $categoryImagePath }} class="post-header post-header--banner" style="background-image: url({{ $categoryImagePath }})"{{ else }} class="post-header"{{ end }}>
+    <h2 class="post-subtitle">{{ $category.Name }}</h2>
     <h1 class="post-title">{{ .Title }}</h1>
     <nav class="post-meta" aria-labelledby="article-tags-navigation">
         <div class="post-timestamp"><time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time></div>

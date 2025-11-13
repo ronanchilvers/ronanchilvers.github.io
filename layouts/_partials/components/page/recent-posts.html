@@ -1,7 +1,0 @@
-<h2>Latest Posts</h2>
-<ul class="posts-list">
-{{ range first 5 (where $.Site.RegularPages "Type" "posts") }}
-    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-{{/* .Summary */}}
-{{ end }}
-</ul>

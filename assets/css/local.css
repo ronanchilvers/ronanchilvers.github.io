@@ -16,19 +16,22 @@
 /*@media (prefers-color-scheme: dark1) {*/
     :root {
         --background-color: rgb(34, 39, 46);
-        --border-color: rgb(75,75,75);
+        --border-color: rgb(100,100,100);
+        --border-radius: 5px;
         --font-color: rgb(220,220,220);
-        --font-muted-color: rgb(220,220,220);
+        --font-muted-color: rgb(175,175,175);
         --menu-background-color: rgb(110,110,110);
         --menu-background-hover-color: rgb(130,130,130);
         --link-color: inherit;
         --link-hover-color: rgb(255,255,255);
         --nav-border-color: rgb(75,75,75);
         --article-header-color: rgb(215,215,215);
-        --alert-background-color: rgb(130,130,130);
-        --alert-heading-background-color: rgb(110,110,110);
-        --tag-background-color: rgb(54, 59, 66);
+        --alert-background-color: rgba(54, 59, 66, 0.65);
+        --alert-heading-background-color: rgba(54, 59, 66, 1);
+        --tag-background-color: rgba(54, 59, 66, 0.65);
+        --tag-count-color: rgb(54, 59, 66);
         --tag-background-hover-color: rgb(130,130,130);
+        --category-background-color: rgb(44, 49, 56);
     }
 /*}*/
 
@@ -80,7 +83,7 @@ body > header {
         }
     }
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     body > header {
         justify-content: center;
         flex-direction: column;
@@ -102,21 +105,21 @@ body > footer {
     padding: 3rem;
 }
 
-.content_wrapper {
+/*.content_wrapper {
     display: flex;
     justify-content: space-between;
     column-gap: 2rem;
     flex-direction: row;
-}
+}*/
 /*@media screen and (max-width: 1056px) {
   .content_wrapper {
     flex-direction: column;
   }
 }*/
 
-.content {
+/*.content {
     flex-grow: 2;
-}
+}*/
 
 main header,
 section header,
@@ -126,18 +129,19 @@ article header {
 }
 
 h1 {
-    font-size: 1.75rem;
+    font-size: 1.8rem;
 }
 h2 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 h3 {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
 }
 h1, h2, h3, h4 {
     font-weight: 400;
     margin: 0;
     margin-bottom: 0.5rem;
+    text-shadow: 0 0 10px rgba(0,0,0,1);
 }
 
 blockquote {
@@ -191,12 +195,12 @@ figure {
     align-items: center;
     padding: 0;
     margin: 2rem 0;
-    border-radius: 10px;
+    border-radius: var(--border-radius);
     overflow: hidden;
     border-width: 2px;
     border-style: solid;
     border-color: var(--border-color);
-    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+    box-shadow: 0 0 10px rgba(0,0,0,1);
 }
 figure.figure-round {
     border-radius: 50%;

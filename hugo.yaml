@@ -28,9 +28,10 @@ params:
   footer: "[Licensing](/licensing/) - [Subscribe](/posts/index.xml)"
   css:
     - css/normalize.css
-    - css/sidebar.css
     - css/tags.css
-    - css/posts-list.css
     - css/posts.css
     - css/categories.css
+    - css/cards.css
     - css/local.css
+  cards:
+    columns: 3

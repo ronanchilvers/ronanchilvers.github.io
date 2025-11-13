@@ -32,17 +32,13 @@ content:
         label: Draft
         type: boolean
         default: true
-      - name: menu
-        label: Show in sidebar
-        type: boolean
-        default: true
   - name: posts
     label: Posts
     type: collection
     path: 'content/posts'
     filename: '{primary}.md'
     view:
-      fields: 
+      fields:
         - title
         - date
         - summary

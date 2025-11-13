@@ -2,12 +2,13 @@
 {{ partial "components/title.html" . }}
 <section>
     {{ .Content }}
-    <ul class="tags">
+    <div class="tags">
     {{ range .Site.Taxonomies.tags.ByCount }}
-        <li class="tags_item">
-            <a href="/tags/{{ .Name }}/" class="tag">{{ .Name }} - {{ .Count }} {{ if lt 1 .Count}}posts{{ else }}post{{ end }}</a>
-        </li>
+        <a href="/tags/{{ .Name }}/" class="tag">
+            {{ .Name }}
+            <span class="tag-count">{{ .Count }} {{ if lt 1 .Count}}posts{{ else }}post{{ end }}</span>
+        </a>
     {{- end }}
-    </ul>
+    </div>
 </section>
 {{ end }}
