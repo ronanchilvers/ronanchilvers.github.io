@@ -1,6 +1,6 @@
 ---
 date: 2025-11-11
-title: Twelve Duchies - The Discovery
+title: The Discovery
 summary: An actual play experiment with D&D OSE
 draft: false
 tags:
