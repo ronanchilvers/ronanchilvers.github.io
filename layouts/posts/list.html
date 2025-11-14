@@ -4,7 +4,7 @@
 <section class="categories">
     {{ .Content }}
 
-    {{- range .Site.Taxonomies.categories.ByCount }}
+    {{- range .Site.Taxonomies.categories.Alphabetical }}
     {{- $categorySlug := (.Name | urlize) }}
     {{- $categoryImagePath := (printf "/images/%s/thumbnail.png" $categorySlug) }}
     {{- if not (fileExists (printf "static%s" $categoryImagePath)) }}

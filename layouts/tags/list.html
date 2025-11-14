@@ -3,7 +3,7 @@
 <section>
     {{ .Content }}
     <div class="tags">
-    {{ range .Site.Taxonomies.tags.ByCount }}
+    {{ range .Site.Taxonomies.tags.Alphabetical }}
         <a href="/tags/{{ .Name }}/" class="tag">
             {{ .Name }}
             <span class="tag-count">{{ .Count }} {{ if lt 1 .Count}}posts{{ else }}post{{ end }}</span>

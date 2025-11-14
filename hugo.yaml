@@ -10,7 +10,7 @@ menu:
     # - name: Home
     #   pageRef: "/"
     #   weight: 1
-    - name: Posts
+    - name: By Category
       pageRef: "posts/"
       weight: 2
     # - name: Posts
