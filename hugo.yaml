@@ -25,7 +25,7 @@ menu:
 params:
   subtitle: Musings, imaginings and discoveries in tabletop RPGs
   # footer: "[Licensing](/licensing/) | [Contact](/contact/) | [Subscribe](/posts/index.xml)"
-  footer: "[Licensing](/licensing/) - [Subscribe](/posts/index.xml)"
+  footer: "[Licensing](/licensing/) - [Posts RSS](/posts/index.xml)"
   css:
     - css/normalize.css
     - css/tags.css
@@ -33,5 +33,3 @@ params:
     - css/categories.css
     - css/cards.css
     - css/local.css
-  cards:
-    columns: 3
