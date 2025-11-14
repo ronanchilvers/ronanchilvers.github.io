@@ -15,15 +15,15 @@
 <h1 class="post-title">{{ $post.Title }}</h1>
 <header{{ if $imagePath }} class="post-header post-header--banner" style="background-image: url({{ $imagePath }})"{{ else }} class="post-header"{{ end }}>
     <div class="post-header-inner">
-        <h2 class="post-subtitle"><span>In</span> <a href="{{ $category.Path }}">{{ $category.Name }}</a></h2>
         <!--<h1 class="post-title">{{ $post.Title }}</h1>-->
+        <time class="post-timestamp" datetime="{{ $dateMachine }}"><span>On</span> {{ $dateHuman }}</time>
+        <h2 class="post-subtitle"><span>in</span> <a href="{{ $category.Path }}">{{ $category.Name }}</a></h2>
         <div class="post-tags">
-            <span>Tagged with </span>
+            <span>tagged with </span>
             {{- with $post.GetTerms "tags" }}
             {{- range . }}<a href="{{ .RelPermalink }}" class="tag tag--bare">{{ .LinkTitle | lower }}</a>{{- end }}
             {{- end }}
         </div>
-        <time class="post-timestamp" datetime="{{ $dateMachine }}"><span>On</span> {{ $dateHuman }}</time>
         <!--<nav class="post-meta" aria-labelledby="article-tags-navigation">
             <div class="post-meta-item post-meta-item--timestamp"><time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time></div>
             <h2 class="post-meta-item post-subtitle">

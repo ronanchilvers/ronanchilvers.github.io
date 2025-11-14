@@ -21,15 +21,20 @@
             /*position: relative;*/
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: center;
         }
         .post-timestamp,
         .post-title,
         .post-tags,
         .post-subtitle {
-            margin: 0;
             font-size: 1.4rem;
             flex: 0 0 auto;
+            margin: 0;
+            margin-right: 0.5rem;
+            &:last-child {
+                margin-right: 0;
+            }
+
         }
         .post-timestamp,
         .post-tags,
