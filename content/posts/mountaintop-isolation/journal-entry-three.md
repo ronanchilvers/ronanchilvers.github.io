@@ -1,7 +1,7 @@
 ---
 date: 2025-06-22
 title: Journal Entry Three
-summary: Third journal entry for Mountaintop Isolation play-through
+summary: Dammit! The day started so well! Managed to get the fire going and it lasted until first light, around 8am. The dawn was spectacular - the cabin must be facing southeast because the sun rose over the mountains away to the left.
 draft: false
 tags:
   - wretched-and-alone

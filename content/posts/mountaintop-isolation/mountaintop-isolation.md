@@ -1,7 +1,7 @@
 ---
 date: 2025-06-20
 title: Mountaintop Isolation - First Look
-summary: A quick introduction to the solo journalling game Mountaintop Isolation
+summary: One of my favourite radio shows from the dim and distant past was [Nightfall](https://archive.org/details/CBC_NightfallOTR), creepy and disturbing stories of all sorts that used the power of radio and imagination to tell terrifying tales. 
 draft: false
 tags:
   - wretched-and-alone

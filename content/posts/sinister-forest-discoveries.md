@@ -5,6 +5,8 @@ summary: A d20 random table of discoveries characters might make in a sinister f
 draft: false
 tags:
   - random-tables
+categories:
+  - Rules and Tools
 ---
 I often have the need for strange, non-combat discoveries that characters can stumble across on their way somewhere. This list is intended for use in mysterious forests, such as Davokar from Free League's [Symbaroum](https://freeleaguepublishing.com/shop/symbaroum/)
 

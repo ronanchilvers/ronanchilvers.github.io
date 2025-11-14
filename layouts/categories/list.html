@@ -1,0 +1,20 @@
+{{ define "main" }}
+{{ $cardColumns := $.Site.Params.cards.columns }}
+{{ partial "components/title.html" . }}
+<section class="categories">
+    {{ .Content }}
+
+    {{- range .Site.Taxonomies.categories.Alphabetical }}
+    <section class="category">
+        <h2 class="category-title">{{ title .Name  }}</h2>
+
+        <div class="cards">
+        {{- range .Pages }}
+            {{ partial "components/post-card.html" . }}
+        {{- end }}
+        </div>
+    </section>
+
+    {{- end }}
+</section>
+{{ end }}

@@ -1,7 +1,7 @@
 ---
 date: 2025-06-21
 title: Journal Entry Two
-summary: Second journal entry for Mountaintop Isolation play-through
+summary: Man it's cold!!! I must have fallen asleep last night. The fire's almost out and it looks like the snow really came down during the night as there are 6 foot drifts outside.
 draft: false
 tags:
   - wretched-and-alone

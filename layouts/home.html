@@ -5,6 +5,14 @@
       <img src="/images/home-300x300.png" alt="By Lantern Light" />
   </figure>
   <h1>{{ .Site.Title }}</h1>
-  <h2>{{ .Site.Params.subtitle }}</h2>
+  <p>{{ .Site.Params.subtitle }}</p>
+</section>
+<section class="recent-posts">
+    <h2>Recent Posts</h2>
+    <div class="cards">
+{{ range first 6 (where .Site.RegularPages "Type" "posts") }}
+    {{ partial "components/post-card.html" . }}
+{{- end }}
+    </div>
 </section>
 {{ end }}

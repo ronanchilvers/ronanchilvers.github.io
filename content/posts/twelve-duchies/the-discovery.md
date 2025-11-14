@@ -12,7 +12,7 @@ categories:
 I was recently sorting out a load of old paperwork and made a fabulous discovery. Buried in a pile of stuff that I've not looked at in years, I found two maps that I created way back when my D&D adventures in other worlds had just begun. One was a world map and the other a map of one of the main continents named "The Twelve Duchies".
 
 {{< figure
-src="/images/twelve-duchies.jpg"
+src="/images/twelve-duchies/the-discovery/twelve-duchies.jpg"
 alt="The Twelve Duchies"
 width="100%"
 >}}

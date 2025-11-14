@@ -1,5 +1,5 @@
 ---
-cascade:
-  build:
-    render: never
+outputs:
+  - html
+  - rss
 ---

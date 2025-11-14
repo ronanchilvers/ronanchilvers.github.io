@@ -1,0 +1,37 @@
+{{- $post := . }}
+{{- $category := index ($post.GetTerms "categories") 0 }}
+{{- $dateMachine := $post.Date | time.Format "2006-01-02T15:04:05-07:00" }}
+{{- $dateHuman := $post.Date | time.Format ":date_long" }}
+{{- $categorySlug := ($category.Name | urlize) }}
+{{- $names := slice (printf "%s.png" ($post.Title | urlize)) "thumbnail.png" }}
+{{- $imagePath := false }}
+{{- range $names }}
+    {{- $testPath := (printf "/images/%s/%s" $categorySlug . ) }}
+    {{- if fileExists (printf "static/%s" $testPath ) }}
+        {{- $imagePath = $testPath }}
+        {{- break }}
+    {{- end }}
+{{- end }}
+<div class="card">
+{{- if $imagePath }}
+    <figure class="card-image">
+        <a href="{{ $post.RelPermalink }}"><img src="{{ $imagePath }}" alt="{{ $post.Title }}"></a>
+    </figure>
+{{- end }}
+    <div class="card-content">
+        <a class="card-title" href="{{ $post.RelPermalink }}">{{ .Title }}</a>
+        <div class="card-body">
+            {{- if gt ($post.Summary | len) 0 -}}
+                <p>{{ $post.Summary | truncate 100 }}</p>
+            {{- end -}}
+        </div>
+        <div class="card-meta">
+            <time class="card-meta-item" datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+            {{- with .GetTerms "tags" }}
+            <div class="card-meta-item">
+            {{- range . }}<a href="{{ $post.RelPermalink }}" class="tag tag--bare">{{ .LinkTitle | lower }}</a>{{- end }}
+            </div>
+            {{- end }}
+        </div>
+    </div>
+</div>

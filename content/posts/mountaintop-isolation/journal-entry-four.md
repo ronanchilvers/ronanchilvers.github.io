@@ -1,7 +1,7 @@
 ---
 date: 2025-06-23
 title: Journal Entry Four
-summary: Fourth journal entry for Mountaintop Isolation play-through
+summary: It's 6:23am and I'm freezing. I managed to keep the fire going but the wind from the bust roof was howling through the cabin all night and I just couldn't get warm.
 draft: false
 tags:
   - wretched-and-alone

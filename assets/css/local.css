@@ -52,6 +52,7 @@ body {
     color: var(--font-color);
     background-color: var(--background-color);
     max-width: 1024px;
+    min-width: 350px;
     margin: 0 auto;
     padding: 0 1rem;
 }
@@ -128,19 +129,24 @@ article header {
     text-align: center;
 }
 
+section {
+    margin: 0;
+    margin-bottom: 3rem;
+}
+
 h1 {
     font-size: 1.8rem;
 }
 h2 {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 h3 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 h1, h2, h3, h4 {
     font-weight: 400;
     margin: 0;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     text-shadow: 0 0 10px rgba(0,0,0,1);
 }
 
@@ -148,6 +154,7 @@ blockquote {
     background-color: var(--alert-background-color);
     border-radius: 5px;
     padding: 1rem;
+    margin: 1rem 2rem 1rem 0.5rem;
 
     &.alert {
         margin: 0 0 1rem 0;
@@ -215,5 +222,10 @@ figure.figure-round {
     figure {
         height: 250px;
         width: 250px;
+    }
+}
+.recent-posts {
+    h2 {
+        text-align: center;
     }
 }
