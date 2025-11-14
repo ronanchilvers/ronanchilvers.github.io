@@ -1,8 +1,10 @@
 ---
-date: 2025-11-14
+date: 2025-11-13
 draft: false
 title: Monster Random Tactics
-summary: The amazing and fabulous Ironsworn and it's sci-fi siblings Starforged and Sundered Isles have fantastic sets of random tables with which to seed chaos into your adventures. 
+summary: The amazing and fabulous Ironsworn and it's sci-fi siblings Starforged
+  and Sundered Isles have fantastic sets of random tables with which to seed
+  chaos into your adventures.
 tags:
   - random-tables
   - rule-hacks
