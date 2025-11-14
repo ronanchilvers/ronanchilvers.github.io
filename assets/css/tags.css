@@ -1,11 +1,14 @@
 .tags {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
-    .tag-count {
-        margin-left: 1rem;
-        color: var(--font-muted-color);
+    .tag {
+        margin: 0.5rem;
+        .tag-count {
+            margin-left: 1rem;
+            color: var(--font-muted-color);
+        }
     }
 }
 .tags-flex {
@@ -24,8 +27,20 @@
     justify-content: space-between;
     &.tag--bare {
         padding: 0;
+        margin: 0;
+        /*margin-right: 0.5rem;*/
         background-color: transparent;
         display: inline;
+        &:after {
+            content: ", ";
+        }
+        &:last-child:after {
+            content: "";
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
     }
 }
 

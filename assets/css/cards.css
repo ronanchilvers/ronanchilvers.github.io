@@ -1,5 +1,6 @@
 :root {
-    --card-background-color: rgb(54, 59, 66);
+    --card-background-color: rgb(44, 49, 56);
+    --card-title-background-color: rgba(0, 0, 0, 0.3);
 }
 .cards {
     display: flex;
@@ -18,10 +19,6 @@
         display: flex;
         flex-direction: column;
 
-        .card-image,
-        .card-content {
-            /*flex: 1 1;*/
-        }
         .card-image {
             flex: 0 0 auto;
         }
@@ -30,7 +27,6 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            /*height: 100%;*/
         }
 
         .card-image {
@@ -42,20 +38,28 @@
             align-items: center;
             height: 200px;
             max-height: 200px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.4);
+            box-shadow: none;
+            position: relative;
             img {
                 width: 100%;
             }
+            .card-title {
+                position: absolute;
+                z-index: 10;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: 0;
+                padding: 0.5rem 1rem;
+                text-shadow: 0 0 5px rgba(0,0,0,1);
+                text-decoration: none;
+                background-color: var(--card-title-background-color);
+            }
         }
-        .card-title,
         .card-body,
         .card-meta {
             padding: 0.5rem 1rem;
             display: block;
-        }
-        .card-title {
-            display: block;
-            flex: 0 0 auto;
         }
         .card-body {
             flex: 1 1 auto;
@@ -63,6 +67,11 @@
         .card-meta {
             font-size: 0.9rem;
             flex: 0 0 auto;
+            display: flex;
+            flex-direction: column;
+            .card-meta-item {
+
+            }
         }
     }
 }

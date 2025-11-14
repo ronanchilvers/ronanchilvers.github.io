@@ -95,7 +95,11 @@ article header {
     margin-bottom: 2rem;
     text-align: center;
 }
-
+main {
+    a {
+        text-decoration: underline;
+    }
+}
 section {
     margin: 0;
     margin-bottom: 3rem;
@@ -114,7 +118,10 @@ h1, h2, h3, h4 {
     font-weight: 400;
     margin: 0;
     margin-bottom: 1rem;
-    text-shadow: 0 0 10px rgba(0,0,0,1);
+    text-shadow: 0 0 5px rgba(0,0,0,1);
+    a {
+        text-decoration: none;
+    }
 }
 
 blockquote {
@@ -155,12 +162,6 @@ a, a:visited {
 }
 a:hover {
     color: var(--link-hover-color);
-}
-
-main {
-    a {
-        text-decoration: underline;
-    }
 }
 
 figure {

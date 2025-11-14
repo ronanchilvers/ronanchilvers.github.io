@@ -15,17 +15,18 @@
 <div class="card">
 {{- if $imagePath }}
     <figure class="card-image">
+        <a class="card-title" href="{{ $post.RelPermalink }}">{{ .Title }}</a>
         <a href="{{ $post.RelPermalink }}"><img src="{{ $imagePath }}" alt="{{ $post.Title }}"></a>
     </figure>
 {{- end }}
     <div class="card-content">
-        <a class="card-title" href="{{ $post.RelPermalink }}">{{ .Title }}</a>
         <div class="card-body">
             {{- if gt ($post.Summary | len) 0 -}}
                 <p>{{ $post.Summary | truncate 100 }}</p>
             {{- end -}}
         </div>
         <div class="card-meta">
+            <a href="{{ $category.Path }}" class="card-meta-item">{{ $category.Name }}</a>
             <time class="card-meta-item" datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
             {{- with .GetTerms "tags" }}
             <div class="card-meta-item">

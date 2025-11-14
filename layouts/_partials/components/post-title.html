@@ -12,11 +12,28 @@
 {{- end }}
 {{- $dateMachine := $post.Date | time.Format "2006-01-02T15:04:05-07:00" }}
 {{- $dateHuman := $post.Date | time.Format ":date_long" }}
+<h1 class="post-title">{{ $post.Title }}</h1>
 <header{{ if $imagePath }} class="post-header post-header--banner" style="background-image: url({{ $imagePath }})"{{ else }} class="post-header"{{ end }}>
-    <h2 class="post-subtitle">{{ $category.Name }}</h2>
-    <h1 class="post-title">{{ $post.Title }}</h1>
-    <nav class="post-meta" aria-labelledby="article-tags-navigation">
-        <div class="post-timestamp"><time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time></div>
-        <div class="post-tags">{{ partial "components/post-tags.html" (dict "taxonomy" "tags" "page" $post) }}</div>
-    </nav>
+    <div class="post-header-inner">
+        <h2 class="post-subtitle"><span>In</span> <a href="{{ $category.Path }}">{{ $category.Name }}</a></h2>
+        <!--<h1 class="post-title">{{ $post.Title }}</h1>-->
+        <div class="post-tags">
+            <span>Tagged with </span>
+            {{- with $post.GetTerms "tags" }}
+            {{- range . }}<a href="{{ .RelPermalink }}" class="tag tag--bare">{{ .LinkTitle | lower }}</a>{{- end }}
+            {{- end }}
+        </div>
+        <time class="post-timestamp" datetime="{{ $dateMachine }}"><span>On</span> {{ $dateHuman }}</time>
+        <!--<nav class="post-meta" aria-labelledby="article-tags-navigation">
+            <div class="post-meta-item post-meta-item--timestamp"><time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time></div>
+            <h2 class="post-meta-item post-subtitle">
+                <a href="{{ $category.Path }}">{{ $category.Name }}</a>
+            </h2>
+            <div class="post-meta-item post-meta-item--tags">
+                {{- with $post.GetTerms "tags" }}
+                {{- range . }}<a href="{{ .RelPermalink }}" class="tag tag--bare">{{ .LinkTitle | lower }}</a>{{- end }}
+                {{- end }}
+            </div>
+        </nav>-->
+    </div>
 </header>
