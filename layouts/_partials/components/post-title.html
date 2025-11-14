@@ -5,7 +5,7 @@
 {{- end }}
 {{- $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
 {{- $dateHuman := .Date | time.Format ":date_long" }}
-<header{{ if or true $categoryImagePath }} class="post-header post-header--banner" style="background-image: url({{ $categoryImagePath }})"{{ else }} class="post-header"{{ end }}>
+<header{{ if $categoryImagePath }} class="post-header post-header--banner" style="background-image: url({{ $categoryImagePath }})"{{ else }} class="post-header"{{ end }}>
     <h2 class="post-subtitle">{{ $category.Name }}</h2>
     <h1 class="post-title">{{ .Title }}</h1>
     <nav class="post-meta" aria-labelledby="article-tags-navigation">
