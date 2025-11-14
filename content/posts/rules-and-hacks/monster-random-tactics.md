@@ -1,6 +1,6 @@
 ---
 date: 2025-11-14
-draft: true
+draft: false
 title: Monster Random Tactics
 summary: A brief article summary
 tags:
