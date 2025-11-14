@@ -1,0 +1,11 @@
+{{ define "main" }}
+{{ partial "components/title.html" . }}
+<section>
+    {{ .Content }}
+    <div class="cards">
+    {{- range .Pages }}
+        {{ partial "components/post-card.html" . }}
+    {{- end }}
+    </div>
+</section>
+{{ end }}

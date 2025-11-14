@@ -89,22 +89,6 @@ body > footer {
     padding: 3rem;
 }
 
-/*.content_wrapper {
-    display: flex;
-    justify-content: space-between;
-    column-gap: 2rem;
-    flex-direction: row;
-}*/
-/*@media screen and (max-width: 1056px) {
-  .content_wrapper {
-    flex-direction: column;
-  }
-}*/
-
-/*.content {
-    flex-grow: 2;
-}*/
-
 main header,
 section header,
 article header {
@@ -197,7 +181,6 @@ figure.figure-round {
 }
 
 .home {
-    /*padding: 3rem 0;*/
     text-align: center;
     display: flex;
     align-items: center;

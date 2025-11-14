@@ -1,8 +1,0 @@
-<h2>Tags</h2>
-<ul class="tags tags-flex">
-{{ range .Site.Taxonomies.tags.ByCount }}
-    <li class="tags_item">
-        <a href="/tags/{{ .Name }}/" class="tag">{{ .Name }}</a>
-    </li>
-{{- end }}
-</ul>
