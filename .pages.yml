@@ -70,3 +70,7 @@ content:
         label: Tags
         type: string
         list: true
+      - name: categories
+        label: Categories
+        type: string
+        list: true
