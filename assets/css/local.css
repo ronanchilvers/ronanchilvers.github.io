@@ -1,39 +1,22 @@
-/*:root {
-    --background-color: rgb(245,245,245);
-    --font-color: rgb(50,50,50);
+:root {
+    --background-color: rgb(34, 39, 46);
+    --border-color: rgb(100,100,100);
+    --border-radius: 5px;
+    --font-color: rgb(220,220,220);
     --font-muted-color: rgb(175,175,175);
-    --menu-background-color: rgb(215,215,215);
-    --menu-background-hover-color: rgb(235,235,235);
+    --menu-background-color: rgb(110,110,110);
+    --menu-background-hover-color: rgb(130,130,130);
     --link-color: inherit;
-    --link-hover-color: rgb(0,0,0);
-    --nav-border-color: rgb(215,215,215);
+    --link-hover-color: rgb(255,255,255);
+    --nav-border-color: rgb(75,75,75);
     --article-header-color: rgb(215,215,215);
-    --alert-background-color: rgb(235,235,235);
-    --alert-heading-background-color: rgb(225, 225, 225);
-    --tag-background-color: rgb(215,215,215);
-    --tag-background-hover-color: rgb(235,235,235);
-}*/
-/*@media (prefers-color-scheme: dark1) {*/
-    :root {
-        --background-color: rgb(34, 39, 46);
-        --border-color: rgb(100,100,100);
-        --border-radius: 5px;
-        --font-color: rgb(220,220,220);
-        --font-muted-color: rgb(175,175,175);
-        --menu-background-color: rgb(110,110,110);
-        --menu-background-hover-color: rgb(130,130,130);
-        --link-color: inherit;
-        --link-hover-color: rgb(255,255,255);
-        --nav-border-color: rgb(75,75,75);
-        --article-header-color: rgb(215,215,215);
-        --alert-background-color: rgba(54, 59, 66, 0.65);
-        --alert-heading-background-color: rgba(54, 59, 66, 1);
-        --tag-background-color: rgba(54, 59, 66, 0.65);
-        --tag-count-color: rgb(54, 59, 66);
-        --tag-background-hover-color: rgb(130,130,130);
-        --category-background-color: rgb(44, 49, 56);
-    }
-/*}*/
+    --alert-background-color: rgba(54, 59, 66, 0.65);
+    --alert-heading-background-color: rgba(54, 59, 66, 1);
+    --tag-background-color: rgba(54, 59, 66, 0.65);
+    --tag-count-color: rgb(54, 59, 66);
+    --tag-background-hover-color: rgb(130,130,130);
+    --category-background-color: rgb(44, 49, 56);
+}
 
 html {
     font-size: 100%;
