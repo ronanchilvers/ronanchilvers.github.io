@@ -75,7 +75,7 @@ A flicker of movement catches his eye as he turns back to the elf - movement out
 > Orc 1 - Open Doors - 2
 > Orc 2 - Open Doors - 3
 
-Hadley grabs the elf under her arms. He drags her across the room and through the swing door into the kitchen. He hears a crash against the outside door and then another from the rear door of the tavern. The stout oak doors hold. Hadley pulls a barrel keg in front of the swing door and then scrambling across the room, he grabs a worn looking scabbard and sword that is hanging in the corner. Many's the time he thought about getting rid of it, of letting that previous version of him go - now he's glad he didn't.
+Hadley hears a crash against the outside door and then another from the rear door of the tavern. The stout oak doors hold. He grabs the elf under her arms. He drags her across the room and through the swing door into the kitchen. Hadley pulls a barrel keg in front of the swing door and then scrambling across the room, he grabs a worn looking scabbard and sword that is hanging in the corner. Many's the time he thought about getting rid of it, of letting that previous version of him go - now he's glad he didn't.
 
 > [!roll] Round 2
 > Initiative - Hadley - 2, Orcs - 5
