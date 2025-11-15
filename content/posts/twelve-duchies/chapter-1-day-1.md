@@ -56,7 +56,7 @@ Hadley steadies her with a flat palm. "Easy. Don't move - you'll make it worse. 
 
 She sags back, breath shuddering. A shaking hand lifts, pointing at the door, blood smearing the fingers. Her mouth finds one word he understands before she goes slack, eyes rolling shut - "Orcs!"
 
-Hadley stares mutely at her for a long moment. He turns and stepping to the door, turns the key in the lock. He's glad he that he locked the rear door earlier.
+Hadley stares mutely at her for a long moment. He turns and stepping to the door, he slams it shut and turns the key in the lock. He's glad he that he locked the rear door earlier.
 
 A flicker of movement catches his eye as he turns back to the elf - movement outside, more than just lashing rain. He dives aside, glass smashes and something thuds into the wall opposite the window. A crossbow bolt, black fletchings wet from the rain, shivers in the oak beam.
 
