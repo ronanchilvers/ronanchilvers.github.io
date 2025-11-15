@@ -8,6 +8,8 @@ tags:
   - ose
 categories:
   - Twelve Duchies
+summary: I'm using a few house rules and mechanics while playing, inspired by
+  (or pinched from) sources such as Tale of the Manticore.
 ---
 I'm using a few house rules and mechanics while playing, inspired by (or pinched from) sources such as [Tale of the Manticore]. I'm intending to keep this article up to date with any new or modified rules I might adopt in the future.
 
