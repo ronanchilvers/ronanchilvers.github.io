@@ -2,7 +2,9 @@
 date: 2025-11-14
 draft: false
 title: 1 - Trouble at the Dancing Bear
-summary: Hadley works the rag across the tables of the Dancing Bear, slow and steady, buffing away the sticky residue of old ale. Rain drums on the window shutters and seeps through in thin threads that trickle down the glass.
+summary: Hadley works the rag across the tables of the Dancing Bear, slow and
+  steady, buffing away the sticky residue of old ale. Rain drums on the window
+  shutters and seeps through in thin threads that trickle down the glass.
 tags:
   - actual-play
   - ose
@@ -20,7 +22,7 @@ Hadley works the rag across the tables of the Dancing Bear, slow and steady, buf
 
 The weather gnaws at him. It’s the wrong kind of cold—wet, chilling the bones. He thinks of the northern lands of the Duchies,  the towns on the coast of Nemus. Winter there felt like a long autumn. Salt on the air. Wind that carried warmth even when the sun was pale. Evenings outside without a cloak, the world soft with mist rather than drenched with rains.
 
-He breathes out a slow sigh and keeps wiping, one table, then the next. Coins clink on wood, benches and chairs scrape, boots scuff. The last patrons leave and the room is quiet but for the shifting of embers in the fireplace as the charred wood settles. Outside the storm rages. Hadley glances at the door, shut against against the wind and wonders how long the storm means to linger.
+He breathes out a slow sigh and keeps wiping, one table, then the next. Coins clink on wood, benches and chairs scrape, boots scuff. The last patrons leave and the tap room is quiet but for the shifting of embers in the fireplace as the charred wood settles. Outside the storm rages. Hadley glances at the door, shut against against the wind and wonders how long the storm means to linger.
 
 On the edge of town a cloaked figure stumbles, running through the rain, each step a dragging effort. Boots slip and splash in pooled water, the cloak hanging heavy with rain that falls relentlessly, stinging on wind chilled skin. The figure's every motion speaks of exhaustion.
 
@@ -32,9 +34,9 @@ The staggering figure lifts its head at the dull glow of lanterns leaking from t
 > The figure reaches the inn? - 13 / yes but...
 > Do they just burst in through the door? 4 / no
 
-Hadley dries and stacks the last tankards, his hand slowed by the ache in his knuckles. They never used to ache but they often do now. Probably the weather - old man Hassock told him last week that his knees pain him more during the winter storms.
+Hadley dries and stacks the last tankards, his hand slowed by the ache in his knuckles. They never used to ache but they often do now. Probably the weather - old man Hassock told him last week that his knees pain him more during the winter storms. Walking to the rear of the tavern's main room, he glances out of the window at the driving rain. A heavy night. He locks the rear door and then turns and walks across the taproom. Time for bed.
 
-The sudden crash on the door jerks him upright. He shouts, voice flat, "We're closed!" The hammering comes again, louder, frantic. He recognises panic - that's no drunk looking for a soak.
+The sudden crash on the front door jerks him upright. He shouts, voice flat, "We're closed!" The hammering comes again, louder, frantic. He recognises panic - that's no drunk looking for a soak.
 
 As he crosses the room to the door he checks his belt knife out of habit, hand resting on the worn hilt. Rain gusts in as he cracks the door. A cloaked figure surges past him and crashes to the boards, face first, drenched cloak spreading water across the floor.
 
@@ -54,9 +56,9 @@ Hadley steadies her with a flat palm. "Easy. Don't move - you'll make it worse. 
 
 She sags back, breath shuddering. A shaking hand lifts, pointing at the door, blood smearing the fingers. Her mouth finds one word he understands before she goes slack, eyes rolling shut - "Orcs!"
 
-Hadley stares mutely at her for a long moment. He turns and stepping to the door, turns the key in the lock. The rear door is already locked.
+Hadley stares mutely at her for a long moment. He turns and stepping to the door, turns the key in the lock. He's glad he that he locked the rear door earlier.
 
-A flicker of movement catches his eye as he turns back to the elf, movement outside, more than just lashing rain. He dives aside, glass smashes and something thuds into the wall opposite the window. A crossbow bolt, black fletchings wet from the rain, shivers in the oak beam.
+A flicker of movement catches his eye as he turns back to the elf - movement outside, more than just lashing rain. He dives aside, glass smashes and something thuds into the wall opposite the window. A crossbow bolt, black fletchings wet from the rain, shivers in the oak beam.
 
 > [!combat] Combat
 > Two orcs have followed the elf into Southome and are now outside the tavern.
