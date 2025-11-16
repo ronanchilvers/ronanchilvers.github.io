@@ -32,7 +32,7 @@ I'll be using the d20 Oracle and Oracle prompt tables from [Solodark]. The d20 O
 - If the result is an odd number add "but..."
 - 1 is an extreme No, 20 is an extreme Yes
 
-It's fast, easy and fits nicely with the OSE dice pool. The [Solodark] Oracle tables are themed well for OSE as well and, at least for the moment, they fit the theme of the Twelve Duchies.
+Likely / unlikely checks are modelled with advantage / disadvantage on the roll. The oracle is fast, easy and fits nicely with the OSE dice pool. The [Solodark] Oracle tables are themed well for OSE as well and, at least for the moment, they fit the theme of the Twelve Duchies.
 
 [Tale of the Manticore]: https://taleofthemanticore.blogspot.com
 [Solodark]: https://www.thearcanelibrary.com/products/solodark-solo-rules-for-shadowdark-rpg-pdf
