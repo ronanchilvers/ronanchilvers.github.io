@@ -1,10 +1,11 @@
 ---
 date: 2025-11-14
 draft: false
-title: 1 - Trouble at the Dancing Bear
+title: Trouble at the Dancing Bear - 1
 summary: Hadley works the rag across the tables of the Dancing Bear, slow and
   steady, buffing away the sticky residue of old ale. Rain drums on the window
   shutters and seeps through in thin threads that trickle down the glass.
+slug: chapter-1-part-1
 tags:
   - actual-play
   - ose
@@ -32,6 +33,7 @@ The staggering figure lifts its head at the dull glow of lanterns leaking from t
 
 > [!roll] Questions
 > The figure reaches the inn? - 13 / yes but...
+> 
 > Do they just burst in through the door? 4 / no
 
 Hadley dries and stacks the last tankards, his hand slowed by the ache in his knuckles. They never used to ache but they often do now. Probably the weather - old man Hassock told him last week that his knees pain him more during the winter storms. Walking to the rear of the tavern's main room, he glances out of the window at the driving rain. A heavy night. He locks the rear door and then turns and walks across the taproom. Time for bed.
@@ -48,6 +50,7 @@ The hood slips back and Hadley stares. It's an elven woman, her face pale in the
 
 > [!roll] Questions
 > Is the Elena conscious? - 12 / yes
+>
 > Is she lucid? 7 / no
 
 The woman tries to sit up, tries to speak, words thin and hurried in a tongue he doesn't know. Her fingers clamp on his sleeve, knuckles white, fear and panic bright in her eyes. She forces herself up further and the bolt shifts; she cries out, the sound sharp and raw.
@@ -71,14 +74,18 @@ A flicker of movement catches his eye as he turns back to the elf - movement out
 
 > [!roll] Round 1
 > Initiative - Hadley - 1, Orcs - 3
+>
 > Elena CON - 12 - she's still unconscious
+>
 > Orc 1 - Open Doors - 2
+>
 > Orc 2 - Open Doors - 3
 
 Hadley hears a crash against the outside door and then another from the rear door of the tavern. The stout oak doors hold. He grabs the elf under her arms. He drags her across the room and through the swing door into the kitchen. Hadley pulls a barrel keg in front of the swing door and then scrambling across the room, he grabs a worn looking scabbard and sword that is hanging in the corner. Many's the time he thought about getting rid of it, of letting that previous version of him go - now he's glad he didn't.
 
 > [!roll] Round 2
 > Initiative - Hadley - 2, Orcs - 5
+>
 > Elena CON - 14
 > 
 > I think the orcs will quickly become frustrated by the doors and will try other entrances. The
@@ -91,26 +98,32 @@ Hadley hears a crash against the outside door and then another from the rear doo
 > he tries the window.
 > 
 > Orc 1 - Open Doors - 3
+>
 > Orc 2 - Open Doors - 4
 
 Crashes at both doors again but they hold. Hadley shakes the elf but she is unresponsive. Straining, he half lifts, half carries her through the kitchen door that leads to the stairs. He hauls her upwards, breathing hard, until he drags her through the door at the top and lets her slump to the floor.
 
 > [!roll] Round 3
 > Initiative - Hadley - 3, Orcs - 2
+>
 > Elena CON - 12
+>
 > Orc 1 - Open Doors - 5
+>
 > Orc 1 has finally succeeded - that oak door put up a good fight!
 > 
 > Orc 2 has turned his attention to the window and is going to smash it and climb through. It 
 > won't prove much of an obstacle so I'll do an Open Doors check to see how rapidly he 
 > does it. Success (5 or 6) will mean he can climb through and move around a bit 
 > inside, all in this round.
+>
 > Orc 2 - Open Doors - 2
 
 Hadley half runs, half slides down the stairs to the kitchen. Out in the tavern there's simultaneously a sound of breaking timber and smashing glass. One of the doors has given way and it sounds like something is smashing it's way through a window at the back. Hadley grabs a chair from the corner and closing the kitchen door, jams it under the door handle. Then he turns and runs back up the stairs.
 
 > [!roll] Round 4
 > Initiative - Hadley - 1, Orcs - 6
+>
 > Elena CON - 7
 
 Below in the main room, the smashed window and door create a funnel for the storm. The wind rages through the room, extinguishing lanterns and sending chairs scraping across the floor. Two figures, heavy and bulky move in the darkness, communicating with guttural grunts.
@@ -123,6 +136,7 @@ Behind him the elf stirs, her eyes unfocussed, blinking, as she tries to sit up.
 
 > [!roll] Round 5
 > Initiative - Hadley - 6, Orcs - 2
+>
 > Orc 1 - Open Doors - 4
 
 Hadley darts to his small room under the eaves. He grabs his old bow from the shadowed corner, heavy and scarred, made not for hunting but for war. Quiver slung, he runs back to the landing, arrow nocked, bow half drawn and waits, breath steady. Below, the kitchen door gives way with a heavy crack—splinters scatter as the orcs force their way through and into the stairwell.
@@ -135,6 +149,7 @@ Hadley darts to his small room under the eaves. He grabs his old bow from the sh
 > to spend this whole round clambering over the wreckage.
 > 
 > Hadley missile attack - THAC0 19 - 15+1+1=17 for 5 damage
+>
 > The orc leader has 8 hit points - Hadley's arrow brings that down to 3. A good shot!
 
 Elena is behind Hadley, struggling to rise, blinking through the pain. He hisses, "Stay down - they're in the stairwell." Hadley waits as the larger orc shoves chairs aside with guttural curses. 
@@ -145,7 +160,9 @@ Elena claws her way upright, breath ragged. Knees shaking, she draws a dagger, k
 
 > [!roll] Round 7
 > Initiative - Hadley - 1
+>
 > Hadley missile attack - THAC0 19 - 18+1+1 = 20 for 2 damage
+>
 > Orc 1 sword attack - THAC0 19 - 1 / critical fumble
 > 
 > I'm going to give Hadley a small armour class bonus as he's well prepared and
@@ -154,6 +171,7 @@ Elena claws her way upright, breath ragged. Knees shaking, she draws a dagger, k
 > I'm also going to adopt a rule from Tale of the Manticore. Rolling a critical 
 > fumble (a 1) results in losing your attack in the next round of combat. The 
 > orc leader will be unable to attack next round. Lucky!
+>
 > Hadley's attack however hits - the leader is down to 1 hit point
 
 The orc leader heaves himself over the tangled barricade of chairs, bellowing as he grasps the shaft of the arrow in his shoulder and snaps it off. Hadley looses again. The shaft whistles through the close air, striking the orc just below the ribs. The brute staggers, snarling, then charges up the cramped stair, roaring with blood and spittle spraying from his mouth.
@@ -170,6 +188,7 @@ Elena, still slumped against the landing wall, presses the dagger to her chest w
 > goodness for that critical fumble!
 >
 > The orc leader misses his turn on this round.
+>
 > Hadley sword attack - THAC0 19 - 3+1+1 = 4
 
 The orc leader tries to regain his footing on the narrow stairs, snarling at Hadley. Muscle and rage drive him upright. Hadley slashes down at him, but the orc bats the blade aside with a thick forearm. The ring of steel is sharp and close.
@@ -178,6 +197,7 @@ Elena hugs the wall, breath sharp and hollows deep under her eyes. She shudders 
 
 > [!roll] Round 9
 > Initiative - Hadley - 5, Orcs - 1
+>
 > Hadley sword attack - THAC0 19 - 14+1+1 = 16 for 5 damage
 > 
 > Hadley's final thrust hits home - the orc leader is dead. One left to deal with!
@@ -188,7 +208,9 @@ The second orc shrieks in rage. Shoving his leader’s corpse aside, he leaps at
 
 > [!roll] Round 10
 > Initiative - Hadley - 2, Orc - 4
+>
 > Orc sword attack - THAC0 19 - 19 for 4 damage
+>
 > Hadley sword attack - THAC0 19 - 18+1+1 = 20 for 8 damage
 
 Hadley isn’t quick enough. The orc’s blade slashes across his forearm and Hadley grunts in shock - it's a long time since he felt the pain of a sword cut. The creature roars in triumph at the blood on its blade.

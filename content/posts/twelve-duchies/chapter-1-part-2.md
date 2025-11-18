@@ -1,8 +1,9 @@
 ---
 date: 2025-11-17
 draft: true
-title: 1 - Trouble at the Dancing Bear - 2
+title: Trouble at the Dancing Bear - 2
 summary: A brief article summary
+slug: chapter-1-part-2
 tags:
   - actual-play
   - ose
