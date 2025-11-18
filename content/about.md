@@ -34,16 +34,19 @@ Hi! I'm Ronan and I've been playing role playing games, mainly D&D and derivitiv
     I loved <a target="_blank" href="">Cyberpunk 2020</a> and the various supplements. It's a vivid setting, primed for excitment and tension.
   {{< /event >}}
   {{< event label="2010s">}}
-    I ran a long campaign with <a target="_blank" href="https://dnd-wiki.org/wiki/5e">D&D 5e</a>, convincing a group of work colleagues to adventure with me.
+    I ran a long campaign with <a target="_blank" href="https://dnd-wiki.org/wiki/5e">D&D 5e</a> after convincing a group of work colleagues to adventure with me.
   {{< /event >}}
   {{< event label="2020s" >}}
-    Like many others, finding Me, Myself and Die was a revelation and my sol adventures with <a target="_blank" href="https://www.wordmillgames.com/page/mythic-gme.html">Mythic GM Emulator</a> and <a target="_blank" href="https://peginc.com/savage-settings/savage-worlds/">Savage Worlds</a> began!
+    Like many others, finding Me, Myself and Die was a revelation and my solo adventures with <a target="_blank" href="https://www.wordmillgames.com/page/mythic-gme.html">Mythic GM Emulator</a> and <a target="_blank" href="https://peginc.com/savage-settings/savage-worlds/">Savage Worlds</a> began!
   {{< /event >}}
   {{< event >}}
     Discovering the fantastic <a target="_blank" href="https://tomkinpress.com/pages/ironsworn">Ironsworn</a>, <a target="_blank" href="https://tomkinpress.com/pages/ironsworn-starforged">Starforged</a> and <a target="_blank" href="">Sundered Isles</a> showed me a whole new mechanical concept - fantastic!
   {{< /event >}}
-  {{< event>}}
-    I was lucky enough to kickstart Kelsey Dionne's <a target="_blank" href="https://www.thearcanelibrary.com/pages/shadowdark">Shadowdark RPG</a> and it brought the possibility of introducing 5the Edition players to a simpler, faster, grittier system. My West Marches campaign began!
+  {{< event label="2023" >}}
+    I was lucky enough to kickstart Kelsey Dionne's <a target="_blank" href="https://www.thearcanelibrary.com/pages/shadowdark">Shadowdark RPG</a> and it brought the possibility of introducing 5the Edition players to a simpler, faster, grittier system.
+  {{< /event >}}
+  {{< event label="2025" >}}
+    The West Marches call and, in the company of thirteen doughty companions (aka work colleagues and friends), I set off to face unknown perils...
   {{< /event >}}
   
 {{< /timeline >}}
