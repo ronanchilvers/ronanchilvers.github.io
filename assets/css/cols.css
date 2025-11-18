@@ -18,11 +18,5 @@
 @media screen and (max-width: 900px) {
     .cols {
         flex-direction: column;
-        .col {
-            /*width: 100%;*/
-            figure {
-                /*display: inline-block;*/
-            }
-        }
     }
 }
