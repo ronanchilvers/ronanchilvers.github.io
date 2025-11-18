@@ -9,7 +9,7 @@ tags:
 categories:
   - Mountaintop Isolation
 ---
-> [!abstract] Mechanics
+> [!roll] Mechanics
 > D6 result: 2
 >
 > Cards: Nine of Hearts, Three of Clubs

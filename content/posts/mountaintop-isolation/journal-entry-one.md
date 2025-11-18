@@ -9,7 +9,7 @@ tags:
 categories:
   - Mountaintop Isolation
 ---
-> [!abstract] Mechanics
+> [!roll] Mechanics
 > Journal entry one starting the game narrative.
 
 Wow! This place is amazing! It took a while to get here - snow on the roads and it's pretty remote. Google maps took me the wrong way and I ended up at a gate on a cliff - had to find my own way for the last hour or so. There's no road the last quarter mile - had to leave the car and hike it. But the views! Wow wow! The cabin is just on the edge of a forest and looks out across the mountains - just stunning.

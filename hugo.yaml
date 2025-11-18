@@ -39,5 +39,6 @@ params:
     - css/categories.css
     - css/cards.css
     - css/cols.css
+    - css/alerts.css
     - css/timeline.css
     - css/local.css

@@ -9,7 +9,7 @@ tags:
 categories:
   - Mountaintop Isolation
 ---
-> [!mechanics]
+> [!roll] Mechanics
 > D6 result: 4
 >
 > Cards: Two of Clubs, Seven of Hearts, Jack of Spades, Nine of Spades

@@ -10,8 +10,6 @@
     --link-hover-color: rgb(255,255,255);
     --nav-border-color: rgb(75,75,75);
     --article-header-color: rgb(215,215,215);
-    --alert-background-color: rgba(54, 59, 66, 0.65);
-    --alert-heading-background-color: rgba(54, 59, 66, 1);
     --category-background-color: rgb(44, 49, 56);
 }
 
@@ -118,33 +116,6 @@ h1, h2, h3, h4 {
     text-shadow: 0 0 5px rgba(0,0,0,1);
     a {
         text-decoration: none;
-    }
-}
-
-blockquote {
-    background-color: var(--alert-background-color);
-    border-radius: 5px;
-    padding: 1rem;
-    margin: 1rem 2rem 1rem 0.5rem;
-
-    &.alert {
-        margin: 0 0 1rem 0;
-        padding: 0;
-    }
-
-    h4 {
-        list-style: none;
-        margin: 0;
-        padding: 1rem 1.5rem;
-        background-color: var(--alert-heading-background-color);
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
-    }
-    div {
-        padding: 1.5rem;
-    }
-    p:last-child {
-        margin-bottom: 0;
     }
 }
 

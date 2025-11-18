@@ -1,13 +1,13 @@
 {{ if eq .Type "alert" }}
-  <blockquote class="alert alert-{{ .AlertType }}">
-    <h4>
+  <blockquote class="alert alert--{{ .AlertType }}">
+    <h4 class="alert__title">
       {{ with .AlertTitle }}
         {{ . }}
       {{ else }}
         {{ or (i18n .AlertType) (title .AlertType) }}
       {{ end }}
     </h4>
-    <div>
+    <div class="alert__content">
     {{ .Text }}
     </div>
   </blockquote>
