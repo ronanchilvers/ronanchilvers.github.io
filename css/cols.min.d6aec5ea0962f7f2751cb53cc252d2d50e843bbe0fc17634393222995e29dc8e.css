@@ -1,0 +1,1 @@
+.cols{display:flex;flex-direction:row;justify-content:space-between;align-items:flex-start;gap:1rem;.col { flex: 1 1 auto; display: flex; justify-content: center; flex-direction: column; figure { margin: 0; width: auto; } }}@media screen and (max-width:900px){.cols{flex-direction:column}}
