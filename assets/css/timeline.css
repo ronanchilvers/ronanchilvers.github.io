@@ -4,9 +4,9 @@
 }
 .timeline {
     margin: 0;
-    margin-left: 1rem;
+    margin-left: 3rem;
     padding: 0;
-    padding-left: 1rem;
+    padding-left: 3rem;
     border-left: 1px solid var(--timeline-color);
     .timeline-event {
         position: relative;
@@ -16,15 +16,14 @@
         border-radius: var(--border-radius);
         background-color: var(--event-background-color);
     }
-    .timeline-event:before {
+    .timeline-event-label {
         position: absolute;
         display: block;
-        height: 0.75rem;
-        width: 0.75rem;
-        border-radius: 50%;
+        border-radius: var(--border-radius);
         content: " ";
         top: 10px;
-        left: -1.37rem;
+        left: -5rem;
+        padding: 0.2rem 0.75rem;
         background-color: var(--timeline-color);
     }
 }

@@ -1,17 +1,10 @@
-{{- $href := .Get "href" }}
-{{- $title := .Get "title" }}
-
+{{- $content := .Inner }}
 {{- $align := .Get "align" }}
-{{- if lt (len $align) 1 }}
-{{- $align = "right" }}
-{{- end }}
+{{- $label := .Get "label" }}
 
 <div class="timeline-event timeline-event--{{ $align }}">
-{{- if gt ( len $href ) 0 }}
-    <a href="{{ $href }}">
+{{- if $label }}
+    <div class="timeline-event-label">{{ $label }}</div>
 {{- end }}
-    {{ $title }}
-{{- if gt ( len $href ) 0 }}
-    </a>
-{{- end }}
+    {{- $content }}
 </div>
