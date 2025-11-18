@@ -1,0 +1,54 @@
+:root {
+    --alert-background-color: rgba(54, 59, 66, 0.65);
+    --alert-heading-background-color: rgba(54, 59, 66, 1);
+}
+
+.alert {
+    background-color: var(--alert-background-color);
+    border-radius: 5px;
+    margin: 0 0 1rem 0;
+    padding: 0;
+
+    .alert__title {
+        list-style: none;
+        margin: 0;
+        padding: 1rem 1.5rem;
+        background-color: var(--alert-heading-background-color);
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        font-weight: 700;
+    }
+    &.alert--note .alert__title,
+    &.alert--mechanics .alert__title,
+    &.alert--combat .alert__title,
+    &.alert--roll .alert__title {
+        position: relative;
+        padding-left: 4rem;
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0.5rem;
+            left: 1rem;
+            bottom: 0;
+            font-size: 2rem;
+        }
+    }
+    &.alert--note .alert__title:before {
+        content: "📝";
+    }
+    &.alert--mechanics .alert__title:before {
+        content: "⚙️";
+    }
+    &.alert--combat .alert__title:before {
+        content: "⚔️";
+    }
+    &.alert--roll .alert__title:before {
+        content: "🎲";
+    }
+    .alert__content {
+        padding: 1.5rem;
+        p:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
