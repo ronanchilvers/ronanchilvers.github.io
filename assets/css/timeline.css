@@ -1,0 +1,30 @@
+:root {
+    --timeline-color: rgba(54, 59, 66, 1);
+    --event-background-color: rgba(54, 59, 66, 0.3);
+}
+.timeline {
+    margin: 0;
+    margin-left: 1rem;
+    padding: 0;
+    padding-left: 1rem;
+    border-left: 1px solid var(--timeline-color);
+    .timeline-event {
+        position: relative;
+        margin: 0;
+        margin-bottom: 1rem;
+        padding: 0.5rem 1rem;
+        border-radius: var(--border-radius);
+        background-color: var(--event-background-color);
+    }
+    .timeline-event:before {
+        position: absolute;
+        display: block;
+        height: 0.75rem;
+        width: 0.75rem;
+        border-radius: 50%;
+        content: " ";
+        top: 10px;
+        left: -1.37rem;
+        background-color: var(--timeline-color);
+    }
+}

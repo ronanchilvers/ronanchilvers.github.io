@@ -10,26 +10,34 @@ menu:
     # - name: Home
     #   pageRef: "/"
     #   weight: 1
+    # - name: Twelve Duchies
+    #   pageRef: "/categories/twelve-duchies/"
+    #   weight: 1
     - name: Categories
-      pageRef: "categories/"
+      pageRef: "/categories/"
       weight: 2
     # - name: Posts
     #   pageRef: "categories/"
     #   weight: 3
     - name: Tags
-      pageRef: "tags/"
+      pageRef: "/tags/"
       weight: 4
+    # - name: About
+    #   pageRef: "about/"
+    #   weight: 5
     # - name: Subscribe
     #   pageRef: "index.xml"
 
 params:
   subtitle: Musings, imaginings and discoveries in tabletop RPGs
   # footer: "[Licensing](/licensing/) | [Contact](/contact/) | [Subscribe](/posts/index.xml)"
-  footer: "[Licensing](/licensing/) - [RSS](/posts/index.xml)"
+  footer: "[About](/about/) - [Licensing](/licensing/) - [RSS](/posts/index.xml)"
   css:
     - css/normalize.css
     - css/tags.css
     - css/posts.css
     - css/categories.css
     - css/cards.css
+    - css/cols.css
+    - css/timeline.css
     - css/local.css
