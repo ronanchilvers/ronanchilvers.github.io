@@ -1,7 +1,8 @@
 {{- $post := . }}
 {{- $category := index ($post.GetTerms "categories") 0 }}
 {{- $categorySlug := ($category.Name | urlize) }}
-{{- $names := slice (printf "%s.png" ($post.Title | urlize)) "banner.png" }}
+{{- $banner := cond ($post.Params.images.banner) $post.Params.images.banner (printf "%s-banner.png" (cond ($post.Slug) $post.Slug ($post.Title | urlize) )) }}
+{{- $names := slice $banner "banner.png" }}
 {{- $imagePath := false }}
 {{- range $names }}
     {{- $testPath := (printf "/images/%s/%s" $categorySlug . ) }}

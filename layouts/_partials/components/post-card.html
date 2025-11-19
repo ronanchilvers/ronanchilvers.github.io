@@ -1,9 +1,8 @@
 {{- $post := . }}
 {{- $category := index ($post.GetTerms "categories") 0 }}
-{{- $dateMachine := $post.Date | time.Format "2006-01-02T15:04:05-07:00" }}
-{{- $dateHuman := $post.Date | time.Format ":date_long" }}
 {{- $categorySlug := ($category.Name | urlize) }}
-{{- $names := slice (printf "%s.png" ($post.Title | urlize)) "thumbnail.png" }}
+{{- $thumbnail := cond ($post.Params.images.thumbnail) $post.Params.images.thumbnail (printf "%s-thumbnail.png" (cond ($post.Slug) $post.Slug ($post.Title | urlize) )) }}
+{{- $names := slice $thumbnail "thumbnail.png" }}
 {{- $imagePath := false }}
 {{- range $names }}
     {{- $testPath := (printf "/images/%s/%s" $categorySlug . ) }}
@@ -12,6 +11,8 @@
         {{- break }}
     {{- end }}
 {{- end }}
+{{- $dateMachine := $post.Date | time.Format "2006-01-02T15:04:05-07:00" }}
+{{- $dateHuman := $post.Date | time.Format ":date_long" }}
 <div class="card">
 {{- if $imagePath }}
     <figure class="card-image">
