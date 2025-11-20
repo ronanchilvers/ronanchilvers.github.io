@@ -44,3 +44,5 @@ params:
     - css/alerts.css
     - css/timeline.css
     - css/local.css
+  analytics:
+    ga4_id: G-CMM03W18WT
