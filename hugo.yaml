@@ -5,6 +5,8 @@ title: By Lantern Light
 permalinks:
   posts: "/posts/:year/:month/:slug/"
 
+enableRobotsTXT: true
+
 menu:
   main:
     # - name: Home
