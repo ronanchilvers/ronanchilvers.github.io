@@ -1,7 +1,7 @@
 ---
 date: 2025-11-14
 draft: false
-title: Trouble at the Dancing Bear - 1
+title: Trouble at the Dancing Bear - Part 1
 summary: Hadley works the rag across the tables of the Dancing Bear, slow and
   steady, buffing away the sticky residue of old ale. Rain drums on the window
   shutters and seeps through in thin threads that trickle down the glass.
@@ -14,8 +14,8 @@ categories:
 ---
 > [!note] Overview
 > - Characters
->	- Hadley - at the "Dancing Bear"
->	- Elena - in the forest, tired and frightened
+>	  - Hadley
+>	  - Elena
 > - Time of day - Late evening
 > - Weather - Heavy rain
 
