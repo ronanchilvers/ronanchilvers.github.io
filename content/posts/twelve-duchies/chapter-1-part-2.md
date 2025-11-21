@@ -240,6 +240,6 @@ He leans on the jamb, sliding down, breath fluttering, eyes on the wavering nigh
 
 *Firelight glows on a low ceiling. His mother stands at the hearth, wiping her hands on a cloth - dinner is ready. His father’s rough laugh fills the room and Hadley hears his name. His brother is already sitting at the long bench, pulling off his boots, beckoning him in. His father calls his name again. It's been a long journey.*
 
-*The storm is far away here. No hurry, no pain. He sits, the wood familiar under him, the heat on his face. Faces he loves around him, smiling. He is home, and it is enough.*
+*The storm is far away here. No hurry, no pain. He sits, the wood familiar under him, the heat on his face. Those he loves are around him. He smiles, content. He is home, and it is enough.*
 
 He exhales once, shallow and final, and goes still.
