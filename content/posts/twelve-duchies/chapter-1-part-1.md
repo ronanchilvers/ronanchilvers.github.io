@@ -148,7 +148,7 @@ Hadley darts to his small room under the eaves. He grabs his old bow from the sh
 > rule that is enough to slow the orcs to half speed meaning they will need 
 > to spend this whole round clambering over the wreckage.
 > 
-> Hadley missile attack - THAC0 19 - 15+1+1=17 for 5 damage
+> Hadley missile attack - THAC0 19 - 15+1=16 for 5 damage
 >
 > The orc leader has 8 hit points - Hadley's arrow brings that down to 3. A good shot!
 
@@ -161,7 +161,7 @@ Elena claws her way upright, breath ragged. Knees shaking, she draws a dagger, k
 > [!roll] Round 7
 > Initiative - Hadley - 1
 >
-> Hadley missile attack - THAC0 19 - 18+1+1 = 20 for 2 damage
+> Hadley missile attack - THAC0 19 - 18+1 = 19 for 2 damage
 >
 > Orc 1 sword attack - THAC0 19 - 1 / critical fumble
 > 
@@ -189,7 +189,7 @@ Elena, still slumped against the landing wall, presses the dagger to her chest w
 >
 > The orc leader misses his turn on this round.
 >
-> Hadley sword attack - THAC0 19 - 3+1+1 = 4
+> Hadley sword attack - THAC0 19 - 3+1 = 4
 
 The orc leader tries to regain his footing on the narrow stairs, snarling at Hadley. Muscle and rage drive him upright. Hadley slashes down at him, but the orc bats the blade aside with a thick forearm. The ring of steel is sharp and close.
 
@@ -198,7 +198,7 @@ Elena hugs the wall, breath sharp and hollows deep under her eyes. She shudders 
 > [!roll] Round 9
 > Initiative - Hadley - 5, Orcs - 1
 >
-> Hadley sword attack - THAC0 19 - 14+1+1 = 16 for 5 damage
+> Hadley sword attack - THAC0 19 - 14+1 = 15 for 5 damage
 > 
 > Hadley's final thrust hits home - the orc leader is dead. One left to deal with!
 
@@ -211,7 +211,7 @@ The second orc shrieks in rage. Shoving his leader’s corpse aside, he leaps at
 >
 > Orc sword attack - THAC0 19 - 19 for 4 damage
 >
-> Hadley sword attack - THAC0 19 - 18+1+1 = 20 for 8 damage
+> Hadley sword attack - THAC0 19 - 18+1 = 19 for 8 damage
 
 Hadley isn’t quick enough. The orc’s blade slashes across his forearm and Hadley grunts in shock - it's a long time since he felt the pain of a sword cut. The creature roars in triumph at the blood on its blade.
 
