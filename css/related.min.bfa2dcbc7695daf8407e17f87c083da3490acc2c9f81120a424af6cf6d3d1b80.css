@@ -1,0 +1,1 @@
+:root{--related-background-color:rgba(54, 59, 66, 0.3)}.related{padding:.5rem 1rem;border-radius:var(--border-radius);background-color:var(--related-background-color);.related__title { text-align: center; }}
