@@ -1,9 +1,9 @@
 ---
 date: 2025-11-22
 draft: false
-title: Interlude
-summary: Goodbye to an old friend.
-slug: interlude
+title: Chapter 1 - Interlude
+summary: Goodbye to an old friend
+slug: chapter-1-interlude
 tags:
   - actual-play
   - ose
