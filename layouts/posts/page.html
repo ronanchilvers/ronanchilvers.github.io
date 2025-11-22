@@ -1,7 +1,7 @@
 {{ define "main" }}
-<article class="post">
-  {{ partial "components/post-title.html" . }}
-  {{ .Content }}
-</article>
-{{ partial "components/related-posts.html"}}
+    <article class="post">
+    {{ partial "components/post-title.html" . }}
+    {{ .Content }}
+    </article>
+    {{ partial "components/related-posts.html" . }}
 {{ end }}
