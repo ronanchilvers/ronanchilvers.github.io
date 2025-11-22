@@ -1,0 +1,10 @@
+{{ $related := .Site.RegularPages.Related . }}
+{{ debug.Dump $related }}
+<section>
+    <h2>Related</h2>
+    <div class="cards">
+    {{- range $related }}
+        {{ partial "components/post-card.html" . }}
+    {{- end }}
+    </div>
+</section>
