@@ -1,7 +1,9 @@
-{{ define "main" }}
+{{- define "main" }}
     <article class="post">
     {{ partial "components/post-title.html" . }}
     {{ .Content }}
     </article>
+{{- if .Site.Params.related.show }}
     {{ partial "components/related-posts.html" . }}
-{{ end }}
+{{- end }}
+{{- end }}
