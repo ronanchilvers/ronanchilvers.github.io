@@ -2,7 +2,7 @@
 <html lang="{{ site.Language.LanguageCode }}" dir="ltr">
     <head>
     {{ partial "head.html" . }}
-{{ if hugo.IsProduction }}
+{{ if .Site.Params.analytics.ga4_id }}
     <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.analytics.ga4_id }}"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
