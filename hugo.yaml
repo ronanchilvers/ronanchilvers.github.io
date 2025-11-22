@@ -10,18 +10,18 @@ enableRobotsTXT: true
 related:
   includeNewer: true
   toLower: false
-  threshold: 20
+  threshold: 50
   indices:
-    - applyFilter: true
-      name: fragmentrefs
-      type: fragments
-      weight: 80
-  # - name: categories
-  #   weight: 20
-  # - name: tags
-    # weight: 10
-  # - name: date
-  #   weight: 10
+    # - applyFilter: true
+    #   name: fragmentrefs
+    #   type: fragments
+    #   weight: 100
+    - name: categories
+      weight: 90
+    - name: date
+      weight: 70
+    - name: tags
+      weight: 20
 
 menu:
   main:
