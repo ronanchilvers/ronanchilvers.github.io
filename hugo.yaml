@@ -7,6 +7,22 @@ permalinks:
 
 enableRobotsTXT: true
 
+related:
+  includeNewer: true
+  toLower: false
+  threshold: 20
+  indices:
+    - applyFilter: true
+      name: fragmentrefs
+      type: fragments
+      weight: 80
+  # - name: categories
+  #   weight: 20
+  # - name: tags
+    # weight: 10
+  # - name: date
+  #   weight: 10
+
 menu:
   main:
     # - name: Home
@@ -32,8 +48,8 @@ menu:
 
 params:
   subtitle: Musings, imaginings and discoveries in tabletop RPGs
-  # footer: "[Licensing](/licensing/) | [Contact](/contact/) | [Subscribe](/posts/index.xml)"
   footer: "[About](/about/) - [Licensing](/licensing/) - [RSS](/posts/index.xml)"
+
   css:
     - css/normalize.css
     - css/tags.css
@@ -44,5 +60,6 @@ params:
     - css/alerts.css
     - css/timeline.css
     - css/local.css
+
   analytics:
     ga4_id: G-CMM03W18WT
