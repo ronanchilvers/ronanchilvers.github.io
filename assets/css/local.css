@@ -95,6 +95,9 @@ main {
         text-decoration: underline;
     }
 }
+article {
+    margin-bottom: 3rem;
+}
 section {
     margin: 0;
     margin-bottom: 3rem;

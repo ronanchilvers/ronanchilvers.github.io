@@ -1,8 +1,8 @@
 {{- $related := .Site.RegularPages.Related . }}
 {{- $length := $related | len }}
 {{- if gt $length 0 }}
-<section>
-    <h2>Related</h2>
+<section class="related">
+    <h2 class="related__title">Related Posts</h2>
     <div class="cards">
     {{- range (first 3 $related).Reverse }}
         {{ partial "components/post-card.html" . }}

@@ -10,7 +10,7 @@ enableRobotsTXT: true
 related:
   includeNewer: true
   toLower: false
-  threshold: 50
+  threshold: 80
   indices:
     # - applyFilter: true
     #   name: fragmentrefs
@@ -59,6 +59,7 @@ params:
     - css/cols.css
     - css/alerts.css
     - css/timeline.css
+    - css/related.css
     - css/local.css
 
   analytics:
