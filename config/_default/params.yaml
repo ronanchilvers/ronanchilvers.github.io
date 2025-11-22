@@ -1,0 +1,18 @@
+---
+subtitle: Musings, imaginings and discoveries in tabletop RPGs
+footer: "[About](/about/) - [Licensing](/licensing/) - [RSS](/posts/index.xml)"
+related:
+  show: true
+css:
+  - css/normalize.css
+  - css/tags.css
+  - css/posts.css
+  - css/categories.css
+  - css/cards.css
+  - css/cols.css
+  - css/alerts.css
+  - css/timeline.css
+  - css/related.css
+  - css/local.css
+analytics:
+  ga4_id: false

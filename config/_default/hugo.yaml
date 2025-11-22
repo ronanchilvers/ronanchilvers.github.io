@@ -1,0 +1,6 @@
+baseurl: https://ronanchilvers.github.io/
+languageCode: en-gb
+title: By Lantern Light
+enableRobotsTXT: true
+permalinks:
+  posts: "/posts/:year/:month/:slug/"

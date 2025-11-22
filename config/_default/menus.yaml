@@ -1,0 +1,22 @@
+---
+main:
+  # - name: Home
+  #   pageRef: "/"
+  #   weight: 1
+  # - name: Twelve Duchies
+  #   pageRef: "/categories/twelve-duchies/"
+  #   weight: 1
+  - name: Categories
+    pageRef: "/categories/"
+    weight: 2
+  # - name: Posts
+  #   pageRef: "categories/"
+  #   weight: 3
+  - name: Tags
+    pageRef: "/tags/"
+    weight: 4
+  # - name: About
+  #   pageRef: "about/"
+  #   weight: 5
+  # - name: Subscribe
+  #   pageRef: "index.xml"
