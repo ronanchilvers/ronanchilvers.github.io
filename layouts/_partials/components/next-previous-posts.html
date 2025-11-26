@@ -1,14 +1,58 @@
-{{- $previous := .Prev }}
-{{- $next := .Next }}
+{{- /* Find next/previous in same category */ -}}
+{{- $categoryNext := "" }}
+{{- $categoryPrev := "" }}
+
+{{- if .Params.categories }}
+  {{- $currentPage := . }}
+  {{- $currentDate := .Date }}
+  {{- $currentCategories := .Params.categories }}
+
+  {{- /* Get all pages in the same section */ -}}
+  {{- $pages := where .Site.RegularPages "Section" .Section }}
+
+  {{- /* Filter pages that share at least one category */ -}}
+  {{- $categoryPages := slice }}
+  {{- range $pages }}
+    {{- $pageInLoop := . }}
+    {{- if .Params.categories }}
+      {{- $pageCategories := .Params.categories }}
+      {{- range $currentCategories }}
+        {{- $currentCat := . }}
+        {{- if in $pageCategories $currentCat }}
+          {{- $categoryPages = $categoryPages | append $pageInLoop }}
+          {{- break }}
+        {{- end }}
+      {{- end }}
+    {{- end }}
+  {{- end }}
+
+  {{- /* Sort by date (newest first) and find adjacent posts */ -}}
+  {{- $sortedPages := sort $categoryPages "Date" "desc" }}
+  {{- range $index, $page := $sortedPages }}
+    {{- if eq $page.RelPermalink $currentPage.RelPermalink }}
+      {{- /* Previous post (older) is next in the list */ -}}
+      {{- if lt (add $index 1) (len $sortedPages) }}
+        {{- $categoryPrev = index $sortedPages (add $index 1) }}
+      {{- end }}
+      {{- /* Next post (newer) is previous in the list */ -}}
+      {{- if gt $index 0 }}
+        {{- $categoryNext = index $sortedPages (sub $index 1) }}
+      {{- end }}
+    {{- end }}
+  {{- end }}
+{{- end }}
+
+{{- if (or $categoryPrev $categoryNext) }}
 <section class="np">
-    {{- with $previous }}
     <div class="np__button np__button--previous">
-        {{ .Title }}
+        {{- with $categoryPrev }}
+        &laquo; <a href="{{ .RelPermalink }}" title="{{ .Title }} - {{ .Summary }}">{{ .Title }}</a>
+        {{- end }}
     </div>
-    {{- end }}
-    {{- with $next }}
     <div class="np__button np__button--next">
-        {{ .Title }}
+        {{- with $categoryNext }}
+        <a href="{{ .RelPermalink }}" title="{{ .Title }} - {{ .Summary }}">{{ .Title }}</a> &raquo;
+        {{- end }}
     </div>
-    {{- end }}
 </section>
+{{- end }}

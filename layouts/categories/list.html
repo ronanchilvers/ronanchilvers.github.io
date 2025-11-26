@@ -3,12 +3,18 @@
 <section class="categories">
     {{ .Content }}
 
+    {{- $sortedCategories := slice }}
     {{- range .Site.Taxonomies.categories.Alphabetical }}
+        {{- $mostRecent := index (.Pages.ByDate.Reverse) 0 }}
+        {{- $sortedCategories = $sortedCategories | append (dict "term" . "date" $mostRecent.Date) }}
+    {{- end }}
+
+    {{- range sort $sortedCategories "date" "desc" }}
     <section class="category">
-        <h2 class="category-title">{{ title .Name  }}</h2>
+        <h2 class="category-title">{{ title .term.Name  }}</h2>
 
         <div class="cards">
-        {{- range .Pages }}
+        {{- range .term.Pages }}
             {{ partial "components/post-card.html" . }}
         {{- end }}
         </div>

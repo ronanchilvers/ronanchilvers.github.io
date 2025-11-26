@@ -1,4 +1,4 @@
 ---
-related:
-  show: true
+navigation:
+  show_related: false
   show_next: true

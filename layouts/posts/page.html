@@ -3,10 +3,10 @@
     {{ partial "components/post-title.html" . }}
     {{ .Content }}
     </article>
-{{- if .Site.Params.related.show }}
+{{- if .Site.Params.related.show_related }}
     {{ partial "components/related-posts.html" . }}
 {{- end }}
-{{- if .Site.Params.related.show_next }}
+{{- if .Site.Params.navigation.show_next }}
     {{ partial "components/next-previous-posts.html" . }}
 {{- end }}
 {{- end }}

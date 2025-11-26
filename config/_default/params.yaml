@@ -1,8 +1,8 @@
 ---
 subtitle: Musings, imaginings and discoveries in tabletop RPGs
 footer: "[About](/about/) - [Licensing](/licensing/) - [RSS](/posts/index.xml)"
-related:
-  show: false
+navigation:
+  show_related: false
   show_next: false
 css:
   - css/normalize.css
