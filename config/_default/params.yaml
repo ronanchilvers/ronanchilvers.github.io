@@ -6,6 +6,7 @@ navigation:
   show_next: true
 css:
   - css/normalize.css
+  - css/local.css
   - css/tags.css
   - css/posts.css
   - css/categories.css
@@ -13,8 +14,7 @@ css:
   - css/cols.css
   - css/alerts.css
   - css/timeline.css
-  - css/related.css
+  # - css/related.css
   - css/next-previous.css
-  - css/local.css
 analytics:
   ga4_id: false
