@@ -31,7 +31,7 @@
             <time class="card-meta-item" datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
             {{- with .GetTerms "tags" }}
             <div class="card-meta-item">
-            {{- range . }}<a href="{{ $post.RelPermalink }}" class="tag tag--bare">{{ .LinkTitle | lower }}</a>{{- end }}
+            {{- range . }}<a href="{{ .RelPermalink }}" class="tag tag--bare">{{ .LinkTitle | lower }}</a>{{- end }}
             </div>
             {{- end }}
         </div>

@@ -3,4 +3,4 @@ languageCode: en-gb
 title: By Lantern Light
 enableRobotsTXT: true
 permalinks:
-  posts: "/posts/:year/:month/:slug/"
+  posts: "/:year/:month/:slug/"
