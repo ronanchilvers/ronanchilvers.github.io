@@ -1,0 +1,14 @@
+{{- $previous := .Prev }}
+{{- $next := .Next }}
+<section class="np">
+    {{- with $previous }}
+    <div class="np__button np__button--previous">
+        {{ .Title }}
+    </div>
+    {{- end }}
+    {{- with $next }}
+    <div class="np__button np__button--next">
+        {{ .Title }}
+    </div>
+    {{- end }}
+</section>

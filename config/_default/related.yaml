@@ -3,13 +3,9 @@ includeNewer: true
 toLower: false
 threshold: 80
 indices:
-  # - applyFilter: true
-  #   name: fragmentrefs
-  #   type: fragments
-  #   weight: 100
   - name: categories
     weight: 90
-  - name: date
-    weight: 70
   - name: tags
-    weight: 20
+    weight: 80
+  # - name: date
+  #   weight: 10

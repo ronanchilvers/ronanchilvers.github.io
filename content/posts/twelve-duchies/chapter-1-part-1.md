@@ -1,7 +1,7 @@
 ---
 date: 2025-11-14
 draft: false
-title: Trouble at the Dancing Bear - Part 1
+title: S1E1 - Trouble at the Dancing Bear
 summary: Hadley works the rag across the tables of the Dancing Bear, slow and
   steady, buffing away the sticky residue of old ale. Rain drums on the window
   shutters and seeps through in thin threads that trickle down the glass.

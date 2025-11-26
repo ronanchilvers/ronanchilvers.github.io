@@ -1,7 +1,7 @@
 ---
 date: 2025-11-23
 draft: true
-title: A Cleric of Shallya
+title: S1E3 - A Cleric of Shallya
 summary: 'Tasha steps off the cart into a fine drizzle, the dove of Shallya cold
   against her collarbone. Her new "temple" is a single damp room off the square,
   shutters swollen, dust furred thick on the floor. '

@@ -1,13 +1,17 @@
 ---
 date: 2025-11-11
-title: The Discovery
+title: S1E0 - The Discovery
 summary: An actual play experiment with D&D OSE
 draft: false
+slug: the-discovery
 tags:
   - actual-play
   - ose
 categories:
   - Twelve Duchies
+params:
+  previous: false
+  next: house-rules
 ---
 I was recently sorting out a load of old paperwork and made a fabulous discovery. Buried in a pile of stuff that I've not looked at in years, I found two maps that I created way back when my D&D adventures in other worlds had just begun. One was a world map and the other a map of one of the main continents named "The Twelve Duchies".
 

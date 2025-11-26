@@ -6,4 +6,7 @@
 {{- if .Site.Params.related.show }}
     {{ partial "components/related-posts.html" . }}
 {{- end }}
+{{- if .Site.Params.related.show_next }}
+    {{ partial "components/next-previous-posts.html" . }}
+{{- end }}
 {{- end }}

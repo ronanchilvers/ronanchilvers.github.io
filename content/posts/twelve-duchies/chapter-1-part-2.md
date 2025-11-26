@@ -1,7 +1,7 @@
 ---
 date: 2025-11-17
 draft: false
-title: Trouble at the Dancing Bear - Part 2
+title: S1E2 - Trouble at the Dancing Bear
 summary: Hadley settles the elf on the floor and makes her as comfortable as the he can. He binds his slashed arm with a makeshift bandage from his room, a torn piece of his oldest shirt, gripping it with his teeth to pull it tight.
 slug: chapter-1-part-2
 tags:
