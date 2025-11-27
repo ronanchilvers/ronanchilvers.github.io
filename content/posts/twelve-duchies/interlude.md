@@ -20,8 +20,8 @@ Role playing games are powerful things. Mike Shea of Sly Flourish is of the opin
 
 Sleep peacefully Hadley, old friend.
 
-[part 1]: /posts/2025/11/chapter-1-part-1/
-[part 2]: /posts/2025/11/chapter-1-part-2/
+[part 1]: /2025/11/chapter-1-part-1/
+[part 2]: /2025/11/chapter-1-part-2/
 [Starforged]: https://tomkinpress.com/pages/ironsworn-starforged
 [they can save your life]: https://slyflourish.com/playing_dnd_can_save_your_life.html
-[created a long time ago and have rediscovered]: https://ronanchilvers.github.io/posts/2025/11/the-discovery/
+[created a long time ago and have rediscovered]: /2025/11/the-discovery/
