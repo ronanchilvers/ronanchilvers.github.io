@@ -5,14 +5,18 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap" rel="stylesheet">
-    {{- range .Site.Params.css }}
+{{- $cssFiles := slice }}
+{{- range .Site.Params.css }}
 {{- with resources.Get . }}
+{{- $cssFiles = $cssFiles | append . }}
+{{- end }}
+{{- end }}
+{{- if $cssFiles }}
+{{- $bundled := $cssFiles | resources.Concat "css/bundle.css" }}
 {{- if hugo.IsDevelopment }}
-<link rel="stylesheet" href="{{ .RelPermalink }}" />
+<link rel="stylesheet" href="{{ $bundled.RelPermalink }}" />
 {{- else }}
-{{ with . | minify | fingerprint "sha256" }}
-<link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" />
-{{- end }}
-{{- end }}
+{{- $processed := $bundled | minify | fingerprint "sha256" }}
+<link rel="stylesheet" href="{{ $processed.RelPermalink }}" integrity="{{ $processed.Data.Integrity }}" />
 {{- end }}
 {{- end }}
