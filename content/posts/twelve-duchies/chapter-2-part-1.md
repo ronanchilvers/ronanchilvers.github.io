@@ -43,6 +43,7 @@ categories:
 > We know the orcs were pursuing Elena, the elven woman, but we don't know why. Neither do we know if the surviving orc killed or captured her. I think it's most likely that she was killed - they had already shot her with a crossbow so they obviously weren't too worried about taking her alive. I'm going to ask the Oracle a "Likely" question to see if she was killed as well.
 > 
 > Was Elena killed also? Likely - ~~2~~, 8 - No
+> 
 > In which case, was she captured? Likely - ~~14~~, 14 - Yes
 
 It had been dreadful. The site of the tavern, broken and violated. Hadley, lifeless in the doorway with that terrible wound in his side. Tasha had been too shocked to show her emotions then, even though she knew at first sight that her friend was beyond her help. And then there were the creatures in the stairwell - she's heard of creatures like them before but has never seen them. Now, standing in the shattered, storm torn taproom of the tavern she feels the tears welling up.
@@ -54,7 +55,7 @@ They took Hadley away a little while ago and the bodies of the two creatures hav
 There was something though. Something strange. She had run up the stairwell, thinking that the two creatures were ... human. It had been a shock to find they weren't but she had been almost more shocked by the blood that was pooled all over the floor boards on the upstairs landing. Hadley was downstairs - it couldn't be his and the dark ichor that the orcs bled was very different. She had almost missed the dagger - only when she glanced back at the scene from the stairwell did she catch the glint of something from beneath a small table that stood against the wall.
 
 > [!roll] Questions
-> Since Elena has been captured, there would be very little left, if anything, to show she had been there. Undecided that Tasha would find something and the elf's dagger came to mind. She had drawn it while Hadley fought the orcs in the stairwell and it makes sense tomme that when she collapsed on the floor, the dagger skittered away under a table.
+> Since it seems that Elena has been captured (or at least she isn't here), there would be very little left, if anything, to show she had been there. I decided that Tasha would find something and the elf's dagger came to mind. She had drawn it while Hadley fought the orcs in the stairwell and it makes sense to me that when she collapsed on the floor, the dagger skittered away under a table.
 > 
 > I'm going to give Tasha a chance to recognise the elven workmanship. I think that's going to be an INT check - Tasha's INT is 13 so she'll need a 13 or lower on a d20.
 > 
@@ -73,7 +74,7 @@ Once outside again, she crosses towards the small group clustered around the bod
 > UNE Power Level: Comparable
 > UNE Motivation: Undermine Discretion
 > 
-> We've already suggested that Camryn is a ranger of some sort. The above descriptions make me think that he is a rather irritating know it all who likes to show off his knowledge. I wonder that Tasha has had run-ins with him before?
+> We've already suggested that Camryn is a ranger of some sort so I'll forget about the monk suggestion. Unreasonable is interesting though. The above descriptions make me think that he is a rather irritating know it all who likes to show off his knowledge. I wonder i Tasha has had run-ins with him before?
 > 
 > Does Tasha know Camryn quite well? Likely - 18 - Yes
 > 
