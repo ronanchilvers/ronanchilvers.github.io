@@ -56,7 +56,7 @@ categories:
 
 It had been dreadful. The site of the tavern, broken and violated. Hadley, lifeless in the doorway with that terrible wound in his side. Tasha had been too shocked to show her emotions then, even though she knew at first sight that her friend was beyond her help. And then there were the creatures in the stairwell - she's heard of creatures like them before but has never seen them. Now, standing in the shattered, storm torn taproom of the tavern she feels the tears welling up.
 
-The scene had told a terrible tale. An attack during the night, Hadley killing the two in the stairwell before a third... Tasha can't even speak the thought in her mind. The shock of it is still coursing through her. But the why of it, that's what she couldn't see, couldn't conceive. Why were these creatures here and what did they want with him?
+The scene told a terrible tale. An attack during the night, Hadley killing the two in the stairwell before a third... Tasha can't even speak the thought in her mind. The shock of it is still coursing through her. But the why of it, that's what she couldn't see, couldn't conceive. Why were these creatures here and what did they want?
 
 They took Hadley away a little while ago and the bodies of the two creatures have been dumped outside. She can hear Myer Olney talking to the others, presumably panicking as he always does. She catches herself mid thought - she had been going to make a mental note to get Hadley to speak to him. The tears well up and her vision blurs.
 
@@ -99,4 +99,4 @@ Camryn rocks back on his heels - "Three I think - the storm washed most of the t
 
 Tasha nods - the dagger feels suddenly heavy inside her robe. She feels a compulsion to reveal it but something stops her. "Look - I need to get back to the temple. Bring Hadley to me and I'll ... I'll prepare him for burial."
 
-She turns on her heel and walks away from the tavern, tears prickling the corners of her eyes. She starts to recite Shallya's Creed, asking the goddess to bless her friend. About halfway home she stops, the tears becoming sobs and then she is leaning against a tree, crying silently into her hands, her shoulders trembling.
+She turns on her heel and walks away from the tavern, tears prickling the corners of her eyes. She starts to recite Shallya's Creed, asking the goddess to bless her friend. About halfway home she stops, the tears becoming sobs and then she is leaning against a tree, crying silently into her hands, her shoulders trembling as the rain falls steadily around her.
