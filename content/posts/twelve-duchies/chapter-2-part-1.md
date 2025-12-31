@@ -36,12 +36,12 @@ categories:
 
 > [!note] Overview
 > Location: Southome
-> - Characters
+> Characters:
 >	- Tasha
 >
-> - Time of day - Mid morning
+> Time of day: Mid morning
 >
-> - Weather - Light drizzle, occasional sunshine
+> Weather: Light drizzle, occasional sunshine
 
 > [!roll] Questions
 > The story took quite a turn in the last chapter. I had expected (and hoped) that Hadley would be a persistent character in the story - unfortunately the dice had other ideas. I think I need to decide a couple of things before the story continues.
