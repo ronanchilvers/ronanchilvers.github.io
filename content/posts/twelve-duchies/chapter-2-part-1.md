@@ -95,7 +95,7 @@ Tasha frowns - "Why would they be here? And attacking a village no less! It does
 > [!roll] Questions
 > Does Camryn know how many from their tracks? 50/50 - 13 - Yes but...
 
-Camryn rocks back on his heels - "Three I think - the storm washed most of the tracks away. I suspect there was someone else here as well though. There's blood on the floor of the taproom that it isn't orc blood and Hadley was by the door."
+Camryn rocks back on his heels - "Three I think - the storm washed most of the tracks away. I suspect there was someone else here as well though. There's blood on the floor of the taproom that isn't orc blood and Hadley was by the door."
 
 Tasha nods - the dagger feels suddenly heavy inside her robe. She feels a compulsion to reveal it but something stops her. "Look - I need to get back to the temple. Bring Hadley to me and I'll ... I'll prepare him for burial."
 
