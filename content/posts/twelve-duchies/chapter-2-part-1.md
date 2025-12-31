@@ -45,6 +45,7 @@ categories:
 > We know the orcs were pursuing Elena, the elven woman, but we don't know why. Neither do we know if the surviving orc found her. I think it's most likely that she was killed - they had already shot her with a crossbow so they obviously weren't too worried about taking her alive. I'm going to ask the Oracle a "Likely" question to see if she was killed as well.
 > 
 > Was Elena killed also? Likely - ~~2~~, 8 - No
+>
 > Is she still here? Unlikely - 2, ~~19~~ - No
 > 
 > Interesting! Captured? Or maybe escaped?
