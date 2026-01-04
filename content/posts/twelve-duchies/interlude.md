@@ -1,6 +1,6 @@
 ---
 date: 2025-11-22
-draft: true
+draft: false
 title: S1 - Interlude
 summary: Well. I feel bereft, as if I've lost an old friend. If you've read part
   1 and 2 of the first chapter of my foray into the Twelve Duchies (a setting I
