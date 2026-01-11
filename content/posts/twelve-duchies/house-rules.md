@@ -10,9 +10,6 @@ tags:
   - ose
 categories:
   - Twelve Duchies
-params:
-  previous: the-discovery
-  next: chapter-1-part-1
 ---
 First a huge caveat. I'm no B/X or OSE expert. I've played a good bit of D&D and a few other systems but I'm *very* far from being an RPG luminary like [Mike Shea] or [Matt Mercer]. Part of the enjoyment is going to be learning a new (old!) system but I'm highly likely to make mistakes. Hopefully I notice and don't make them a second time, but you never know!
 
@@ -27,19 +24,10 @@ I've decided to use a few house rules and mechanics while playing, inspired by (
 
 ## Oracles
 
-I'll be using the d20 Oracle and Oracle prompt tables from [Solodark]. The d20 Oracle works like this:
-
-- Ask a yes/no question (I tend to ask my questions with the dramatic outcome being a yes result)
-- Roll d20
-- 1 to 9 is a Yes
-- 11 to 20 is a No
-- 10 is an Unexpected Twist
-- If the result is an odd number add "but..."
-- 1 is an extreme No, 20 is an extreme Yes
-
-Likely / unlikely checks are modelled with advantage / disadvantage on the roll. The oracle is fast, easy and fits nicely with the OSE dice pool. The [Solodark] Oracle tables are themed well for OSE as well and, at least for the moment, they fit the theme of the Twelve Duchies.
+I'm going to use the [Mythic GM Emulator] for my Oracles, meaning tables and so on. I'm not going to use the chaos factor and will probably determine random events based on spark words from the meaning tables rather then rolling on the events table. I may or may not keep thread and character lists - I'll see how I get on.
 
 [Tale of the Manticore]: https://taleofthemanticore.blogspot.com
-[Solodark]: https://www.thearcanelibrary.com/products/solodark-solo-rules-for-shadowdark-rpg-pdf
+[Mythic GM Emulator]: https://www.wordmillgames.com/page/mythic-gme.html
+[One-Page Mythic Game Master Emulator]: https://www.drivethrurpg.com/en/product/432955/one-page-mythic-game-master-emulator
 [Mike Shea]: https://www.slyflourish.com
 [Matt Mercer]: https://www.matthewmerceronline.com/
