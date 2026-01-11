@@ -1,8 +1,11 @@
 ---
 date: 2025-11-22
-draft: false
+draft: true
 title: S1 - Interlude
-summary: Well. I feel bereft, as if I've lost an old friend. If you've read part 1 and 2 of the first chapter of my foray into the Twelve Duchies (a setting I created a long time ago and have rediscovered) you will know that the Twelve Duchies have already seen their first character death.
+summary: Well. I feel bereft, as if I've lost an old friend. If you've read part
+  1 and 2 of the first chapter of my foray into the Twelve Duchies (a setting I
+  created a long time ago and have rediscovered) you will know that the Twelve
+  Duchies have already seen their first character death.
 slug: chapter-1-interlude
 tags:
   - actual-play

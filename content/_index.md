@@ -1,3 +1,3 @@
 ---
-title: Ronan's Blog - Bits and Pieces
+title: By Lantern Light - blog about role playing games.
 ---
