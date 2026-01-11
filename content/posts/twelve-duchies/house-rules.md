@@ -24,7 +24,7 @@ I've decided to use a few house rules and mechanics while playing, inspired by (
 
 ## Oracles
 
-I'm going to use the [Mythic GM Emulator] for my Oracles, meaning tables and so on. I'm not going to use the chaos factor and will probably determine random events based on spark words from the meaning tables rather then rolling on the events table. I may or may not keep thread and character lists - I'll see how I get on.
+I'm going to use the [Mythic GM Emulator] for my oracle, meaning tables and so on. I'm not going to use the chaos factor and will probably determine random events based on spark words from the meaning tables rather then rolling on the events table. I may or may not keep thread and character lists - I'll see how I get on.
 
 [Tale of the Manticore]: https://taleofthemanticore.blogspot.com
 [Mythic GM Emulator]: https://www.wordmillgames.com/page/mythic-gme.html
