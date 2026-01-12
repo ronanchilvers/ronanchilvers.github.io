@@ -1,11 +1,12 @@
 {{ define "main" }}
-<section>
-  {{ partial "components/title.html" . }}
-  {{ .Content }}
-  <div class="cards">
-  {{ range .Pages }}
-    {{ partial "components/post-card.html" . }}
-  {{ end }}
-  </div>
+<section class="categories">
+    <section class="category">
+        <h2 class="category-title">{{ title .Title  }}</h2>
+        <div class="cards">
+        {{ range .Pages }}
+            {{ partial "components/post-card.html" . }}
+        {{ end }}
+        </div>
+    </section>
 </section>
 {{ end }}
