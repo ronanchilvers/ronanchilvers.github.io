@@ -1,6 +1,6 @@
 ---
 date: 2026-01-14 17:34:01
-draft: true
+draft: false
 title: Encounter Tables
 summary: Some encounter tables that I use in my solo sessions.
 slug: encounter-tables
