@@ -1,5 +1,5 @@
 ---
-date: 2025-11-12
+date: 2025-11-12 12:00:00
 draft: false
 title: Odinson Games Chaotic Combat
 summary: Injecting more crazy into combat

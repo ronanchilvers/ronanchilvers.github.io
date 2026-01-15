@@ -1,5 +1,5 @@
 ---
-date: 2025-11-14
+date: 2025-11-14 12:00:00
 draft: false
 title: Victorian Street Urchins
 summary: A Year Zero Engine hack for street urchin adventures in victorian London.

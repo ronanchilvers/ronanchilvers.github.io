@@ -1,5 +1,5 @@
 ---
-date: 2025-06-22
+date: 2025-06-22 12:00:00
 title: Journal Entry Three
 summary: Dammit! The day started so well! Managed to get the fire going and it lasted until first light, around 8am. The dawn was spectacular - the cabin must be facing southeast because the sun rose over the mountains away to the left.
 draft: false

@@ -1,5 +1,5 @@
 ---
-date: 2025-11-13
+date: 2025-11-13 12:00:00
 draft: false
 title: Monster Random Tactics
 summary: The amazing and fabulous Ironsworn and it's sci-fi siblings Starforged

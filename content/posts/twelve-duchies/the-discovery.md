@@ -1,5 +1,5 @@
 ---
-date: 2025-11-11
+date: 2025-11-11 12:00:00
 title: The Discovery
 summary: An actual play experiment with D&D OSE
 draft: false

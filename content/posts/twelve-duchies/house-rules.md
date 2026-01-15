@@ -1,5 +1,5 @@
 ---
-date: 2025-11-12
+date: 2025-11-12 12:00:00
 title: House Rules
 summary: I'm using a few house rules and mechanics while playing, inspired by
   (or pinched from) sources such as Tale of the Manticore.

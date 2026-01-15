@@ -1,5 +1,5 @@
 ---
-date: 2025-05-22
+date: 2025-05-22 12:00:00
 title: Sinister Forest Discoveries
 summary: A d20 random table of discoveries characters might make in a sinister forest
 draft: false
