@@ -49,8 +49,9 @@ content:
       - name: date
         label: Date
         type: date
-        format: yyyy-MM-dd HH:mm:ss
-        time: true
+        options:
+          format: yyyy-MM-dd HH:mm:ss
+          time: true
       - name: title
         label: Title
         type: string
