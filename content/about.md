@@ -20,18 +20,18 @@ timeline:
 Hi! I'm Ronan and I've been playing role playing games, mainly D&D and derivitives, since the late 1970s. Here's a rough timeline of my gaming life:
 
 {{< timeline >}}
-  
-  {{< event label="1970s">}}
+
+  {{< event label="1980s">}}
     The "red box" <a target="_blank" href="https://www.dandwiki.com/wiki/Basic_Set_(BECMI_D%26D)">Basic Rules Set</a> - my Dad gave it to me for Christmas.
   {{< /event >}}
-  {{< event label="1980s">}}
+  {{< event >}}
     I played <a target="_blank" href="https://en.wikipedia.org/wiki/Editions_of_Dungeons_%26_Dragons#Advanced_Dungeons_&_Dragons_2nd_Edition">AD&D 2nd Edition</a> for years - Ravenloft and its horrifying "Domains of Dread" was my favourite campaign setting.
   {{< /event >}}
   {{< event >}}
     I really wanted to love <a target="_blank" href="https://en.wikipedia.org/wiki/Middle-earth_Role_Playing">MERP</a> but I never really got to grips with the rules. I'm not even sure I understood the character creation process! I played <a target="_blank" href="https://en.wikipedia.org/wiki/Warhammer_Fantasy_Roleplay">WFRP</a> for a while.
   {{< /event >}}
   {{< event label="1990s">}}
-    I loved <a target="_blank" href="">Cyberpunk 2020</a> and the various supplements. It's a vivid setting, primed for excitment and tension.
+    I discovered and loved <a target="_blank" href="https://talsorianstore.com/collections/cyberpunk/products/cyberpunk-2020">Cyberpunk 2020</a> and the various supplements including the spinoff <a href="https://talsorianstore.com/collections/cybergeneration/products/cybergeneration-digital-pdf">Cyber Generation</a>. It's a vivid setting, primed for excitment and tension.
   {{< /event >}}
   {{< event label="2010s">}}
     I ran a long campaign with <a target="_blank" href="https://dnd-wiki.org/wiki/5e">D&D 5e</a> after convincing a group of work colleagues to adventure with me.
