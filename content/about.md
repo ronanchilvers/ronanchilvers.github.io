@@ -52,7 +52,7 @@ Hi! I'm Ronan and I've been playing role playing games, mainly D&D and derivitiv
     Two old friends and I start a Starforged cooperative campaign, having a blast!
   {{< /event >}}
   {{< event >}}
-    I start work on my Victorian street urchin game, working title "Streetwise".
+    I start work on my <a href="/2025/11/victorian-street-urchins/">Victorian street urchin game</a>, working title "Streetwise".
   {{< /event >}}
   {{< event label="2026" >}}
     Streetwise sees its first playtest with two of my most dedicated players. The streets of 1890s London begin to emerge from the smog.
