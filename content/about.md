@@ -43,7 +43,7 @@ Hi! I'm Ronan and I've been playing role playing games, mainly D&D and derivitiv
     Discovering the fantastic <a target="_blank" href="https://tomkinpress.com/pages/ironsworn">Ironsworn</a>, <a target="_blank" href="https://tomkinpress.com/pages/ironsworn-starforged">Starforged</a> and <a target="_blank" href="">Sundered Isles</a> showed me a whole new mechanical concept - fantastic!
   {{< /event >}}
   {{< event label="2023" >}}
-    I was lucky enough to kickstart Kelsey Dionne's <a target="_blank" href="https://www.thearcanelibrary.com/pages/shadowdark">Shadowdark RPG</a> and it brought the possibility of introducing 5the Edition players to a simpler, faster, grittier system.
+    I was lucky enough to kickstart Kelsey Dionne's <a target="_blank" href="https://www.thearcanelibrary.com/pages/shadowdark">Shadowdark RPG</a> and it brought the possibility of introducing 5th Edition players to a simpler, faster, grittier system.
   {{< /event >}}
   {{< event label="2025" >}}
     The West Marches call and, in the company of thirteen doughty companions (aka work colleagues and friends), I set off to face unknown perils...
