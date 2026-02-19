@@ -2,9 +2,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap" rel="stylesheet">
+<link
+    rel="preconnect"
+    href="https://fonts.googleapis.com">
+<link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin>
 {{- $cssFiles := slice }}
 {{- range .Site.Params.css }}
 {{- with resources.Get . }}
@@ -14,9 +18,24 @@
 {{- if $cssFiles }}
 {{- $bundled := $cssFiles | resources.Concat "css/bundle.css" }}
 {{- if hugo.IsDevelopment }}
-<link rel="stylesheet" href="{{ $bundled.RelPermalink }}" />
+<link
+    rel="stylesheet"
+    href="{{ $bundled.RelPermalink }}" />
 {{- else }}
 {{- $processed := $bundled | minify | fingerprint "sha256" }}
-<link rel="stylesheet" href="{{ $processed.RelPermalink }}" integrity="{{ $processed.Data.Integrity }}" />
+<link
+    rel="stylesheet"
+    href="{{ $processed.RelPermalink }}"
+    integrity="{{ $processed.Data.Integrity }}" />
 {{- end }}
 {{- end }}
+<link rel="preload" fetchpriority="high" as="image" href="/images/home-64x64.png" type="image/png">
+<link rel="preload" fetchpriority="high" as="image" href="/images/home-300x300.png" type="image/png">
+<link
+    rel="preload"
+    as="style"
+    href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap">
+<link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap"
+    media="print" onload="this.media='all'">
