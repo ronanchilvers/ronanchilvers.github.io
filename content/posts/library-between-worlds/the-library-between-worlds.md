@@ -6,6 +6,10 @@ summary: Imagine a place between worlds, between all the plethora of realities
   somewhen?), nestled into the cracks between, built by long forgotten
   architects is the Great Library.
 draft: true
+tags:
+  - world-building
+categories:
+  - The Library Between Worlds
 ---
 I've been looking around for a while to find ideas for a setting which would allow flexible, one-shot style gameplay with fluid groups of players. I find one-shots hard to run - I've never managed to complete a one-shots in one shot - so I needed to make sure that the setting supported short, high action episodes and also included some sort of potential mechanical nod towards speedy resolution.
 
