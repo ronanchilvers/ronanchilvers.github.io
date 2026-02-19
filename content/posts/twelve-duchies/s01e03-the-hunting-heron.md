@@ -6,4 +6,5 @@ tags:
   - actual-play
 categories:
   - Twelve Duchies
+slug: s01e03
 ---
