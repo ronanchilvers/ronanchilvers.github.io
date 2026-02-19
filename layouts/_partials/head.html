@@ -19,10 +19,18 @@
 {{- $bundled := $cssFiles | resources.Concat "css/bundle.css" }}
 {{- if hugo.IsDevelopment }}
 <link
+    rel="preload"
+    as="style"
+    href="{{ $bundled.RelPermalink }}" />
+<link
     rel="stylesheet"
     href="{{ $bundled.RelPermalink }}" />
 {{- else }}
 {{- $processed := $bundled | minify | fingerprint "sha256" }}
+<link
+    rel="preload"
+    as="style"
+    href="{{ $processed.RelPermalink }}" />
 <link
     rel="stylesheet"
     href="{{ $processed.RelPermalink }}"
