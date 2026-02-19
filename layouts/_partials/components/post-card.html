@@ -17,7 +17,7 @@
 {{- if $imagePath }}
     <figure class="card-image">
         <a class="card-title" href="{{ $post.RelPermalink }}">{{ .Title }}</a>
-        <a href="{{ $post.RelPermalink }}"><img src="{{ $imagePath }}" alt="{{ $post.Title }}"></a>
+        <a href="{{ $post.RelPermalink }}"><img fetchpriority="high" src="{{ $imagePath }}" alt="{{ $post.Title }}"></a>
     </figure>
 {{- end }}
     <div class="card-content">
