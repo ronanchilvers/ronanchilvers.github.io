@@ -1,6 +1,6 @@
 ---
 date: 2026-02-18 22:58:00
-title: A Streetwise Dice Roller
+title: Streetwise Web Apps
 draft: false
 tags:
   - year-zero-engine
@@ -17,6 +17,10 @@ The Year Zero Engine is very flexible and I like the fact that it uses six sided
 In the end, to make play testing more streamlined, I put together a quick dice roller based on the current state of the Streetwise Core Rules. It's a work in progress but you can have a go at:
 
 https://ronanchilvers.github.io/yze-roller/
+
+In addition, having some way to rapidly manage characters (and possibly even generate random ones) is extremely useful. One of my most dedicated players spent some time developing a builder for Streetwise characters. You can have a go at:
+
+https://urchinator.notoriety.co.uk/
 
 [Year Zero Engine]: https://freeleaguepublishing.com/wp-content/uploads/2023/11/YZE-Standard-Reference-Document.pdf
 [Alien RPG]: https://freeleaguepublishing.com/games/alien/
