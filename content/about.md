@@ -16,6 +16,7 @@ timeline:
   - Sundered Isles: https://tomkinpress.com/pages/sundered-isles
   - Mythic GM Emulator: https://www.wordmillgames.com/page/mythic-gme.html
   - Savage Worlds: https://peginc.com/savage-settings/savage-worlds/
+  - Daggerheart: https://www.daggerheart.com/
 ---
 Hi! I'm Ronan and I've been playing role playing games, mainly D&D and derivitives, since the late 1970s. Here's a rough timeline of my gaming life:
 
@@ -45,6 +46,9 @@ Hi! I'm Ronan and I've been playing role playing games, mainly D&D and derivitiv
   {{< event label="2023" >}}
     I was lucky enough to kickstart Kelsey Dionne's <a target="_blank" href="https://www.thearcanelibrary.com/pages/shadowdark">Shadowdark RPG</a> and it brought the possibility of introducing 5th Edition players to a simpler, faster, grittier system.
   {{< /event >}}
+  {{< event label="2024" >}}
+    My son and I start playing a <a href="https://peginc.com/savage-settings/savage-worlds/">Savage Worlds</a> adventure involving baby tarrasques, gladiatorial contests and collpasing temples!
+  {{< /event >}}
   {{< event label="2025" >}}
     The West Marches call and, in the company of thirteen doughty companions (aka work colleagues and friends), I set off to face unknown perils...
   {{< /event >}}
@@ -55,6 +59,9 @@ Hi! I'm Ronan and I've been playing role playing games, mainly D&D and derivitiv
     I start work on my <a href="/2025/11/victorian-street-urchins/">Victorian street urchin game</a>, working title "Streetwise".
   {{< /event >}}
   {{< event label="2026" >}}
+    My fabulous players bought me the core box set of <a href="https://www.daggerheart.com/">Daggerheart</a> for Christmas and my son and I start playing adventures and love the new system!
+  {{< /event >}}
+  {{< event >}}
     Streetwise sees its first playtest with two of my most dedicated players. The streets of 1890s London begin to emerge from the smog.
   {{< /event >}}
   {{< event >}}
