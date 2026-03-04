@@ -20,4 +20,4 @@ Inspired by Sly Flourish's article about [lazy world building] and compiling lis
 **Description:** A compassionate goddess of healing, mercy, and humble service who walks among the suffering in disguise, teaching that kindness and care for the wounded are sacred duties.
 Her faith centers on the legend of Shallya’s Pilgrimage, a ten-year journey during which she traveled the world as a wandering healer, tending the sick and destitute without revealing her divinity.
 
-[lazy world building]
+[lazy world building]: https://slyflourish.com/build_a_faction_list.html
