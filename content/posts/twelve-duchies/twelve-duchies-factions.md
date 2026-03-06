@@ -5,7 +5,7 @@ title: Factions in the Twelve Duchies
 summary: Lore is important in a D&D setting. It helps set the scene, gives
   context and helps the GM develop the story. [Sly Flourish] wrote an article a
   while ago about [factions in your campaign].
-slug: factions
+slug: twelve-duchies-factions
 tags:
   - ose
   - world-building

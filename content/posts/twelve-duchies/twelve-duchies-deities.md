@@ -1,6 +1,6 @@
 ---
 date: 2026-02-19 18:20:00
-title: Twelve Duchies Deities
+title: Deities in the Twelve Duchies
 draft: false
 summary: Inspired by Sly Flourish's article about lazy world building and
   compiling lists of deities (among other things), this page is going to be a
