@@ -10,7 +10,7 @@ tags:
   - ose
   - world-building
 categories:
-  - Twelve Duchies
+  - Twelve Duchies Lore
 ---
 Lore is important in a D&D setting. It helps set the scene, gives context and helps the GM develop the story. [Sly Flourish] wrote an article a while ago about [factions in your campaign]. To quote the article
 

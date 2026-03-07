@@ -9,7 +9,7 @@ tags:
   - random-tables
   - encounters
 categories:
-  - Twelve Duchies
+  - Twelve Duchies Lore
 ---
 This page documents some random encounter tables that I use in my Twelve Duchies OSE actual play sessions. I write these as I need them and re-use them, replacing entries as needed.
 
