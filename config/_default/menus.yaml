@@ -3,8 +3,8 @@ main:
   # - name: Twelve Duchies
   #   pageRef: "/categories/twelve-duchies/"
   #   weight: 1
-  - name: Campaign Settings
-    pageRef: "/campaign-settings/"
+  - name: Worlds
+    pageRef: "/worlds/"
     weight: 1
   - name: Categories
     pageRef: "/categories/"
