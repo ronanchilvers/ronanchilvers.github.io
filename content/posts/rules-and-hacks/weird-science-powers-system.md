@@ -1,6 +1,6 @@
 ---
 date: 2026-04-08 21:11:00
-title: Weird Science Powers System
+title: Weird Science Powers
 slug: weird-science-powers-system
 draft: false
 tags:
