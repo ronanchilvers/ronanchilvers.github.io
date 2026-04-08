@@ -5,11 +5,15 @@ slug: weird-science-powers-system
 draft: true
 tags:
   - swade
+  - rules-hacks
 categories:
-  - Rules and Hacks
+  - Rules and Tools
+summary: Rather than selecting from a fixed list of known powers, Weird
+  Scientists construct effects on the fly by combining an **Element** (what they
+  work with) and a **Manipulation** (what they do with it), then declaring the
+  mechanical parameters of the effect. The roll penalty is calculated from those
+  parameters.
 ---
-# Overview
-
 Rather than selecting from a fixed list of known powers, Weird Scientists
 construct effects on the fly by combining an **Element** (what they work with)
 and a **Manipulation** (what they do with it), then declaring the mechanical
@@ -17,8 +21,6 @@ parameters of the effect. The roll penalty is calculated from those parameters.
 
 This system uses the **No Power Points** setting rule. There are no Power
 Points to track.
-
----
 
 ## Elements
 
