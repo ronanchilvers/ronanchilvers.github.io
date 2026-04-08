@@ -103,7 +103,7 @@ Unit: **inches** (1″ = 2 yards). Base = Smarts die maximum value in inches / y
 | Base x 4 | ×4 | −3 |
 
 ### Duration
-Unit: **minutes**. Base = Smarts die in minutes.
+Unit: **minutes**. Base = Smarts die maximum value in minutes.
 
 | Duration | Multiplier | Penalty |
 |----------|-----------|---------|
