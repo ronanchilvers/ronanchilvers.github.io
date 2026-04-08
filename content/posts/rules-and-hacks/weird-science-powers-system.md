@@ -8,13 +8,14 @@ tags:
   - rules-hacks
 categories:
   - Rules and Tools
-summary: Rather than selecting from a fixed list of known powers, Weird
-  Scientists construct effects on the fly by combining an **Element** (what they
-  work with) and a **Manipulation** (what they do with it), then declaring the
-  mechanical parameters of the effect. The roll penalty is calculated from those
+summary: This is a Powers hack for Savage Worlds Adventure Edition. Rather than
+  selecting from a fixed list of known powers, Weird Scientists construct
+  effects on the fly by combining an **Element** (what they work with) and a
+  **Manipulation** (what they do with it), then declaring the mechanical
+  parameters of the effect. The roll penalty is calculated from those
   parameters.
 ---
-Rather than selecting from a fixed list of known powers, Weird Scientists
+This is a Powers hack for Savage Worlds Adventure Edition. Rather than selecting from a fixed list of known powers, Weird Scientists
 construct effects on the fly by combining an **Element** (what they work with)
 and a **Manipulation** (what they do with it), then declaring the mechanical
 parameters of the effect. The roll penalty is calculated from those parameters.
