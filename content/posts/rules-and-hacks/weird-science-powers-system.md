@@ -5,7 +5,7 @@ slug: weird-science-powers-system
 draft: false
 tags:
   - swade
-  - rules-hacks
+  - rule-hacks
 categories:
   - Rules and Tools
 summary: This is a Powers hack for Savage Worlds Adventure Edition. Rather than
