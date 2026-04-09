@@ -68,10 +68,10 @@ Declare your **Element + Manipulation**, then work out the cost (see Modifiers
 below) and apply it as a negative modifier on the Weird Science roll. Roll **Weird Science vs. TN 4**, 
 minus the total penalty from the chosen parameters.
 
-**Success:** The effect works as declared.
-**Raise:** Success with additional benefits - see Raises section.
-**Failure:** The effect doesn't activate.
-**Critical Failure:** Roll on the Catastrophe Table (see below).
+- **Success:** The effect works as declared.
+- **Raise:** Success with additional benefits - see Raises section.
+- **Failure:** The effect doesn't activate.
+- **Critical Failure:** Roll on the Catastrophe Table (see below).
 
 ## Base Cost
 
