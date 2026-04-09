@@ -209,7 +209,7 @@ Self only, 60 minutes duration
 | Base      | Significant       | 2                                 | 
 | Targets   | 1 (self)  | 0                                 |
 | Damage    | N/A       | 0                                 |
-| Duration  | Sustained | 0 up front, +1 on future castings |
+| Duration  | Sustained | 0 up front, +1 cost while active |
 | **Total** |           | **2**                             |
 
-Roll Weird Science at −2. On a raise, maintain the effect for free or choose from the Raise options above. The caster will have an additional +1 cost on any casting for the next 60 mins. On a Critical Failure roll on the Catastrophy table with a +2 modifier, ie: 1d6+2.
+Roll Weird Science at −2. The caster will have an additional +1 cost on any casting for the next 60 mins. On a raise, maintain the effect for free or choose from the Raise options above. On a Critical Failure roll on the Catastrophy table with a +2 modifier, ie: 1d6+2.
