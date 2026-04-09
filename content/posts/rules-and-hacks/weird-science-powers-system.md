@@ -193,7 +193,7 @@ On a Critical Failure with your Signature Method, subtract 2 from the Effect cos
 
 | Parameter | Value               | Cost   |
 | --------- | ------------------- | ------ |
-| Base cost | N/A                 | 1      |
+| Base cost | Minor                 | 1      |
 | Targets   | 2                   | 1     |
 | Damage    | ×1 (d8)             | 0      |
 | Range     | ×3 (24″ / 48 yards) | 2     |
@@ -206,7 +206,7 @@ Self only, 60 minutes duration
 
 | Parameter | Value     | Cost                              |
 | --------- | --------- | --------------------------------- |
-| Base      | N/A       | 2                                 | 
+| Base      | Significant       | 2                                 | 
 | Targets   | 1 (self)  | 0                                 |
 | Damage    | N/A       | 0                                 |
 | Duration  | Sustained | 0 up front, +1 on future castings |
