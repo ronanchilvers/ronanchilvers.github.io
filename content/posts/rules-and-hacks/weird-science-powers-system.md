@@ -156,7 +156,7 @@ failure**, roll d6 and add the total cost. Then consult the table below.
 | 3–4              | **Kickback** — Caster is Shaken.                                                                   |
 | 5–6              | **Backlash** — Caster suffers Fatigue. All active powers end immediately.                          |
 | 7–8              | **Blowback** — Effect triggers on caster or nearest ally instead of intended target.               |
-| 9–10             | **Catastrophe** — Device destroyed. Caster takes damage equal to the intended effect.              |
+| 9–10             | **Catastrophe** — Device destroyed. Caster takes damage equal to a Smarts die roll multiplied by the effect cost.              |
 | 11+              | **Unravelling** — Major narrative consequence, GM's call. The experiment has gone seriously wrong. |
 
 For example, for a casting attempt with a 5 point cost, on a Critical Failure the character would roll 1d6+5 to determine the outcome.
