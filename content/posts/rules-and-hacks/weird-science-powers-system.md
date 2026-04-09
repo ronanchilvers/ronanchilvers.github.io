@@ -165,19 +165,23 @@ For example, for a casting attempt with a 5 point cost, on a Critical Failure th
 
 ### Signature Method
 *Requirements: Novice, Weird Science d6*
+
 Choose one Element+Manipulation combination. Gain +2 to rolls using that combination.
 
 ### Overclock
 *Requirements: Seasoned, Weird Science d8*
+
 Once per scene, add one free parameter step to a declared effect with no additional penalty. On a critical failure, add 2 to the Effect cost when rolling for a Catastrophy.
 
 ### Jury Rig
 *Requirements: Novice, Weird Science d6*
+
 May construct one-time use devices without dedicated materials, using only found objects.
 Normally this carries a GM-imposed penalty or is impossible.
 
 ### Refined Prototype
 *Requirements: Veteran, Signature Method*
+
 On a Critical Failure with your Signature Method, subtract 2 from the Effect cost when rolling for a Catastrophy.
 
 ## Example Effects
