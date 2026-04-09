@@ -117,7 +117,7 @@ Effect durations are one of:
 | 8                 | 4    |
 | 16                | 6    | 
 
-These bands are the maximum per band. Arbitrary target counts incur a cost equal to the next band which is larger than the count. For example, 3 targets incurs a cost of 4 targets / 2.
+These bands are the maximum per band. Arbitrary target counts incur a cost equal to the next band which is larger than the count. For example, 3 targets incurs a cost of 4 targets, or 2 points.
 
 ### Damage
 Unit: **Smarts die**. Base = one Smarts die, free. Each multiplier step
