@@ -1,5 +1,6 @@
 ---
-title: Licensing Information
+title: Projects
 description: Information about how the content on this site is licensed
-draft: true
+draft: false
 ---
+Various projects I've done on the side.
