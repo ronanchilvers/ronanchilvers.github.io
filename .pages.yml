@@ -32,6 +32,23 @@ content:
         label: Draft
         type: boolean
         default: true
+  - name: projects
+    label: Projects Page
+    type: file
+    path: "content/projects.md"
+    fields:
+      - name: title
+        label: Title
+        type: string
+      - name: body
+        label: Body
+        type: text
+        options:
+          rows: 60
+      - name: draft
+        label: Draft
+        type: boolean
+        default: true
   - name: posts
     label: Posts
     type: collection
