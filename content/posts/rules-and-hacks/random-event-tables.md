@@ -1,8 +1,11 @@
 ---
-date: 2026-07-21 07:35:52
+date: 2026-07-21 07:35:00
 draft: false
 title: Random Event Tables
-summary: I recently started putting together a set of tables that I could use for random events. Mythic's random event tables are a great resource, but I wanted to create something that was a bit more specific and gave me a more immediate path to follow.
+summary: I recently started putting together a set of tables that I could use
+  for random events. Mythic's random event tables are a great resource, but I
+  wanted to create something that was a bit more specific and gave me a more
+  immediate path to follow.
 slug: random-event-tables
 tags:
   - random-tables
@@ -43,10 +46,10 @@ These tables are intended to be a more narrow resource, giving me a specific cir
 | - | - |
 | 1 | Hunted - seen in the distance |
 | 2 | Signs - marks of passage |
-| 3 | |
-| 4 | |
-| 5 | |
-| 6 | |
+| 3 | Intuition - feeling of danger |
+| 4 | Memory - reminder of promised peril |
+| 5 | Consequence - a result of peril |
+| 6 |  |
 
 #### Meeting
 
@@ -56,8 +59,8 @@ These tables are intended to be a more narrow resource, giving me a specific cir
 | 2 | In force |
 | 3 | In haste |
 | 4 | With purpose |
-| 5 | |
-| 6 | |
+| 5 | With terror |
+| 6 | Old friends |
 
 #### Structure or Habitation
 
@@ -68,24 +71,24 @@ These tables are intended to be a more narrow resource, giving me a specific cir
 | 3 | In need |
 | 4 | Imperilled |
 | 5 | Transient |
-| 6 | |
+| 6 |  |
 
-#### Lanscape Feature
+#### Landscape Feature
 
 | d6 | Type |
 | - | - |
 | 1 | Depths |
 | 2 | Heights |
 | 3 | Treacherous |
-| 4 |  |
-| 5 |  |
-| 6 | |
+| 4 | Tranquil |
+| 5 | Deceptive |
+| 6 | Unexpected |
 
 #### Travel Challenge
 
 | d6 | Type |
 | - | - |
-| 1 | Weather change |
+| 1 | Weather |
 | 2 | Supplies |
 | 3 | Gear |
 | 4 | Navigation |
