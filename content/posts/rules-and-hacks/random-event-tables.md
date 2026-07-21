@@ -34,7 +34,7 @@ These tables are intended to be a more narrow resource, giving me a specific cir
 | d6 | Type |
 | - | - |
 | 1 | Hunted - by something close by |
-| 2 | Happen Upon - not imediately threatening |
+| 2 | Happen Upon - not immediately threatening |
 | 3 | Interrupt - threatening and aware |
 | 4 | Trapped - cornered and hostile |
 | 5 | Injured - wounded and hostile |
