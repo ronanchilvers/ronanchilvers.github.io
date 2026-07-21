@@ -16,12 +16,14 @@ This page is where I'll keep the adventure lists for the Twelve Duchies campaign
 ## Threads
 
 | # | Thread |
+|-|-|
 | 1 | Who is the woman of the willow tree? |
 | 2 | The enmity of Joss Ketter |
 
 ## Characters
 
 | # | Character |
+|-|-|
 | 1 | Joss Ketter |
 | 2 | Berrin Cole |
 | 3 | The woman of the willow tree |
