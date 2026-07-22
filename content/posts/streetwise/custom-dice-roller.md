@@ -16,7 +16,7 @@ The Year Zero Engine is very flexible and I like the fact that it uses six sided
 
 In the end, to make play testing more streamlined, I put together a quick dice roller based on the current state of the Streetwise Core Rules. It's a work in progress but you can have a go at:
 
-https://ronanchilvers.github.io/yze-roller/
+https://artifakt.co.uk/yze-roller/
 
 In addition, having some way to rapidly manage characters (and possibly even generate random ones) is extremely useful. One of my most dedicated players spent some time developing a builder for Streetwise characters. You can have a go at:
 
