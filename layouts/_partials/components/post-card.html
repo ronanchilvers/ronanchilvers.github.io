@@ -1,4 +1,11 @@
 {{- $post := . }}
+{{- $features := dict }}
+
+{{- if reflect.IsMap . }}
+  {{- $post = .post }}
+  {{- $features = .features | default dict }}
+{{- end }}
+
 {{- $category := index ($post.GetTerms "categories") 0 }}
 {{- $categorySlug := ($category.Name | urlize) }}
 {{- $thumbnail := cond ($post.Params.images.thumbnail) $post.Params.images.thumbnail (printf "%s-thumbnail.png" (cond ($post.Slug) $post.Slug ($post.Title | urlize) )) }}
@@ -13,11 +20,11 @@
 {{- end }}
 {{- $dateMachine := $post.Date | time.Format "2006-01-02T15:04:05-07:00" }}
 {{- $dateHuman := $post.Date | time.Format ":date_long" }}
-<div class="card">
+<div class="card{{ if $features.smallCards }} card--small{{ end }}">
 {{- if $imagePath }}
     <figure class="card-image">
-        <a class="card-title" href="{{ $post.RelPermalink }}">{{ .Title }}</a>
-        <a href="{{ $post.RelPermalink }}"><img fetchpriority="high" src="{{ $imagePath }}" alt="{{ $post.Title }}"></a>
+        <a class="card-title" href="{{ $post.RelPermalink }}">{{ $post.Title }}</a>
+        <a class="card-image-link" href="{{ $post.RelPermalink }}"><img{{ if $features.highPriority }} fetchpriority="high"{{ end }} src="{{ $imagePath }}" alt="{{ $post.Title }}"></a>
     </figure>
 {{- end }}
     <div class="card-content">
@@ -29,7 +36,7 @@
         <div class="card-meta">
             <a href="{{ $category.Path }}" class="card-meta-item">{{ $category.Name }}</a>
             <time class="card-meta-item" datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
-            {{- with .GetTerms "tags" }}
+            {{- with $post.GetTerms "tags" }}
             <div class="card-meta-item">
             {{- range . }}<a href="{{ .RelPermalink }}" class="tag tag--bare">{{ .LinkTitle | lower }}</a>{{- end }}
             </div>
