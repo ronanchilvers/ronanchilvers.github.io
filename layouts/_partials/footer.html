@@ -3,11 +3,19 @@
     <p>{{ .Site.Params.subtitle }}</p>
 </div>
 <div>
-    <h4 class="footer-heading">Categories</h4>
-
+    <h3 class="footer-heading">Categories</h3>
+    {{- range .Site.Taxonomies.categories.Alphabetical }}
+    <a href="{{ .Page.RelPermalink }}">{{ .Page.LinkTitle }}</a>
+    {{- end }}
 </div>
 <div>
-    <h4 class="footer-heading">About</h4>
+    <h3 class="footer-heading">Tags</h3>
+    {{- range first 6 .Site.Taxonomies.tags.ByCount }}
+    <a href="{{ .Page.RelPermalink }}">{{ .Name }}</a>
+    {{- end }}
+</div>
+<div>
+    <h3 class="footer-heading">About</h3>
     <a href="/about/">About Me</a>
     <a href="/licensing/">Licensing</a>
     <a href="/posts/index.xml">RSS</a>
