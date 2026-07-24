@@ -115,6 +115,11 @@ body > footer {
         vertical-align: top;
         flex-direction: row;
     }
+    @media screen and (max-width: 600px) {
+        .sections {
+            flex-direction: column;
+        }
+    }
     .sections div {
         width: calc(25% - 1rem);
         padding: 1rem;
