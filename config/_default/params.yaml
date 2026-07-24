@@ -4,6 +4,9 @@ subtitle: In which I muse, imagine and burble about tabletop role playing games,
 navigation:
   show_related: false
   show_next: true
+social:
+  bluesky: "ronanchilvers.bsky.social"
+  mastodon: "@ronanchilvers@mstdn.party"
 css:
   - css/normalize.css
   - css/local.css

@@ -66,6 +66,9 @@
             padding: 0.5rem 1rem;
             display: block;
         }
+        .card-meta-item {
+            margin-bottom: 0.5rem;
+        }
         .card-body {
             flex: 1 1 auto;
         }
