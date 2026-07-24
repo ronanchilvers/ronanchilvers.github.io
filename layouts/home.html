@@ -1,6 +1,6 @@
 {{ define "main" }}
+<!--
 <section class="home">
-  <!--{{ .Content }}-->
   <figure class="figure-round">
       <img src="/images/home-300x300.png" alt="By Lantern Light" />
   </figure>
@@ -9,6 +9,19 @@
     <p>{{ .Site.Params.subtitle }}</p>
   </div>
 </section>
+-->
+
+<section class="home">
+    <figure class="figure-round">
+        <img src="/images/home-300x300.png" alt="By Lantern Light" />
+    </figure>
+    <div>
+        <h2>Hi! I'm Ronan!</h2>
+        <p>Welcome to my small corner of the internet. This is where I write about my solo actual plays, jot down ideas and thoughts about role playing games and publish whatever else takes my fancy.</p>
+        <p>Thanks for stopping by!</p>
+    </div>
+</section>
+
 {{- $posts := sort (where .Site.RegularPages "Type" "posts") "Date" "desc" }}
 {{- $featuredPosts := first 2 (where $posts "Params.featured" true) }}
 {{- if $featuredPosts }}

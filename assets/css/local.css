@@ -1,5 +1,6 @@
 :root {
     --background-color: rgb(34, 39, 46);
+    --background-color-pale: rgb(44, 49, 56);
     --border-color: rgb(100,100,100);
     --border-radius: 5px;
     --font-color: rgb(220,220,220);
@@ -180,12 +181,20 @@ figure.figure-round {
 }
 
 .home {
-    text-align: center;
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
     justify-content: space-evenly;
+    gap: 0 4rem;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    padding-block: 1rem;
+    padding-inline: max(1rem, calc((100vw - 1024px) / 2 + 1rem));
+    box-sizing: border-box;
+    background-color: var(--background-color-pale);
+
     figure {
+        min-width: 250px;
         height: 250px;
         width: 250px;
     }
