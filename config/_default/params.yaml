@@ -6,6 +6,8 @@ navigation:
 social:
   bluesky: "ronanchilvers.bsky.social"
   mastodon: "@ronanchilvers@mstdn.party"
+  # x: "ronanchilvers"
+  # instagram: "ronanchilvers"
   rss: /posts/index.xml
 css:
   - css/normalize.css
@@ -17,6 +19,7 @@ css:
   - css/cols.css
   - css/alerts.css
   - css/timeline.css
+  - css/social.css
   # - css/related.css
   - css/next-previous.css
 analytics:

@@ -15,8 +15,8 @@ main:
   - name: Tags
     pageRef: "/tags/"
     weight: 4
-  # - name: About
-  #   pageRef: "about/"
-  #   weight: 5
+  - name: About
+    pageRef: "about/"
+    weight: 5
   # - name: Subscribe
   #   pageRef: "index.xml"

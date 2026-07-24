@@ -2,6 +2,7 @@
     <div>
         <h3>{{ .Site.Title }}</h3>
         <p>{{ .Site.Params.subtitle }}</p>
+        <p><a href="/about/">Read About Me</a></p>
     </div>
     <div>
         <h3 class="footer-heading">Categories</h3>
@@ -18,11 +19,9 @@
         </div>
     </div>
     <div>
-        <h3 class="footer-heading">Misc</h3>
-        <a href="/about/">About Me</a>
-        <a href="/licensing/">Licensing</a>
-        <a href="/posts/index.xml">RSS</a>
+        <h3 class="footer-heading">Social</h3>
+        {{ partial "components/social-links.html" . }}
     </div>
 </div>
 <hr />
-<p><a href="/licensing/">CC BY-NC 4.0</a> - Made with 🧠 and 🍪 by Ronan - {{ .Date | time.Format "2006" }}</p>
+<p><a href="/licensing/">Licensing</a> - Made with 🧠 and 🍪 by Ronan - {{ .Date | time.Format "2006" }}</p>
