@@ -1,6 +1,7 @@
 :root {
     --background-color: rgb(34, 39, 46);
     --background-color-pale: rgb(44, 49, 56);
+    --background-color-dark: rgb(24, 29, 36);
     --border-color: rgb(100,100,100);
     --border-radius: 5px;
     --font-color: rgb(220,220,220);
@@ -81,8 +82,33 @@ body > header {
     padding: 2rem 0 2rem 0;
 }
 body > footer {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    padding-block: 1rem;
+    padding-inline: max(1rem, calc((100vw - 1024px) / 2 + 1rem));
+    box-sizing: border-box;
+    background-color: var(--background-color-dark);
     text-align: center;
-    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    vertical-align: top;
+    flex-direction: row;
+    gap: 1rem;
+    font-size: 0.9rem;
+
+    div {
+        outline: 1px dotted red;
+
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .footer-heading {
+        text-transform: uppercase;
+    }
 }
 
 main header,
@@ -191,7 +217,7 @@ figure.figure-round {
     padding-block: 1rem;
     padding-inline: max(1rem, calc((100vw - 1024px) / 2 + 1rem));
     box-sizing: border-box;
-    background-color: var(--background-color-pale);
+    background-color: var(--background-color-dark);
 
     figure {
         min-width: 250px;

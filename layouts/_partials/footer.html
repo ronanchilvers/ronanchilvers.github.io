@@ -1,1 +1,14 @@
-<p>{{ replace .Site.Params.footer "{Year}" now.Year | markdownify }} </p>
+<div>
+    <h3>{{ .Site.Title }}</h3>
+    <p>{{ .Site.Params.subtitle }}</p>
+</div>
+<div>
+    <h4 class="footer-heading">Categories</h4>
+
+</div>
+<div>
+    <h4 class="footer-heading">About</h4>
+    <a href="/about/">About Me</a>
+    <a href="/licensing/">Licensing</a>
+    <a href="/posts/index.xml">RSS</a>
+</div>
