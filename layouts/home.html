@@ -23,7 +23,7 @@
 </section>
 
 {{- $posts := sort (where .Site.RegularPages "Type" "posts") "Date" "desc" }}
-{{- $featuredPosts := first 2 (where $posts "Params.featured" true) }}
+{{- $featuredPosts := first 3 (where $posts "Params.featured" true) }}
 {{- if $featuredPosts }}
 <section class="featured-posts">
     <h2>Featured Posts</h2>

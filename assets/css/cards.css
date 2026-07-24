@@ -9,7 +9,7 @@
     justify-content: left;
     .card {
         margin: 0 0.5rem 1rem 0.5rem;
-        width: calc(50% - 1rem);
+        width: calc(33.33% - 1rem);
         min-height: 200px;
 
         box-shadow: 0 0 10px rgba(0,0,0,1);
