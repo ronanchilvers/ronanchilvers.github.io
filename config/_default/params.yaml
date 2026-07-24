@@ -1,12 +1,12 @@
 ---
 subtitle: In which I muse, imagine and burble about tabletop role playing games, occasionally jotting down scribblings of variable quality and value.
-# footer: "[About Me](/about/) - [Licensing](/licensing/) - [RSS](/posts/index.xml)"
 navigation:
   show_related: false
   show_next: true
 social:
   bluesky: "ronanchilvers.bsky.social"
   mastodon: "@ronanchilvers@mstdn.party"
+  rss: /posts/index.xml
 css:
   - css/normalize.css
   - css/local.css
