@@ -38,4 +38,12 @@
 {{- end }}
     </div>
 </section>
+
+<section class="home-section">
+    <h2>Popular Tags</h2>
+    {{- range first 6 .Site.Taxonomies.tags.ByCount }}
+    <a href="{{ .Page.RelPermalink }}">{{ .Name }}</a>
+    {{- end }}
+</section>
+
 {{ end }}
