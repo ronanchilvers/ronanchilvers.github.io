@@ -6,10 +6,11 @@ summary: This page is where I'll keep the adventure lists for the Twelve Duchies
 draft: false
 slug: adventure-lists
 tags:
-  - actual-play
   - ose
+  - mythic
 categories:
   - Twelve Duchies
+featured: false
 ---
 This page is where I'll keep the adventure lists for the Twelve Duchies campaign. If you've used Mythic or another similar GM emulator, the concept of lists will be familiar to you. I'll be keeping two lists - Threads and Characters - and will use them to decide context as the campaign plays out.
 
