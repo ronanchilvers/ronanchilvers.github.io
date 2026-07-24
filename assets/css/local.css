@@ -189,6 +189,7 @@ figure.figure-round {
         width: 250px;
     }
 }
+.featured-posts,
 .recent-posts {
     h2 {
         text-align: center;

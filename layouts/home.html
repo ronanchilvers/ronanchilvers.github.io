@@ -7,10 +7,22 @@
   <h1>{{ .Site.Title }}</h1>
   <p>{{ .Site.Params.subtitle }}</p>
 </section>
+{{- $posts := sort (where .Site.RegularPages "Type" "posts") "Date" "desc" }}
+{{- $featuredPosts := first 3 (where $posts "Params.featured" true) }}
+{{- if $featuredPosts }}
+<section class="featured-posts">
+    <h2>Featured Posts</h2>
+    <div class="cards">
+{{ range $featuredPosts }}
+    {{ partial "components/post-card.html" . }}
+{{- end }}
+    </div>
+</section>
+{{- end }}
 <section class="recent-posts">
     <h2>Recent Posts</h2>
     <div class="cards">
-{{ range first 6 (where .Site.RegularPages "Type" "posts") }}
+{{ range first 6 $posts }}
     {{ partial "components/post-card.html" . }}
 {{- end }}
     </div>
