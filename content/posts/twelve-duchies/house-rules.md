@@ -6,10 +6,11 @@ summary: I'm using a few house rules and mechanics while playing, inspired by
 draft: false
 slug: house-rules
 tags:
-  - actual-play
   - ose
+  - mythic
 categories:
   - Twelve Duchies
+featured: false
 ---
 First a huge caveat. I'm no B/X or OSE expert. I've played a good bit of D&D and a few other systems but I'm *very* far from being an RPG luminary like [Mike Shea] or [Matt Mercer]. Part of the enjoyment is going to be learning a new (old!) system but I'm highly likely to make mistakes. Hopefully I notice and don't make them a second time, but you never know!
 
