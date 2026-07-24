@@ -78,12 +78,6 @@ content:
       - name: summary
         label: Summary
         type: string
-      - name: body
-        label: Body
-        type: text
-        options:
-          autoresize: false
-          rows: 10
       - name: draft
         label: Draft
         type: boolean
@@ -100,3 +94,9 @@ content:
         label: Categories
         type: string
         list: true
+      - name: body
+        label: Body
+        type: text
+        options:
+          autoresize: false
+          rows: 10
