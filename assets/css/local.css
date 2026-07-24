@@ -183,12 +183,26 @@ figure.figure-round {
     text-align: center;
     display: flex;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
     figure {
         height: 250px;
         width: 250px;
     }
+    div {
+        text-align: left;
+    }
 }
+@media screen and (max-width: 900px) {
+    .home {
+        flex-direction: column;
+        justify-content: space-evenly;
+        div {
+            text-align: center;
+        }
+    }
+}
+
 .featured-posts,
 .recent-posts {
     h2 {

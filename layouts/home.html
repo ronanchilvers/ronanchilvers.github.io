@@ -4,8 +4,10 @@
   <figure class="figure-round">
       <img src="/images/home-300x300.png" alt="By Lantern Light" />
   </figure>
-  <h1>{{ .Site.Title }}</h1>
-  <p>{{ .Site.Params.subtitle }}</p>
+  <div>
+    <h1>{{ .Site.Title }}</h1>
+    <p>{{ .Site.Params.subtitle }}</p>
+  </div>
 </section>
 {{- $posts := sort (where .Site.RegularPages "Type" "posts") "Date" "desc" }}
 {{- $featuredPosts := first 2 (where $posts "Params.featured" true) }}
