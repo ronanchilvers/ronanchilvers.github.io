@@ -88,6 +88,10 @@ content:
         label: Draft
         type: boolean
         default: true
+      - name: featured
+        label: Featured Article
+        type: boolean
+        default: false
       - name: tags
         label: Tags
         type: string
