@@ -4,13 +4,13 @@
         <p>{{ .Site.Params.subtitle }}</p>
     </div>
     <div>
-        <h3 class="footer-heading">Top Categories</h3>
+        <h3 class="footer-heading">Categories</h3>
         {{- range first 6 .Site.Taxonomies.categories.ByCount }}
         <a href="{{ .Page.RelPermalink }}">{{ .Page.LinkTitle }}</a>
         {{- end }}
     </div>
     <div>
-        <h3 class="footer-heading">Top Tags</h3>
+        <h3 class="footer-heading">Tags</h3>
         {{- range first 6 .Site.Taxonomies.tags.ByCount }}
         <a href="{{ .Page.RelPermalink }}">{{ .Name }}</a>
         {{- end }}
