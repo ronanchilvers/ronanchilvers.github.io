@@ -2,7 +2,7 @@
 title: Licensing Information
 description: Information about how the content on this site is licensed
 ---
-Content on this site is released under a [Creative Commons Attribution-NonCommercial 4.0 International] license. It allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, for noncommercial purposes only by including the following statement in the new work:
+Content on this site is released under a [Creative Commons Attribution-NonCommercial 4.0 International] license. It allows users to distribute, remix, adapt, and build upon the material in any medium or format, for noncommercial purposes only by including the following statement in the new work:
 
 > This work includes material taken from artifakt.co.uk by Ronan Chilvers available under a Creative Commons Attribution-NonCommercial 4.0 International license.
 
