@@ -295,6 +295,10 @@ hr {
         list-style: none;
     }
     .post-list-item {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 1rem;
         padding: 1rem 0;
         border-bottom: 1px solid var(--nav-border-color);
 
@@ -306,14 +310,34 @@ hr {
             border-bottom: 0;
         }
         h3 {
-            margin-bottom: 0.25rem;
+            flex: 1 1 auto;
+            margin-bottom: 0;
         }
     }
     .post-list-meta {
         display: flex;
-        flex-wrap: wrap;
+        flex: 0 0 auto;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
         gap: 0.25rem 1rem;
         color: var(--font-muted-color);
         font-size: 0.9rem;
+        text-align: right;
+    }
+}
+@media screen and (max-width: 600px) {
+    .home-section {
+        .post-list-item {
+            display: block;
+
+            h3 {
+                margin-bottom: 0.25rem;
+            }
+        }
+        .post-list-meta {
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            text-align: left;
+        }
     }
 }
