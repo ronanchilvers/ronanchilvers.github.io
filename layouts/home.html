@@ -27,16 +27,28 @@
 {{- end }}
 <section class="home-section">
     <h2>Recent Posts</h2>
-    <div class="cards">
+    <ul class="post-list">
 {{ range first 8 $posts }}
-    {{ partial "components/post-card.html" ( dict
-        "post" .
-        "features" ( dict
-            "smallCards" true
-        )
-    ) }}
+        {{- $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+        {{- $dateHuman := .Date | time.Format ":date_long" }}
+        {{- $category := index (.GetTerms "categories") 0 }}
+        <li class="post-list-item">
+            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+            <div class="post-list-meta">
+                <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+                {{- with $category }}
+                <span>in <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></span>
+                {{- end }}
+                {{- with .GetTerms "tags" }}
+                <span>
+                    tagged
+                    {{- range . }} <a href="{{ .RelPermalink }}" class="tag tag--bare">{{ .LinkTitle | lower }}</a>{{- end }}
+                </span>
+                {{- end }}
+            </div>
+        </li>
 {{- end }}
-    </div>
+    </ul>
 </section>
 
 {{/*
