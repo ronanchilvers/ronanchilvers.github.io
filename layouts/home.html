@@ -25,6 +25,16 @@
     </div>
 </section>
 {{- end }}
+
+<section class="home-section">
+    <h2>Popular Tags</h2>
+    <div class="tags">
+    {{- range first 6 .Site.Taxonomies.tags.ByCount }}
+    <a href="{{ .Page.RelPermalink }}" class="tag">{{ .Name }}</a>
+    {{- end }}
+    </div>
+</section>
+
 <section class="home-section">
     <h2>Recent Posts</h2>
     <ul class="post-list">
@@ -37,11 +47,11 @@
             <div class="post-list-meta">
                 <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
                 {{- with $category }}
-                <span>in <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></span>
+                in <span><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></span>
                 {{- end }}
                 {{- with .GetTerms "tags" }}
+                tagged
                 <span>
-                    tagged
                     {{- range . }} <a href="{{ .RelPermalink }}" class="tag tag--bare">{{ .LinkTitle | lower }}</a>{{- end }}
                 </span>
                 {{- end }}
@@ -50,16 +60,5 @@
 {{- end }}
     </ul>
 </section>
-
-{{/*
-<section class="home-section">
-    <h2>Popular Tags</h2>
-    <div class="tags">
-    {{- range first 6 .Site.Taxonomies.tags.ByCount }}
-    <a href="{{ .Page.RelPermalink }}" class="tag">{{ .Name }}</a>
-    {{- end }}
-    </div>
-</section>
-*/}}
 
 {{ end }}

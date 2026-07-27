@@ -319,13 +319,18 @@ hr {
         flex: 0 0 auto;
         flex-wrap: nowrap;
         justify-content: flex-end;
-        gap: 0.25rem 1rem;
+        gap: 0.25rem;
         color: var(--font-muted-color);
         font-size: 0.9rem;
         text-align: right;
+
+        time,
+        span {
+            color: var(--font-color);
+        }
     }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .home-section {
         .post-list-item {
             display: block;
