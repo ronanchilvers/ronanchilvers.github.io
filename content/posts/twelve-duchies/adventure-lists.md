@@ -1,6 +1,6 @@
 ---
 date: 2026-07-21 20:36:00
-title: Adventure Lists
+title: Twelve Duchies Adventure Lists
 summary: This page is where I'll keep the adventure lists for the Twelve Duchies
   campaign.
 draft: false

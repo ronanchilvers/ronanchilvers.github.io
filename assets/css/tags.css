@@ -65,5 +65,8 @@
 @media (max-width: 600px) {
     .tags {
         flex-direction: column;
+        .tag {
+            margin: 0.25rem 0;
+        }
     }
 }

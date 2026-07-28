@@ -1,6 +1,8 @@
 :root {
     --alert-background-color: rgba(54, 59, 66, 0.65);
     --alert-heading-background-color: rgba(54, 59, 66, 1);
+    --alert-background-color-help: rgba(247, 249, 169, 0.4);
+    --alert-heading-background-color-help: rgba(247, 249, 169, 0.1);
 }
 
 .alert,
@@ -25,6 +27,7 @@ blockquote {
         border-top-right-radius: 5px;
         font-weight: 700;
     }
+    &.alert--help .alert__title,
     &.alert--note .alert__title,
     &.alert--mechanics .alert__title,
     &.alert--combat .alert__title,
@@ -38,6 +41,15 @@ blockquote {
             left: 1rem;
             bottom: 0;
             font-size: 2rem;
+        }
+    }
+    &.alert--help {
+        background-color: var(--alert-background-color-help);
+        .alert__title {
+            background-color: var(--alert-heading-background-color-help);
+        }
+        .alert__title:before {
+            content: "💡";
         }
     }
     &.alert--note .alert__title:before {
