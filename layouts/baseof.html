@@ -11,8 +11,10 @@
       gtag('config', '{{ .Site.Params.analytics.ga4_id }}');
     </script>
 {{ end }}
+{{ partial "analytics/gtm-head.html" . }}
     </head>
     <body>
+{{ partial "analytics/gtm-body.html" . }}
         <header>
           {{ partial "header.html" . }}
         </header>
