@@ -7,10 +7,7 @@
 
   (function () {
     var storageKey = 'cookie-consent';
-    var categories = [
-      'ad_storage',
-      'ad_user_data',
-      'ad_personalization',
+    var nonAdvertisingCategories = [
       'analytics_storage',
       'functionality_storage',
       'personalization_storage',
@@ -25,24 +22,20 @@
     }
 
     function settingsFor(choice) {
-      var settings = {};
+      var settings = {
+        ad_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied'
+      };
 
-      categories.forEach(function (category) {
+      nonAdvertisingCategories.forEach(function (category) {
         settings[category] = choice === 'accepted' ? 'granted' : 'denied';
       });
 
       return settings;
     }
 
-    var defaults = {
-      ad_storage: 'denied',
-      ad_user_data: 'denied',
-      ad_personalization: 'denied',
-      analytics_storage: 'granted',
-      functionality_storage: 'granted',
-      personalization_storage: 'granted',
-      security_storage: 'granted'
-    };
+    var defaults = settingsFor('accepted');
 
     if (decision === 'accepted' || decision === 'rejected') {
       defaults = settingsFor(decision);
