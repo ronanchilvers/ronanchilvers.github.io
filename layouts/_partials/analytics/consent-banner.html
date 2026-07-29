@@ -4,12 +4,10 @@
   id="cookie-consent"
   aria-label="Cookie preferences"
   hidden>
-  <p>
-    This site uses cookies for measurement and advertising. You can accept or reject them.
-  </p>
+  <p>{{ .Site.Params.consent.text }}</p>
   <div class="cookie-consent__actions">
-    <button type="button" data-cookie-consent="rejected">Reject cookies</button>
-    <button type="button" data-cookie-consent="accepted">Accept cookies</button>
+    <button type="button" data-cookie-consent="rejected">No thanks</button>
+    <button type="button" data-cookie-consent="accepted">Sure - no problem!</button>
   </div>
 </aside>
 <script>

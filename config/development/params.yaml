@@ -2,3 +2,6 @@
 navigation:
   show_related: false
   show_next: true
+analytics:
+  ga4_id: false
+  gtm_id: false
