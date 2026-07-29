@@ -2,9 +2,6 @@
 name: Hugo Site Build
 
 on:
-  push:
-    branches:
-      - master
   workflow_dispatch:
 
 concurrency:
