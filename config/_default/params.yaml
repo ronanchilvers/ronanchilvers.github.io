@@ -12,6 +12,7 @@ social:
 css:
   - css/normalize.css
   - css/local.css
+  - css/consent.css
   - css/tags.css
   - css/posts.css
   - css/categories.css
@@ -25,3 +26,5 @@ css:
 analytics:
   ga4_id: false
   gtm_id: false
+consent:
+  text: This site may use cookies for anonymous analytics to better understand how people use it. We don't use cookies for advertising.
