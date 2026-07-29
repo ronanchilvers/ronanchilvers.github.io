@@ -12,6 +12,7 @@ social:
 css:
   - css/normalize.css
   - css/local.css
+  - css/consent.css
   - css/tags.css
   - css/posts.css
   - css/categories.css
