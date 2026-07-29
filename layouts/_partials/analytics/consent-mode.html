@@ -1,0 +1,74 @@
+{{ if .Site.Params.analytics.gtm_id }}
+<script>
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = window.gtag || function () {
+    window.dataLayer.push(arguments);
+  };
+
+  (function () {
+    var storageKey = 'cookie-consent';
+    var categories = [
+      'ad_storage',
+      'ad_user_data',
+      'ad_personalization',
+      'analytics_storage',
+      'functionality_storage',
+      'personalization_storage',
+      'security_storage'
+    ];
+    var decision = null;
+
+    try {
+      decision = window.localStorage.getItem(storageKey);
+    } catch (error) {
+      // Continue with the default settings when storage is unavailable.
+    }
+
+    function settingsFor(choice) {
+      var settings = {};
+
+      categories.forEach(function (category) {
+        settings[category] = choice === 'accepted' ? 'granted' : 'denied';
+      });
+
+      return settings;
+    }
+
+    var defaults = {
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied',
+      analytics_storage: 'granted',
+      functionality_storage: 'granted',
+      personalization_storage: 'granted',
+      security_storage: 'granted'
+    };
+
+    if (decision === 'accepted' || decision === 'rejected') {
+      defaults = settingsFor(decision);
+    } else {
+      decision = null;
+    }
+
+    window.gtag('consent', 'default', defaults);
+
+    window.cookieConsent = {
+      decision: decision,
+      update: function (choice) {
+        if (choice !== 'accepted' && choice !== 'rejected') {
+          return;
+        }
+
+        window.gtag('consent', 'update', settingsFor(choice));
+        this.decision = choice;
+
+        try {
+          window.localStorage.setItem(storageKey, choice);
+        } catch (error) {
+          // The choice still applies to this page when storage is unavailable.
+        }
+      }
+    };
+  }());
+</script>
+{{ end }}
