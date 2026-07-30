@@ -288,6 +288,9 @@ hr {
             text-align: center;
         }
     }
+    .home-section .cards .card:nth-child(3) {
+        display: none;
+    }
 }
 
 .home-section {
