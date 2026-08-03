@@ -12,10 +12,11 @@ tags:
   - rule-hacks
 categories:
   - Rules and Tools
+featured: false
 ---
 I recently started putting together a set of tables that I could use for random events. [Mythic's] random event tables are a great resource, but I wanted to create something that was a bit more specific and gave me a more immediate path to follow. One of the biggest hurdles I've had to overcome when playing solo has been dealing with the cognitive load. Quite often I would drop straight out of the story having hit a brick wall when a particular event type ("Remote Event" and "Current Context" - I'm looking at you!) triggered nothing in my mind.
 
-These tables are intended to be a more narrow resource, giving me a specific circumstance to work with while leaving room for interpretation within the current context. They're not yet complete - I'll fill the gaps when I roll them! I've also created some scale tables which I've included below - nothing too novel there though.
+These tables are intended to be a more narrow resource, giving me a specific circumstance to work with while leaving room for interpretation within the current context. They're not yet complete - I'll fill in the gaps when I roll them! I've also created some scale tables which I've included below - nothing too novel there though.
 
 ## Event Tables
 
