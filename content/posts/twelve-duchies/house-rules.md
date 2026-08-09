@@ -22,6 +22,7 @@ I've decided to use a few house rules and mechanics while playing, inspired by (
 - Critical fumble results in missing your next turn
 - First level characters automatically get maximum hit points - they don't need to roll.
 - When rolling first level characters, roll 3d6 for 6 stats in order. Two stats can then be swapped if desired.
+- A full night's undisturbed rest grants 1 hp of natural healing. The normal OSE rules don't apply.
 
 ## Oracles
 
