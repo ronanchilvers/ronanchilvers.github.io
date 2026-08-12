@@ -1,11 +1,15 @@
 {{- with .Site.Params.echothread }}
 {{- if .site_key }}
+{{- $identifier := $.Permalink }}
+{{- with $.File }}
+{{- $identifier = .UniqueID }}
+{{- end }}
 <section class="echothread-panel">
     <div
         class="echothread-comments"
         data-site="{{ .site_key }}"
-        data-thread-id="{{ $.Permalink }}"
-        data-theme="{{ default "auto" .theme }}">
+        data-identifier="{{ $identifier }}"
+        data-theme="{{ default "dark" .theme }}">
     </div>
 </section>
 <script src="https://cdn.echothread.io/embed.js" async></script>
