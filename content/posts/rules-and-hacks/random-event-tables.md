@@ -72,7 +72,7 @@ These tables are intended to be a more narrow resource, giving me a specific cir
 | 3 | In need |
 | 4 | Imperilled |
 | 5 | Transient |
-| 6 |  |
+| 6 | Abandoned |
 
 #### Landscape Feature
 
