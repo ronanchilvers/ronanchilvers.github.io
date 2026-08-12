@@ -93,8 +93,8 @@ These tables are intended to be a more narrow resource, giving me a specific cir
 | 2 | Supplies |
 | 3 | Gear |
 | 4 | Navigation |
-| 5 |  |
-| 6 | |
+| 5 | Terrain |
+| 6 | Fatigue |
 
 ## Scale Tables
 
