@@ -50,7 +50,7 @@ These tables are intended to be a more narrow resource, giving me a specific cir
 | 3 | Intuition - feeling of danger |
 | 4 | Memory - reminder of promised peril |
 | 5 | Consequence - a result of peril |
-| 6 |  |
+| 6 | Absence - something is missing |
 
 #### Meeting
 
