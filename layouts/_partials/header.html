@@ -1,12 +1,12 @@
 <div class="site-title">
     <figure class="figure-round">
-        <img src="/images/home-64x64.png"/>
+        <img src="/images/home-64x64.png" alt="" width="64" height="64">
     </figure>
     <h1>
         <a href="/">{{ .Site.Title }}</a>
     </h1>
 </div>
-<nav aria-labelledby="primary-navigation">
+<nav aria-label="Primary navigation">
 {{ range .Site.Menus.main }}
     <a href="{{ .URL | relURL }}">{{ .Name }}</a>
 {{ end }}
