@@ -6,7 +6,7 @@
 {{- if not .IsHome }}
     {{- $description = .Description | default .Summary | default $description }}
 {{- end }}
-<meta name="description" content="{{ $description | plainify | htmlUnescape | truncate 160 }}">
+<meta name="description" content="{{ $description | plainify | htmlUnescape | replaceRE `\s+` " " | strings.TrimSpace | truncate 160 }}">
 <link
     rel="preconnect"
     href="https://fonts.googleapis.com">
