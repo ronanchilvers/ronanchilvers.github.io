@@ -7,7 +7,9 @@
 <section class="echothread-panel">
     <div
         class="echothread-comments"
-        data-site="{{ .site_key }}"
+        id="echothread"
+        data-shortname="artifakt"
+        data-api-key="{{ .site_key }}"
         data-identifier="{{ $identifier }}"
         data-page-title="{{ $.Title }}"
         data-theme="{{ default "#22272e" .theme }}">
