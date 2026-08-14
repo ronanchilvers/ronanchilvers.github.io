@@ -3,6 +3,7 @@
     {{ partial "components/post-title.html" . }}
     {{ .Content }}
     </article>
+    {{ partial "components/echothread.html" . }}
 {{- if .Site.Params.related.show_related }}
     {{ partial "components/related-posts.html" . }}
 {{- end }}
