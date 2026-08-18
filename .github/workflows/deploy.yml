@@ -2,9 +2,12 @@
 name: Hugo Site Build
 
 on:
-  push:
-    branches:
-      - master
+  workflow_dispatch:
+    inputs:
+      payload:
+        description: Pages CMS JSON payload (optional)
+        required: false
+        type: string
 
 concurrency:
   group: ci-${{ github.ref }}

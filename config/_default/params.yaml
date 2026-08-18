@@ -21,6 +21,7 @@ css:
   - css/alerts.css
   - css/timeline.css
   - css/social.css
+  - css/echothread.css
   # - css/related.css
   - css/next-previous.css
 analytics:
@@ -28,3 +29,6 @@ analytics:
   gtm_id: false
 consent:
   text: This site may use cookies for anonymous analytics to better understand how people use it. We don't use cookies for advertising.
+echothread:
+  site_key: false
+  theme: "#22272e"
