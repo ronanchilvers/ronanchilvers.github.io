@@ -4,7 +4,12 @@
   {{ .Content }}
   <div class="cards">
   {{ range .Pages }}
-    {{ partial "components/post-card.html" . }}
+  {{ partial "components/post-card.html" ( dict
+      "post" .
+      "features" ( dict
+          "smallCards" true
+      )
+  )}}
   {{ end }}
   </div>
 </section>

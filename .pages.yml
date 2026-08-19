@@ -1,6 +1,10 @@
 settings:
   content:
     merge: true
+actions:
+  - name: deploy
+    label: Deploy Site
+    workflow: deploy.yml
 media: static
 content:
   - name: home
@@ -19,6 +23,23 @@ content:
     label: About Page
     type: file
     path: "content/about.md"
+    fields:
+      - name: title
+        label: Title
+        type: string
+      - name: body
+        label: Body
+        type: text
+        options:
+          rows: 60
+      - name: draft
+        label: Draft
+        type: boolean
+        default: true
+  - name: projects
+    label: Projects Page
+    type: file
+    path: "content/projects.md"
     fields:
       - name: title
         label: Title
@@ -61,16 +82,14 @@ content:
       - name: summary
         label: Summary
         type: string
-      - name: body
-        label: Body
-        type: text
-        options:
-          autoresize: false
-          rows: 10
       - name: draft
         label: Draft
         type: boolean
         default: true
+      - name: featured
+        label: Featured Article
+        type: boolean
+        default: false
       - name: tags
         label: Tags
         type: string
@@ -79,3 +98,9 @@ content:
         label: Categories
         type: string
         list: true
+      - name: body
+        label: Body
+        type: text
+        options:
+          autoresize: false
+          rows: 10

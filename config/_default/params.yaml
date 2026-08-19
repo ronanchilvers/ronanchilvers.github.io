@@ -1,12 +1,18 @@
 ---
-subtitle: Musings, imaginings and discoveries in tabletop RPGs
-footer: "[About Me](/about/) - [Licensing](/licensing/) - [RSS](/posts/index.xml)"
+subtitle: In which I muse, imagine and burble about tabletop role playing games, occasionally jotting down scribblings of variable quality and value.
 navigation:
   show_related: false
   show_next: true
+social:
+  bluesky: "ronanchilvers.bsky.social"
+  mastodon: "@ronanchilvers@mstdn.party"
+  # x: "ronanchilvers"
+  # instagram: "ronanchilvers"
+  rss: /posts/index.xml
 css:
   - css/normalize.css
   - css/local.css
+  - css/consent.css
   - css/tags.css
   - css/posts.css
   - css/categories.css
@@ -14,7 +20,15 @@ css:
   - css/cols.css
   - css/alerts.css
   - css/timeline.css
+  - css/social.css
+  - css/echothread.css
   # - css/related.css
   - css/next-previous.css
 analytics:
   ga4_id: false
+  gtm_id: false
+consent:
+  text: This site may use cookies for anonymous analytics to better understand how people use it. We don't use cookies for advertising.
+echothread:
+  site_key: false
+  theme: "#22272e"

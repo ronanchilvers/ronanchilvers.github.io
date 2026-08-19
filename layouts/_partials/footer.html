@@ -1,1 +1,27 @@
-<p>{{ replace .Site.Params.footer "{Year}" now.Year | markdownify }} </p>
+<div class="sections">
+    <div>
+        <h3>{{ .Site.Title }}</h3>
+        <p>{{ .Site.Params.subtitle }}</p>
+        <p><a href="/about/">Read About Me</a></p>
+    </div>
+    <div>
+        <h3 class="footer-heading">Top Categories</h3>
+        {{- range first 6 .Site.Taxonomies.categories.ByCount }}
+        <a href="{{ .Page.RelPermalink }}">{{ .Page.LinkTitle }}</a>
+        {{- end }}
+    </div>
+    <div>
+        <h3 class="footer-heading">Top Tags</h3>
+        <div>
+            {{- range first 6 .Site.Taxonomies.tags.ByCount }}
+            <a href="{{ .Page.RelPermalink }}" class="tag">{{ .Name }}</a>
+            {{- end }}
+        </div>
+    </div>
+    <div>
+        <h3 class="footer-heading">Social</h3>
+        {{ partial "components/social-links.html" . }}
+    </div>
+</div>
+<hr />
+<p><a href="/licensing/">Licensing</a> - Made with 🧠 and 💭 by Ronan - {{ .Date | time.Format "2006" }}</p>

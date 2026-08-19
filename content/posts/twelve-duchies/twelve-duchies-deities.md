@@ -10,7 +10,8 @@ tags:
   - ose
   - world-building
 categories:
-  - Twelve Duchies Lore
+  - Twelve Duchies
+featured: false
 ---
 Inspired by Sly Flourish's article about [lazy world building] and compiling lists of deities (among other things), this page is going to be a growing list of the deities in the Twelve Duchies. I'll keep it up to date as more emerge.
 

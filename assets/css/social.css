@@ -1,0 +1,31 @@
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    width: fit-content;
+}
+
+.social-link__icon {
+    width: 1em;
+    height: 1em;
+    flex: none;
+    fill: currentColor;
+}
+
+.social-link__icon--mastodon {
+    width: 1.2em;
+    height: 1.2em;
+}
+
+.social-link__icon--stroke {
+    fill: none;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2;
+}
+
+.social-link__icon-dot {
+    fill: currentColor;
+    stroke: none;
+}

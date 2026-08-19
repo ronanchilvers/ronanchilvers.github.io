@@ -1,0 +1,37 @@
+{{ if .Site.Params.analytics.gtm_id }}
+<aside
+  class="cookie-consent"
+  id="cookie-consent"
+  aria-label="Cookie preferences"
+  hidden>
+  <p>{{ .Site.Params.consent.text }}</p>
+  <div class="cookie-consent__actions">
+    <button type="button" data-cookie-consent="rejected">No thanks</button>
+    <button type="button" data-cookie-consent="accepted">Sure - no problem!</button>
+  </div>
+</aside>
+<script>
+  (function () {
+    var banner = document.getElementById('cookie-consent');
+
+    if (!banner || !window.cookieConsent) {
+      return;
+    }
+
+    if (!window.cookieConsent.decision) {
+      banner.hidden = false;
+    }
+
+    banner.addEventListener('click', function (event) {
+      var choice = event.target.getAttribute('data-cookie-consent');
+
+      if (!choice) {
+        return;
+      }
+
+      window.cookieConsent.update(choice);
+      banner.hidden = true;
+    });
+  }());
+</script>
+{{ end }}

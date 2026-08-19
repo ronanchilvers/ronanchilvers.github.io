@@ -1,18 +1,64 @@
 {{ define "main" }}
 <section class="home">
-  <!--{{ .Content }}-->
-  <figure class="figure-round">
-      <img src="/images/home-300x300.png" alt="By Lantern Light" />
-  </figure>
-  <h1>{{ .Site.Title }}</h1>
-  <p>{{ .Site.Params.subtitle }}</p>
+    <figure class="figure-round">
+        <img src="/images/home-300x300.png" alt="By Lantern Light" />
+    </figure>
+    <div>
+        {{ .Content }}
+    </div>
 </section>
-<section class="recent-posts">
-    <h2>Recent Posts</h2>
+
+{{- $posts := sort (where .Site.RegularPages "Type" "posts") "Date" "desc" }}
+{{- $featuredPosts := first 3 (where $posts "Params.featured" true) }}
+{{- if $featuredPosts }}
+<section class="home-section">
+    <h2>Featured Posts</h2>
     <div class="cards">
-{{ range first 6 (where .Site.RegularPages "Type" "posts") }}
-    {{ partial "components/post-card.html" . }}
+{{ range $featuredPosts }}
+    {{ partial "components/post-card.html" ( dict
+        "post" .
+        "features" ( dict
+            "highPriority" true
+        )
+    ) }}
 {{- end }}
     </div>
 </section>
+{{- end }}
+
+<section class="home-section">
+    <h2>Popular Tags</h2>
+    <div class="tags">
+    {{- range first 6 .Site.Taxonomies.tags.ByCount }}
+    <a href="{{ .Page.RelPermalink }}" class="tag">{{ .Name }}</a>
+    {{- end }}
+    </div>
+</section>
+
+<section class="home-section">
+    <h2>Recent Posts</h2>
+    <ul class="post-list">
+{{ range first 8 $posts }}
+        {{- $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+        {{- $dateHuman := .Date | time.Format ":date_long" }}
+        {{- $category := index (.GetTerms "categories") 0 }}
+        <li class="post-list-item">
+            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+            <div class="post-list-meta">
+                <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+                {{- with $category }}
+                in <span><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></span>
+                {{- end }}
+                {{- with .GetTerms "tags" }}
+                tagged
+                <span>
+                    {{- range . }} <a href="{{ .RelPermalink }}" class="tag tag--bare">{{ .LinkTitle | lower }}</a>{{- end }}
+                </span>
+                {{- end }}
+            </div>
+        </li>
+{{- end }}
+    </ul>
+</section>
+
 {{ end }}

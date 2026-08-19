@@ -2,6 +2,7 @@
 <html lang="{{ site.Language.LanguageCode }}" dir="ltr">
     <head>
     {{ partial "head.html" . }}
+{{ partial "analytics/consent-mode.html" . }}
 {{ if .Site.Params.analytics.ga4_id }}
     <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.analytics.ga4_id }}"></script>
     <script>
@@ -11,8 +12,10 @@
       gtag('config', '{{ .Site.Params.analytics.ga4_id }}');
     </script>
 {{ end }}
+{{ partial "analytics/gtm-head.html" . }}
     </head>
     <body>
+{{ partial "analytics/consent-banner.html" . }}
         <header>
           {{ partial "header.html" . }}
         </header>

@@ -10,7 +10,8 @@ tags:
   - ose
   - world-building
 categories:
-  - Twelve Duchies Lore
+  - Twelve Duchies
+featured: false
 ---
 Lore is important in a D&D setting. It helps set the scene, gives context and helps the GM develop the story. [Sly Flourish] wrote an article a while ago about [factions in your campaign]. To quote the article
 
@@ -27,7 +28,7 @@ Jarik and Malen Rook run a low level crime racket in the docks of Kethryn, capti
 *NPCs*
 - Jarik and Malen Rook
 - Joss Ketter - Sly, cruel enforce for the Rooks. Ketter enjoys making people suffer.
-- Harl Fen - Huge, muscular bruiser. The frequent sidekick of Joss Ketter. Fen likes hitting things. 
+- Harl Fen - Huge, muscular bruiser. The frequent sidekick of Joss Ketter. Fen likes hitting things. **Seemingly killed by Hadley**
 
 [Sly Flourish]: https://slyflourish.com
 [factions in your campaign]: https://slyflourish.com/build_a_faction_list.html

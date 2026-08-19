@@ -1,0 +1,21 @@
+{{- with .Site.Params.echothread }}
+{{- if .site_key }}
+{{- $identifier := $.Permalink }}
+{{- with $.File }}
+{{- $identifier = .UniqueID }}
+{{- end }}
+<section class="echothread-panel">
+    <div
+        class="echothread-comments"
+        id="echothread"
+        data-shortname="artifakt"
+        data-auth-button-style="icons"
+        data-api-key="{{ .site_key }}"
+        data-identifier="{{ $identifier }}"
+        data-page-title="{{ $.Title }}"
+        data-theme="{{ default "#22272e" .theme }}">
+    </div>
+</section>
+<script src="https://cdn.echothread.io/widget.js" async></script>
+{{- end }}
+{{- end }}

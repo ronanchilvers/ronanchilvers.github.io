@@ -15,7 +15,12 @@
 
         <div class="cards">
         {{- range .term.Pages }}
-            {{ partial "components/post-card.html" . }}
+            {{ partial "components/post-card.html" ( dict
+                "post" .
+                "features" ( dict
+                    "smallCards" true
+                )
+            )}}
         {{- end }}
         </div>
     </section>

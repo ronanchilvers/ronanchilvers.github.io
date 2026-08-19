@@ -6,10 +6,11 @@ summary: I'm using a few house rules and mechanics while playing, inspired by
 draft: false
 slug: house-rules
 tags:
-  - actual-play
   - ose
+  - mythic
 categories:
   - Twelve Duchies
+featured: false
 ---
 First a huge caveat. I'm no B/X or OSE expert. I've played a good bit of D&D and a few other systems but I'm *very* far from being an RPG luminary like [Mike Shea] or [Matt Mercer]. Part of the enjoyment is going to be learning a new (old!) system but I'm highly likely to make mistakes. Hopefully I notice and don't make them a second time, but you never know!
 
@@ -21,6 +22,7 @@ I've decided to use a few house rules and mechanics while playing, inspired by (
 - Critical fumble results in missing your next turn
 - First level characters automatically get maximum hit points - they don't need to roll.
 - When rolling first level characters, roll 3d6 for 6 stats in order. Two stats can then be swapped if desired.
+- A full night's undisturbed rest grants 1 hp of natural healing. The normal OSE rules don't apply.
 
 ## Oracles
 

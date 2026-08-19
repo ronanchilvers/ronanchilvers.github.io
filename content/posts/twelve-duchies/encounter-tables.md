@@ -1,5 +1,5 @@
 ---
-date: 2026-01-14 17:34:01
+date: 2026-01-14 17:34:00
 draft: false
 title: Encounter Tables
 summary: Some encounter tables that I use in my solo sessions.
@@ -9,7 +9,8 @@ tags:
   - random-tables
   - encounters
 categories:
-  - Twelve Duchies Lore
+  - Twelve Duchies
+featured: false
 ---
 This page documents some random encounter tables that I use in my Twelve Duchies OSE actual play sessions. I write these as I need them and re-use them, replacing entries as needed.
 
