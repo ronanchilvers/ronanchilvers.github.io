@@ -100,7 +100,7 @@
         flex-direction: column;
         .card,
         .card.card--small {
-            width: auto;
+            width: calc(100% - 1rem);
             display: block;
         }
     }

@@ -22,8 +22,10 @@ html {
     box-sizing: border-box;
     line-height: 1.7;
     letter-spacing: 0.5px;
+    scrollbar-gutter: stable;
 }
 body {
+    box-sizing: inherit;
     font-family: "Goudy Bookletter 1911", serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -34,7 +36,6 @@ body {
     color: var(--font-color);
     background-color: var(--background-color);
     max-width: 1024px;
-    min-width: 350px;
     margin: 0 auto;
     padding: 0 1rem;
 }
