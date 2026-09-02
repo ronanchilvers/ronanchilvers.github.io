@@ -18,6 +18,10 @@
     <div class="post-header-inner">
         <!--<h1 class="post-title">{{ $post.Title }}</h1>-->
         <time class="post-timestamp" datetime="{{ $dateMachine }}"><span>On</span> {{ $dateHuman }}</time>
+        <span class="post-reading-time" aria-label="Estimated reading time">
+            <span class="post-meta-separator" aria-hidden="true">&middot;</span>
+            {{ $post.ReadingTime }} min read
+        </span>
         <h2 class="post-subtitle"><span>in</span> <a href="{{ $category.Path }}">{{ $category.Name }}</a></h2>
         <div class="post-tags">
             <span>tagged with </span>

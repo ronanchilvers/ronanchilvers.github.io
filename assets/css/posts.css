@@ -25,6 +25,7 @@
         }
         .post-timestamp,
         .post-title,
+        .post-reading-time,
         .post-tags,
         .post-subtitle {
             font-size: 1.4rem;
@@ -46,6 +47,16 @@
             left: 1rem;
             right: auto;
             position: absolute;*/
+        }
+        .post-reading-time {
+            font-size: 1.2rem;
+            opacity: 0.75;
+            align-self: center;
+
+            .post-meta-separator {
+                margin-right: 0.5rem;
+                opacity: 0.6;
+            }
         }
         /*.post-subtitle {
             left: auto;
@@ -72,6 +83,13 @@
                 flex-direction: column;
                 align-items: center;
                 text-align: center;
+            }
+            .post-reading-time {
+                margin: 0.25rem 0;
+
+                .post-meta-separator {
+                    display: none;
+                }
             }
         }
     }
