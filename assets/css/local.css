@@ -246,7 +246,7 @@ figure {
     border-width: 2px;
     border-style: solid;
     border-color: var(--border-color);
-    box-shadow: 0 0 7px rgba(0,0,0,0.25);
+    box-shadow: 0 0 7px rgba(0,0,0,0.4);
 }
 figure.figure-round {
     border-radius: 50%;
