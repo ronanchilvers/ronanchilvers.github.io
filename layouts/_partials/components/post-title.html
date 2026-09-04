@@ -15,13 +15,16 @@
 {{- $dateHuman := $post.Date | time.Format ":date_long" }}
 <h1 class="post-title">{{ $post.Title }}</h1>
 <header{{ if $imagePath }} class="post-header post-header--banner" style="background-image: url({{ $imagePath }})"{{ else }} class="post-header"{{ end }}>
+    <span class="post-reading-time" aria-label="Estimated reading time: {{ $post.ReadingTime }} minutes">
+        <svg class="post-reading-time-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <circle cx="12" cy="12" r="9"></circle>
+            <path d="M12 7v5l3 2"></path>
+        </svg>
+        {{ $post.ReadingTime }} min read
+    </span>
     <div class="post-header-inner">
         <!--<h1 class="post-title">{{ $post.Title }}</h1>-->
         <time class="post-timestamp" datetime="{{ $dateMachine }}"><span>On</span> {{ $dateHuman }}</time>
-        <span class="post-reading-time" aria-label="Estimated reading time">
-            <span class="post-meta-separator" aria-hidden="true">&middot;</span>
-            {{ $post.ReadingTime }} min read
-        </span>
         <h2 class="post-subtitle"><span>in</span> <a href="{{ $category.Path }}">{{ $category.Name }}</a></h2>
         <div class="post-tags">
             <span>tagged with </span>
