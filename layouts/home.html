@@ -1,7 +1,10 @@
 {{ define "main" }}
 <section class="home">
     <figure class="figure-round">
-        <img src="/images/home-300x300.png" alt="By Lantern Light" />
+        <picture>
+            <source srcset="/images/home-300x300.webp" type="image/webp">
+            <img src="/images/home-300x300.png" alt="By Lantern Light" width="300" height="300" fetchpriority="high">
+        </picture>
     </figure>
     <div>
         {{ .Content }}

@@ -20,11 +20,25 @@
 {{- end }}
 {{- $dateMachine := $post.Date | time.Format "2006-01-02T15:04:05-07:00" }}
 {{- $dateHuman := $post.Date | time.Format ":date_long" }}
+{{- $imageConfig := false }}
+{{- $webpPath := false }}
+{{- if $imagePath }}
+    {{- $imageConfig = imageConfig (printf "static%s" $imagePath) }}
+    {{- $webpCandidate := replaceRE `\.[^.]+$` ".webp" $imagePath }}
+    {{- if fileExists (printf "static%s" $webpCandidate) }}
+        {{- $webpPath = $webpCandidate }}
+    {{- end }}
+{{- end }}
 <div class="card{{ if $features.smallCards }} card--small{{ end }}">
 {{- if $imagePath }}
     <figure class="card-image">
         <a class="card-title" href="{{ $post.RelPermalink }}">{{ $post.Title }}</a>
-        <a class="card-image-link" href="{{ $post.RelPermalink }}"><img{{ if $features.highPriority }} fetchpriority="high"{{ end }} src="{{ $imagePath }}" alt="{{ $post.Title }}"></a>
+        <a class="card-image-link" href="{{ $post.RelPermalink }}">
+            <picture>
+                {{- with $webpPath }}<source srcset="{{ . }}" type="image/webp">{{ end }}
+                <img src="{{ $imagePath }}" alt="{{ $post.Title }}" width="{{ $imageConfig.Width }}" height="{{ $imageConfig.Height }}"{{ if $features.highPriority }} fetchpriority="high"{{ else }} loading="lazy" decoding="async"{{ end }}>
+            </picture>
+        </a>
     </figure>
 {{- end }}
     <div class="card-content">
