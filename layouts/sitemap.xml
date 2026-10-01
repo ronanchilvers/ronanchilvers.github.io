@@ -1,0 +1,18 @@
+{{- /* Include only crawlable HTML destinations that are eligible for indexing. */ -}}
+{{ printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{{- range .Pages }}
+    {{- $page := . }}
+    {{- $seo := partial "seo/resolve.html" . }}
+    {{- if and (not $seo.noindex) (not .Sitemap.Disable) }}
+        {{- with .OutputFormats.Get "html" }}
+    <url>
+        <loc>{{ .Permalink }}</loc>
+            {{- if not $page.Lastmod.IsZero }}
+        <lastmod>{{ $page.Lastmod | time.Format "2006-01-02T15:04:05-07:00" }}</lastmod>
+            {{- end }}
+    </url>
+        {{- end }}
+    {{- end }}
+{{- end }}
+</urlset>

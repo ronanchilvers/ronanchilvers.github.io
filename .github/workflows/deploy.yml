@@ -29,11 +29,17 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: ${{ vars.HUGO_VERSION }}
+          hugo-version: '0.152.2'
           extended: true
 
       - name: Build Site
-        run: hugo --minify
+        run: hugo --environment production --minify
+
+      - name: Check SEO output
+        run: python3 scripts/check_seo.py public
+
+      - name: Test SEO overrides and indexing
+        run: python3 scripts/test_seo.py
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3

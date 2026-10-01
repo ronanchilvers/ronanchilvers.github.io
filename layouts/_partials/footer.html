@@ -14,7 +14,7 @@
         <h3 class="footer-heading">Top Tags</h3>
         <div>
             {{- range first 6 .Site.Taxonomies.tags.ByCount }}
-            <a href="{{ .Page.RelPermalink }}" class="tag">{{ .Name }}</a>
+        <a href="{{ .Page.RelPermalink }}" class="tag">{{ .Page.LinkTitle }}</a>
             {{- end }}
         </div>
     </div>

@@ -1,16 +1,7 @@
 {{- $post := . }}
-{{- $category := index ($post.GetTerms "categories") 0 }}
-{{- $categorySlug := ($category.Name | urlize) }}
-{{- $banner := cond ($post.Params.images.banner) $post.Params.images.banner (printf "%s-banner.png" (cond ($post.Slug) $post.Slug ($post.Title | urlize) )) }}
-{{- $names := slice $banner "banner.png" }}
-{{- $imagePath := false }}
-{{- range $names }}
-    {{- $testPath := (printf "/images/%s/%s" $categorySlug . ) }}
-    {{- if fileExists (printf "static/%s" $testPath ) }}
-        {{- $imagePath = $testPath }}
-        {{- break }}
-    {{- end }}
-{{- end }}
+{{- $category := false }}
+{{- with $post.GetTerms "categories" }}{{ $category = index . 0 }}{{ end }}
+{{- $imagePath := partial "components/post-image.html" (dict "page" $post "kind" "banner") }}
 {{- $dateMachine := $post.Date | time.Format "2006-01-02T15:04:05-07:00" }}
 {{- $dateHuman := $post.Date | time.Format ":date_long" }}
 <h1 class="post-title">{{ $post.Title }}</h1>
@@ -25,14 +16,16 @@
     <div class="post-header-inner">
         <!--<h1 class="post-title">{{ $post.Title }}</h1>-->
         <time class="post-timestamp" datetime="{{ $dateMachine }}"><span>On</span> {{ $dateHuman }}</time>
-        <h2 class="post-subtitle"><span>in</span> <a href="{{ $category.Path }}">{{ $category.Name }}</a></h2>
+        {{- with $category }}
+        <h2 class="post-subtitle"><span>in</span> <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+        {{- end }}
         <div class="post-tags">
             <span>tagged with </span>
             {{- with $post.GetTerms "tags" }}
-            {{- range . }}<a href="{{ .RelPermalink }}" class="tag tag--bare">{{ .LinkTitle | lower }}</a>{{- end }}
+            {{- range . }}<a href="{{ .RelPermalink }}" class="tag tag--bare">{{ .LinkTitle }}</a>{{- end }}
             {{- end }}
         </div>
-        <!--<nav class="post-meta" aria-labelledby="article-tags-navigation">
+        {{/* <nav class="post-meta" aria-labelledby="article-tags-navigation">
             <div class="post-meta-item post-meta-item--timestamp"><time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time></div>
             <h2 class="post-meta-item post-subtitle">
                 <a href="{{ $category.Path }}">{{ $category.Name }}</a>
@@ -42,6 +35,7 @@
                 {{- range . }}<a href="{{ .RelPermalink }}" class="tag tag--bare">{{ .LinkTitle | lower }}</a>{{- end }}
                 {{- end }}
             </div>
-        </nav>-->
+        </nav> */}}
     </div>
 </header>
+<p class="post-author">By <a href="{{ .Site.Params.author.url | relURL }}">{{ .Site.Params.author.name }}</a>{{ if gt .Lastmod .Date }} · Updated <time datetime="{{ .Lastmod | time.Format "2006-01-02T15:04:05-07:00" }}">{{ .Lastmod | time.Format ":date_long" }}</time>{{ end }}</p>

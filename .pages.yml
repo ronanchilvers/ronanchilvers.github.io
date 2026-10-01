@@ -5,7 +5,9 @@ actions:
   - name: deploy
     label: Deploy Site
     workflow: deploy.yml
-media: static
+media:
+  input: static
+  output: /
 content:
   - name: home
     label: Home Page
@@ -15,6 +17,34 @@ content:
       - name: title
         label: Title
         type: string
+      - &seo_title
+        name: seo_title
+        label: Search title (optional)
+        type: string
+      - &description
+        name: description
+        label: Search description (optional)
+        type: text
+      - &seo_image
+        name: seo_image
+        label: Social preview image (optional)
+        type: image
+      - &seo_image_alt
+        name: seo_image_alt
+        label: Social preview image description (optional)
+        type: string
+      - &noindex
+        name: noindex
+        label: Exclude from search results
+        type: boolean
+        default: false
+      - &lastmod
+        name: lastmod
+        label: Last content update (optional)
+        type: date
+        options:
+          format: yyyy-MM-dd HH:mm:ss
+          time: true
       - name: body
         label: Body
         type: text
@@ -27,6 +57,12 @@ content:
       - name: title
         label: Title
         type: string
+      - *seo_title
+      - *description
+      - *seo_image
+      - *seo_image_alt
+      - *noindex
+      - *lastmod
       - name: body
         label: Body
         type: text
@@ -44,6 +80,12 @@ content:
       - name: title
         label: Title
         type: string
+      - *seo_title
+      - *description
+      - *seo_image
+      - *seo_image_alt
+      - *noindex
+      - *lastmod
       - name: body
         label: Body
         type: text
@@ -98,9 +140,107 @@ content:
         label: Categories
         type: string
         list: true
+      - *seo_title
+      - *description
+      - *seo_image
+      - *seo_image_alt
+      - *noindex
+      - *lastmod
       - name: body
         label: Body
         type: text
         options:
           autoresize: false
           rows: 10
+  - name: category-twelve-duchies
+    label: "Category: Twelve Duchies"
+    type: file
+    path: "content/categories/twelve-duchies/_index.md"
+    fields: &term_fields
+      - name: title
+        label: Display title
+        type: string
+      - *seo_title
+      - *description
+      - *seo_image
+      - *seo_image_alt
+      - *noindex
+      - *lastmod
+      - name: body
+        label: Introduction
+        type: text
+  - name: category-mountaintop-isolation
+    label: "Category: Mountaintop Isolation"
+    type: file
+    path: "content/categories/mountaintop-isolation/_index.md"
+    fields: *term_fields
+  - name: category-rules-and-tools
+    label: "Category: Rules and Tools"
+    type: file
+    path: "content/categories/rules-and-tools/_index.md"
+    fields: *term_fields
+  - name: category-streetwise
+    label: "Category: Streetwise"
+    type: file
+    path: "content/categories/streetwise/_index.md"
+    fields: *term_fields
+  - name: category-the-library-between-worlds
+    label: "Category: The Library Between Worlds"
+    type: file
+    path: "content/categories/the-library-between-worlds/_index.md"
+    fields: *term_fields
+  - name: tag-actual-play
+    label: "Tag: Actual Play"
+    type: file
+    path: "content/tags/actual-play/_index.md"
+    fields: *term_fields
+  - name: tag-encounters
+    label: "Tag: Encounters"
+    type: file
+    path: "content/tags/encounters/_index.md"
+    fields: *term_fields
+  - name: tag-mythic
+    label: "Tag: Mythic"
+    type: file
+    path: "content/tags/mythic/_index.md"
+    fields: *term_fields
+  - name: tag-ose
+    label: "Tag: Old-School Essentials"
+    type: file
+    path: "content/tags/ose/_index.md"
+    fields: *term_fields
+  - name: tag-random-tables
+    label: "Tag: Random Tables"
+    type: file
+    path: "content/tags/random-tables/_index.md"
+    fields: *term_fields
+  - name: tag-rule-hacks
+    label: "Tag: Rule Hacks"
+    type: file
+    path: "content/tags/rule-hacks/_index.md"
+    fields: *term_fields
+  - name: tag-swade
+    label: "Tag: Savage Worlds Adventure Edition"
+    type: file
+    path: "content/tags/swade/_index.md"
+    fields: *term_fields
+  - name: tag-systems
+    label: "Tag: Game Systems"
+    type: file
+    path: "content/tags/systems/_index.md"
+    fields: *term_fields
+  - name: tag-world-building
+    label: "Tag: World Building"
+    type: file
+    path: "content/tags/world-building/_index.md"
+    fields: *term_fields
+  - name: tag-wretched-and-alone
+    label: "Tag: Wretched and Alone"
+    type: file
+    path: "content/tags/wretched-and-alone/_index.md"
+    fields: *term_fields
+  - name: tag-year-zero-engine
+    label: "Tag: Year Zero Engine"
+    type: file
+    path: "content/tags/year-zero-engine/_index.md"
+    fields: *term_fields

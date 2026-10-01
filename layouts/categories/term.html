@@ -1,7 +1,8 @@
 {{ define "main" }}
 <section class="categories">
     <section class="category">
-        <h2 class="category-title">{{ title .Title  }}</h2>
+        <h1 class="category-title">{{ .Title }}</h1>
+        {{ .Content }}
         <div class="cards">
         {{ range .Pages }}
             {{ partial "components/post-card.html" . }}

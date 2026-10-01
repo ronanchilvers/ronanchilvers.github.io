@@ -4,7 +4,7 @@ This file provides guidance to AI agents when working with code in this reposito
 
 ## Overview
 
-This is a Hugo static site — "By Lantern Light" — a personal blog focused on tabletop RPGs. It uses Hugo v0.152.2+ (extended).
+This is a Hugo static site, "By Lantern Light", a personal blog focused on tabletop roleplaying games. It uses Hugo v0.152.2 (extended), pinned in the deployment workflow.
 
 ## Common Commands
 
@@ -15,13 +15,19 @@ hugo server -D -M --cleanDestinationDir
 # Build site for production
 hugo --environment production
 
+# Validate generated search metadata, images and sitemap
+python3 scripts/check_seo.py public
+
+# Exercise metadata overrides and development indexing with isolated content
+python3 scripts/test_seo.py
+
 # Create a new post using the default archetype
 hugo new content/posts/<section>/<filename>.md
 ```
 
 ## Deployment
 
-The site is deployed to GitHub Pages via `.github/workflows/deploy.yml`. Pushing to `master` triggers an automatic build (Hugo 0.147.2 extended, with `--minify`) and deploy to the `gh-pages` branch using `peaceiris/actions-gh-pages`.
+The site is deployed to GitHub Pages via `.github/workflows/deploy.yml`. Deployment is triggered manually through `workflow_dispatch`, including the Deploy Site action in Pages CMS. The workflow builds with Hugo 0.152.2 extended and `--environment production --minify`, checks the generated search metadata, then deploys to `gh-pages` using `peaceiris/actions-gh-pages` when the selected branch is `master`. Pushing alone does not trigger deployment.
 
 ## Site Architecture
 
@@ -59,6 +65,17 @@ categories: []
 - Permalinks are structured as `/:year/:month/:slug/`
 - Categories map to series (e.g. `Twelve Duchies`)
 - Common tags include `actual-play`, `ose`, `solo-rpg`
+
+## Search Metadata and Indexing
+
+- Search engine optimisation (SEO) metadata is resolved in `layouts/_partials/seo/resolve.html` and rendered by `seo/head.html`. Keep descriptions, canonical links, social previews and structured data consistent through this resolver.
+- Optional front matter: `seo_title`, `description`, `seo_image`, `seo_image_alt`, `noindex`, and `lastmod`. Search titles do not change visible titles or existing slugs. Descriptions fall back to plain-text post summaries or page-specific defaults.
+- Set `lastmod` only for genuine content updates. Undated pages omit modification dates; post publication dates provide the fallback for sitemap dates. Never use build time or file modification time.
+- Keep category and tag archives indexable by default. Set `noindex: true` for pages that should be excluded from search. Development builds, `/error/` and the branded 404 page are always noindex, while robots.txt keeps them crawlable.
+- The custom sitemap includes indexable HTML pages only. Feeds remain available but are excluded from the sitemap.
+- Category and tag display titles and introductions live in `content/categories/<term>/_index.md` and `content/tags/<term>/_index.md`. Preserve directory names when changing display titles to retain existing URLs.
+- Pages CMS uses `static` as its media input and `/` as the public output. Social image overrides use public paths such as `/images/home.png`, not `/static/images/home.png`.
+- Local images require intrinsic width and height. Content images and archive cards are lazy-loaded; prominent homepage images remain eager.
 
 ## Callout Blocks
 

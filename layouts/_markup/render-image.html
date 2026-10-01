@@ -1,0 +1,4 @@
+{{- /* Reserve space for local content images while deferring their network requests. */ -}}
+{{- $path := (urls.Parse .Destination).Path }}
+{{- $file := printf "static/%s" (strings.TrimPrefix "/" $path) }}
+<img src="{{ .Destination | safeURL }}" alt="{{ .PlainText }}"{{ with .Title }} title="{{ . }}"{{ end }}{{ if and (not (urls.Parse .Destination).Host) (fileExists $file) }}{{ $size := images.Config $file }} width="{{ $size.Width }}" height="{{ $size.Height }}"{{ end }} loading="lazy" decoding="async">

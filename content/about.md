@@ -1,5 +1,6 @@
 ---
 title: About Me
+description: Meet Ronan, the writer behind By Lantern Light, and explore a lifetime of tabletop roleplaying games and solo adventures.
 draft: false
 type: page
 layout: about
