@@ -1,5 +1,12 @@
 ---
 subtitle: In which I muse, imagine and burble about tabletop role playing games, occasionally jotting down scribblings of variable quality and value.
+seo:
+  description: Solo tabletop roleplaying adventures, random tables and house rules by Ronan.
+  image: /images/home.png
+  image_alt: By Lantern Light
+author:
+  name: Ronan
+  url: /about/
 navigation:
   show_related: false
   show_next: true

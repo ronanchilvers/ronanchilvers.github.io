@@ -1,0 +1,43 @@
+{{- /* Resolve shared metadata without changing visible titles, excerpts, or URLs. */ -}}
+{{- $headline := .Params.seo_title | default .Title | default .Site.Title }}
+{{- $title := $headline }}
+{{- if and (ne $headline .Site.Title) (not (strings.HasSuffix $headline (printf " | %s" .Site.Title))) }}
+    {{- $title = printf "%s | %s" $headline .Site.Title }}
+{{- end }}
+{{- $description := .Description }}
+{{- if not $description }}
+    {{- if and .IsPage (eq .Type "posts") }}
+        {{- with .Params.summary }}
+            {{- $description = . | markdownify | plainify }}
+        {{- else }}
+            {{- $description = $.Summary | plainify }}
+        {{- end }}
+    {{- else if .IsHome }}
+        {{- $description = .Site.Params.seo.description }}
+    {{- else if eq .Kind "term" }}
+        {{- $description = printf "Explore %s posts, ideas and adventures on %s." .Title .Site.Title }}
+    {{- else if eq .Kind "taxonomy" }}
+        {{- $description = printf "Browse %s to discover tabletop roleplaying posts on %s." (.Title | lower) .Site.Title }}
+    {{- end }}
+{{- end }}
+{{- $description = $description | default (printf "%s on %s, a personal blog about tabletop roleplaying games." .Title .Site.Title) }}
+{{- $description = $description | htmlUnescape | replaceRE `\s+` " " | strings.TrimSpace }}
+{{- $image := .Params.seo_image }}
+{{- if not $image }}
+    {{- if and .IsPage (eq .Type "posts") }}
+        {{- $image = partial "components/post-image.html" (dict "page" . "kind" "banner") }}
+    {{- else if and (eq .Kind "term") (eq .Data.Plural "categories") }}
+        {{- $candidate := printf "/images/%s/banner.png" (.Data.Term | urlize) }}
+        {{- if fileExists (printf "static%s" $candidate) }}
+            {{- $image = $candidate }}
+        {{- end }}
+    {{- end }}
+{{- end }}
+{{- $image = $image | default .Site.Params.seo.image | absURL }}
+{{- $imageAlt := .Params.seo_image_alt | default $headline }}
+{{- if eq $image (.Site.Params.seo.image | absURL) }}
+    {{- $imageAlt = .Params.seo_image_alt | default .Site.Params.seo.image_alt }}
+{{- end }}
+{{- $noindex := or hugo.IsDevelopment (.Params.noindex | default false) (eq .Kind "404") (eq .RelPermalink "/error/") }}
+{{- $metadata := dict "headline" $headline "title" $title "description" $description "canonical" .Permalink "image" $image "imageAlt" $imageAlt "noindex" $noindex }}
+{{- return $metadata }}

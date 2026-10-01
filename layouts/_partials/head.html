@@ -1,7 +1,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
+{{ partial "seo/head.html" . }}
 <link
     rel="preconnect"
     href="https://fonts.googleapis.com">
@@ -30,7 +30,9 @@
 {{- end }}
 {{- end }}
 <link rel="preload" fetchpriority="high" as="image" href="/images/home-64x64.png" type="image/png">
+{{ if .IsHome }}
 <link rel="preload" fetchpriority="high" as="image" href="/images/home-300x300.png" type="image/png">
+{{ end }}
 <link
     rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap"

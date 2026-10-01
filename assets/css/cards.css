@@ -68,6 +68,21 @@
         }
         .card-meta-item {
             margin-bottom: 0.5rem;
+            overflow-wrap: anywhere;
+        }
+        .card-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+
+            .tag {
+                display: block;
+                max-width: 100%;
+                box-sizing: border-box;
+                margin: 0;
+                white-space: normal;
+                overflow-wrap: anywhere;
+            }
         }
         .card-body {
             flex: 1 1 auto;

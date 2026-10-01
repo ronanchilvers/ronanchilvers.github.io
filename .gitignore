@@ -4,6 +4,7 @@
 /resources/_gen/
 /assets/jsconfig.json
 hugo_stats.json
+/scripts/__pycache__/
 
 # Temporary lock file while building
 /.hugo_build.lock

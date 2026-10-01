@@ -1,0 +1,19 @@
+{{- /* Resolve a post image using the existing filename and category fallback convention. */ -}}
+{{- $post := .page }}
+{{- $kind := .kind }}
+{{- $image := "" }}
+{{- with $post.GetTerms "categories" }}
+    {{- $categorySlug := (index . 0).Data.Term | urlize }}
+    {{- $filename := printf "%s-%s.png" ($post.Slug | default ($post.Title | urlize)) $kind }}
+    {{- with index ($post.Params.images | default dict) $kind }}
+        {{- $filename = . }}
+    {{- end }}
+    {{- range slice $filename (printf "%s.png" $kind) }}
+        {{- $candidate := printf "/images/%s/%s" $categorySlug . }}
+        {{- if fileExists (printf "static%s" $candidate) }}
+            {{- $image = $candidate }}
+            {{- break }}
+        {{- end }}
+    {{- end }}
+{{- end }}
+{{- return $image }}

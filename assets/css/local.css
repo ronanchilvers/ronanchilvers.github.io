@@ -52,10 +52,11 @@ body > header {
             margin: 0 1rem 0 0;
         }
     }
-    h1 {
+    .site-name {
         font-size: 1.3rem;
         padding: 0.25rem 0rem;
         margin: 0;
+        font-weight: 400;
     }
     nav {
         display: flex;
@@ -233,6 +234,11 @@ a, a:visited {
 }
 a:hover {
     color: var(--link-hover-color);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 figure {

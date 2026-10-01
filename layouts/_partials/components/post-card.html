@@ -6,39 +6,36 @@
   {{- $features = .features | default dict }}
 {{- end }}
 
-{{- $category := index ($post.GetTerms "categories") 0 }}
-{{- $categorySlug := ($category.Name | urlize) }}
-{{- $thumbnail := cond ($post.Params.images.thumbnail) $post.Params.images.thumbnail (printf "%s-thumbnail.png" (cond ($post.Slug) $post.Slug ($post.Title | urlize) )) }}
-{{- $names := slice $thumbnail "thumbnail.png" }}
-{{- $imagePath := false }}
-{{- range $names }}
-    {{- $testPath := (printf "/images/%s/%s" $categorySlug . ) }}
-    {{- if fileExists (printf "static/%s" $testPath ) }}
-        {{- $imagePath = $testPath }}
-        {{- break }}
-    {{- end }}
-{{- end }}
+{{- $category := false }}
+{{- with $post.GetTerms "categories" }}{{ $category = index . 0 }}{{ end }}
+{{- $imagePath := partial "components/post-image.html" (dict "page" $post "kind" "thumbnail") }}
 {{- $dateMachine := $post.Date | time.Format "2006-01-02T15:04:05-07:00" }}
 {{- $dateHuman := $post.Date | time.Format ":date_long" }}
 <div class="card{{ if $features.smallCards }} card--small{{ end }}">
 {{- if $imagePath }}
     <figure class="card-image">
         <a class="card-title" href="{{ $post.RelPermalink }}">{{ $post.Title }}</a>
-        <a class="card-image-link" href="{{ $post.RelPermalink }}"><img{{ if $features.highPriority }} fetchpriority="high"{{ end }} src="{{ $imagePath }}" alt="{{ $post.Title }}"></a>
+        {{- $size := images.Config (printf "static%s" $imagePath) }}
+        <a class="card-image-link" href="{{ $post.RelPermalink }}"><img{{ if $features.highPriority }} fetchpriority="high"{{ else }} loading="lazy"{{ end }} src="{{ $imagePath }}" alt="{{ $post.Title }}" width="{{ $size.Width }}" height="{{ $size.Height }}" decoding="async"></a>
     </figure>
 {{- end }}
     <div class="card-content">
+        {{- if not $imagePath }}
+        <a class="card-title" href="{{ $post.RelPermalink }}">{{ $post.Title }}</a>
+        {{- end }}
         <div class="card-body">
             {{- if gt ($post.Summary | len) 0 -}}
                 <p>{{ $post.Summary | truncate 100 }}</p>
             {{- end -}}
         </div>
         <div class="card-meta">
-            <a href="{{ $category.Path }}" class="card-meta-item">{{ $category.Name }}</a>
+            {{- with $category }}
+            <a href="{{ .RelPermalink }}" class="card-meta-item">{{ .LinkTitle }}</a>
+            {{- end }}
             <time class="card-meta-item" datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
             {{- with $post.GetTerms "tags" }}
-            <div class="card-meta-item">
-                {{- range . }}<a href="{{ .RelPermalink }}" class="tag tag--small">{{ .LinkTitle | lower }}</a>{{- end }}
+            <div class="card-meta-item card-tags">
+                {{- range . }}<a href="{{ .RelPermalink }}" class="tag tag--small">{{ .LinkTitle }}</a>{{- end }}
             </div>
             {{- end }}
         </div>
