@@ -7,14 +7,14 @@
 <h1 class="post-title">{{ $post.Title }}</h1>
 <header{{ if $imagePath }} class="post-header post-header--banner" style="background-image: url({{ $imagePath }})"{{ else }} class="post-header"{{ end }}>
     <div class="post-header-badges">
-        <p class="post-author">
+        {{/* <p class="post-author">
             <svg class="post-author-icon" viewBox="0 0 24 24" role="img" aria-label="By" focusable="false">
                 <path d="m3 21 3-12 9-6 6 6-6 9Z"></path>
                 <circle cx="10" cy="14" r="2"></circle>
                 <path d="m3 21 5.5-5.5M12 5l7 7"></path>
             </svg>
             <a href="{{ .Site.Params.author.url | relURL }}">{{ .Site.Params.author.name }}</a>{{ if gt .Lastmod .Date }} · Updated <time datetime="{{ .Lastmod | time.Format "2006-01-02T15:04:05-07:00" }}">{{ .Lastmod | time.Format ":date_long" }}</time>{{ end }}
-        </p>
+        </p> */}}
         <span class="post-reading-time" aria-label="Estimated reading time: {{ $post.ReadingTime }} minutes">
             <svg class="post-reading-time-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
                 <circle cx="12" cy="12" r="9"></circle>
