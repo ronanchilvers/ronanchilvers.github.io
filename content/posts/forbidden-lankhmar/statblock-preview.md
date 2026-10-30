@@ -4,7 +4,8 @@ draft: true
 title: Forbidden Lankhmar Stat Block Preview
 summary: A preview of the stat block shortcode for Forbidden Lands characters, NPCs and monsters.
 slug: forbidden-lankhmar-statblock-preview
-tags: []
+tags:
+  - testing
 categories: []
 ---
 ## Characters
@@ -13,7 +14,7 @@ categories: []
   attributes="Str 2, Ag 2, Wits 5, Emp 4"
   skills="Sleight of Hand 3, Lore 3, Insight 2, Manipulation 2, Performance 1, Healing 1"
   talents="Adaptive (Kin), Path of Signs 2, Sharp Tongue 1, Fearless 1"
-  pride="Yet to be revealed" secret="Yet to be revealed" />}}
+  pride="Yet to be revealed" se1cret="Yet to be revealed" />}}
 
 {{< statblock name="Drennick (Drenn)" kin="Human (36 years old)" profession="Rogue"
   attributes="Str 4, Ag 5, Wits 3, Emp 2"
