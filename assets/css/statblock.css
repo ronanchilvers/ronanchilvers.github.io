@@ -1,39 +1,51 @@
 :root {
-    --statblock-background-color: rgb(28, 31, 35);
-    --statblock-border-color: rgb(120, 98, 62);
-    --statblock-accent-color: rgb(201, 162, 90);
-    --statblock-verdigris-color: rgb(96, 148, 132);
+    --statblock-background-color: rgb(231, 211, 163);
+    --statblock-ink-color: rgb(52, 38, 24);
+    --statblock-ink-muted-color: rgb(104, 82, 54);
+    --statblock-border-color: rgb(122, 90, 48);
+    --statblock-accent-color: rgb(122, 38, 28);
+    --statblock-verdigris-color: rgb(46, 98, 84);
 }
 .statblock {
     position: relative;
     margin: 2rem 0;
     padding: 1.25rem 1.5rem 1rem;
+    color: var(--statblock-ink-color);
     background:
-        radial-gradient(ellipse at top, rgba(96, 148, 132, 0.08), transparent 70%),
+        radial-gradient(ellipse at center, rgba(255, 244, 210, 0.55), transparent 65%),
+        radial-gradient(ellipse at bottom right, rgba(140, 100, 40, 0.28), transparent 60%),
         var(--statblock-background-color);
     border: 1px solid var(--statblock-border-color);
-    outline: 1px solid rgba(120, 98, 62, 0.45);
+    outline: 1px solid rgba(122, 90, 48, 0.5);
     outline-offset: 4px;
-    border-radius: var(--border-radius);
-    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.45);
+    border-radius: 3px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.5), inset 0 0 40px rgba(122, 90, 48, 0.3);
     line-height: 1.5;
     p { margin: 0; }
     .statblock__header {
-        text-align: center;
-        padding-bottom: 0.75rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 0.25rem 1rem;
+        padding-bottom: 0.5rem;
         margin-bottom: 0.75rem;
-        border-bottom: 1px solid var(--statblock-border-color);
+        border-bottom: 2px solid var(--statblock-border-color);
     }
     .statblock__name {
         margin: 0;
+        text-align: left;
+        text-shadow: none;
         font-size: 1.7rem;
         font-variant: small-caps;
         letter-spacing: 2px;
         color: var(--statblock-accent-color);
     }
     .statblock__subtitle {
+        margin-left: auto;
+        text-align: right;
         font-style: italic;
-        color: var(--font-muted-color);
+        color: var(--statblock-ink-muted-color);
     }
     .statblock__attributes {
         display: grid;
@@ -44,14 +56,14 @@
         .statblock__attribute {
             padding: 0.25rem 0;
             border: 1px solid var(--statblock-border-color);
-            border-radius: var(--border-radius);
-            background: rgba(0, 0, 0, 0.25);
+            border-radius: 3px;
+            background: rgba(255, 244, 210, 0.35);
         }
         dt {
             font-size: 0.85rem;
             font-variant: small-caps;
             letter-spacing: 1px;
-            color: var(--font-muted-color);
+            color: var(--statblock-ink-muted-color);
         }
         dd {
             margin: 0;
@@ -65,11 +77,11 @@
         h5 {
             margin: 0 0 0.25rem;
             font-size: 0.95rem;
-            font-weight: normal;
+            font-weight: bold;
             font-variant: small-caps;
             letter-spacing: 2px;
             color: var(--statblock-verdigris-color);
-            border-bottom: 1px dotted rgba(96, 148, 132, 0.45);
+            border-bottom: 1px dotted rgba(122, 90, 48, 0.6);
         }
         &.statblock__section--inline h5 {
             display: inline;
@@ -93,7 +105,7 @@
         text-align: center;
         font-size: 0.95rem;
         border-radius: 50%;
-        background: rgba(201, 162, 90, 0.18);
+        background: rgba(122, 38, 28, 0.14);
         color: var(--statblock-accent-color);
     }
     .statblock__notes {
@@ -101,6 +113,6 @@
         padding-top: 0.6rem;
         border-top: 1px solid var(--statblock-border-color);
         font-style: italic;
-        color: var(--font-muted-color);
+        color: var(--statblock-ink-muted-color);
     }
 }
