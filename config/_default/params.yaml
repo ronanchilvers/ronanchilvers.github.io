@@ -27,6 +27,7 @@ css:
   - css/cols.css
   - css/alerts.css
   - css/timeline.css
+  - css/statblock.css
   - css/social.css
   - css/echothread.css
   # - css/related.css

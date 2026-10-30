@@ -1,0 +1,101 @@
+{{- /*
+  Forbidden Lands stat block for PCs, NPCs and monsters.
+  Params (all optional except name): name, kin, profession, type, attributes,
+  skills, talents, armor, weapons, gear, pride, secret.
+  Lists are comma separated, e.g. attributes="Str 2, Ag 2, Wits 5, Emp 4".
+  Inner content is rendered as free-form notes.
+*/ -}}
+{{- $name := .Get "name" | default (.Get 0) -}}
+{{- $kin := .Get "kin" -}}
+{{- $profession := .Get "profession" -}}
+{{- $type := .Get "type" -}}
+{{- $notes := .Inner | strings.TrimSpace -}}
+{{- $subtitle := slice -}}
+{{- with $kin }}{{ $subtitle = $subtitle | append . }}{{ end -}}
+{{- with $profession }}{{ $subtitle = $subtitle | append . }}{{ end -}}
+{{- with $type }}{{ $subtitle = $subtitle | append . }}{{ end -}}
+<aside class="statblock">
+    <div class="statblock__summary">
+    <header class="statblock__header">
+        <h4 class="statblock__name">{{ $name }}</h4>
+{{- if $subtitle }}
+        <p class="statblock__subtitle">{{ delimit $subtitle " · " }}</p>
+{{- end }}
+    </header>
+{{- with .Get "attributes" }}
+{{- $attributeNames := dict "str" "Strength" "ag" "Agility" "emp" "Empathy"  "w" "Wits" }}
+    <dl class="statblock__attributes">
+{{- range split . "," }}
+{{- $parts := split (strings.TrimSpace .) " " }}
+{{- $value := index $parts (sub (len $parts) 1) }}
+{{- $label := delimit (first (sub (len $parts) 1) $parts) " " }}
+        <div class="statblock__attribute">
+            <dt>{{ index $attributeNames (lower $label) | default $label }}</dt>
+            <dd>{{ $value }}</dd>
+        </div>
+{{- end }}
+    </dl>
+{{- end }}
+{{- with .Get "skills" }}
+    <div class="statblock__section">
+        <h5>Skills</h5>
+        <ul class="statblock__list">
+{{- range split . "," }}
+{{- $parts := split (strings.TrimSpace .) " " }}
+{{- $last := index $parts (sub (len $parts) 1) }}
+{{- if and (gt (len $parts) 1) (findRE `^\d+$` $last) }}
+            <li>{{ delimit (first (sub (len $parts) 1) $parts) " " }}&nbsp;<span class="statblock__rank">{{ $last }}</span></li>
+{{- else }}
+            <li>{{ strings.TrimSpace . }}</li>
+{{- end }}
+{{- end }}
+        </ul>
+    </div>
+{{- end }}
+{{- range $key, $label := dict "armor" "Armour" "weapons" "Weapons" "gear" "Gear" }}
+{{- with $.Get $key }}
+    <div class="statblock__section statblock__section--inline">
+        <h5>{{ $label }}</h5>
+        <p>{{ . }}</p>
+    </div>
+{{- end }}
+{{- end }}
+    </div>
+{{- if or (.Get "talents") (.Get "pride") (.Get "secret") $notes }}
+    <div class="statblock__details">
+{{- with .Get "talents" }}
+    <div class="statblock__section">
+        <h5>Talents</h5>
+        <ul class="statblock__list">
+{{- range split . "," }}
+{{- $parts := split (strings.TrimSpace .) " " }}
+{{- $last := index $parts (sub (len $parts) 1) }}
+{{- if and (gt (len $parts) 1) (findRE `^\d+$` $last) }}
+            <li>{{ delimit (first (sub (len $parts) 1) $parts) " " }}&nbsp;<span class="statblock__rank">{{ $last }}</span></li>
+{{- else }}
+            <li>{{ strings.TrimSpace . }}</li>
+{{- end }}
+{{- end }}
+        </ul>
+    </div>
+{{- end }}
+{{- with .Get "pride" }}
+    <div class="statblock__section statblock__section--inline">
+        <h5>Pride</h5>
+        <p>{{ . }}</p>
+    </div>
+{{- end }}
+{{- with .Get "secret" }}
+    <div class="statblock__section statblock__section--inline">
+        <h5>Dark Secret</h5>
+        <p>{{ . }}</p>
+    </div>
+{{- end }}
+{{- if $notes }}
+    <div class="statblock__notes">
+        {{ $notes | .Page.RenderString (dict "display" "block") }}
+    </div>
+{{- end }}
+    </div>
+{{- end }}
+</aside>
