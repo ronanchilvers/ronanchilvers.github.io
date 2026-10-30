@@ -5,7 +5,7 @@
 {{- $dateMachine := $post.Date | time.Format "2006-01-02T15:04:05-07:00" }}
 {{- $dateHuman := $post.Date | time.Format ":date_long" }}
 <h1 class="post-title">{{ $post.Title }}</h1>
-<header{{ if $imagePath }} class="post-header post-header--banner" style="background-image: url({{ $imagePath }})"{{ else }} class="post-header"{{ end }}>
+<header{{ if $imagePath }}{{ $size := images.Config (printf "static%s" $imagePath) }} class="post-header post-header--banner" style="background-image: url({{ $imagePath }}); aspect-ratio: {{ $size.Width }} / {{ $size.Height }}"{{ else }} class="post-header"{{ end }}>
     <div class="post-header-badges">
         {{/* <p class="post-author">
             <svg class="post-author-icon" viewBox="0 0 24 24" role="img" aria-label="By" focusable="false">
