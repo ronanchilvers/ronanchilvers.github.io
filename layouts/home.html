@@ -44,12 +44,17 @@
         {{- $category := false }}
         {{- with .GetTerms "categories" }}{{ $category = index . 0 }}{{ end }}
         <li class="post-list-item">
-            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+            <h3>
+										 {{- with $category }}
+              <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a> /
+              {{- end }}
+									   <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+									 </h3>
             <div class="post-list-meta">
                 <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
-                {{- with $category }}
+                {{/*- with $category }}
                 in <span><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></span>
-                {{- end }}
+                {{- end */}}
                 {{- with .GetTerms "tags" }}
                 tagged
                 <span>
