@@ -1,0 +1,73 @@
+{{- /*
+  Forbidden Lands dice pool result.
+  Params (all optional): base, skill, gear, d8, d10, d12, title.
+  Each dice param is a space or comma separated list of rolled values, e.g.
+  base="6 3 1" skill="6 2" d12="10". Base is white, skill is red, gear is black,
+  d8 is green, d10 is blue and d12 is orange. Swords (successes) and skulls
+  (banes) are totalled beneath the pool. Banes count on base and gear dice only.
+*/ -}}
+{{- $title := .Get "title" -}}
+{{- $types := slice
+    (dict "key" "base" "label" "Base" "sides" 6 "bane" true)
+    (dict "key" "skill" "label" "Skill" "sides" 6 "bane" false)
+    (dict "key" "gear" "label" "Gear" "sides" 6 "bane" true)
+    (dict "key" "d8" "label" "d8" "sides" 8 "bane" false)
+    (dict "key" "d10" "label" "d10" "sides" 10 "bane" false)
+    (dict "key" "d12" "label" "d12" "sides" 12 "bane" false) -}}
+{{- $sword := `<svg class="dice__sword" viewBox="0 0 40 40" aria-hidden="true"><g stroke="currentColor" stroke-linecap="round" fill="none"><path d="M6 6 L31 31 M34 6 L9 31" stroke-width="3.5"/><path d="M26 26 L35 24 M14 26 L5 24 M24 28 L26 34 M16 28 L14 34" stroke-width="3"/></g></svg>` -}}
+{{- $skull := `<svg class="dice__skull" viewBox="0 0 40 40" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M20 4C11 4 6 10 6 18c0 5 2 8 5 10v6h18v-6c3-2 5-5 5-10C34 10 29 4 20 4zM13 14a4 4 0 1 1 0 8 4 4 0 0 1 0-8zm14 0a4 4 0 1 1 0 8 4 4 0 0 1 0-8zM20 22l3 5h-6z"/><path stroke="var(--dice-face-color)" stroke-width="1.6" d="M15 30v4M20 30v4M25 30v4"/></svg>` -}}
+{{- $scratch := newScratch -}}
+{{- $scratch.Set "successes" 0 -}}
+{{- $scratch.Set "banes" 0 -}}
+{{- $scratch.Set "count" 0 -}}
+<div class="dice" role="group"{{ with $title }} aria-label="{{ . }}"{{ end }}>
+{{- with $title }}
+    <h4 class="dice__title">{{ . }}</h4>
+{{- end }}
+    <ul class="dice__pool">
+{{- range $types }}
+{{- $type := . }}
+{{- with $.Get $type.key }}
+{{- range (split (replace . "," " ") " ") }}
+{{- $raw := strings.TrimSpace . }}
+{{- if $raw }}
+{{- $v := int $raw }}
+{{- $scratch.Add "count" 1 }}
+{{- $swords := 0 }}
+{{- if ge $v 6 }}
+{{- if eq $type.sides 6 }}{{ $swords = 1 }}
+{{- else }}{{ $swords = sub (div $v 2) 2 | int }}{{ if gt $swords 4 }}{{ $swords = 4 }}{{ end }}{{ if lt $swords 1 }}{{ $swords = 1 }}{{ end }}
+{{- if eq $v 6 }}{{ $swords = 1 }}{{ end }}
+{{- end }}
+{{- end }}
+{{- $scratch.Add "successes" $swords }}
+{{- $bane := and $type.bane (eq $v 1) }}
+{{- if $bane }}{{ $scratch.Add "banes" 1 }}{{ end }}
+{{- $numeral := cond (eq $v 1) "I" (string $v) }}
+        <li class="dice__die dice__die--{{ $type.key }}{{ if $swords }} dice__die--success{{ end }}{{ if $bane }} dice__die--bane{{ end }}" title="{{ $type.label }}: {{ $v }}">
+            <span class="dice__face">
+{{- if and (eq $type.sides 6) (eq $v 6) }}
+                {{ $sword | safeHTML }}<span class="dice__pip">6</span>
+{{- else if and (eq $type.sides 6) (eq $v 1) }}
+                {{ $skull | safeHTML }}<span class="dice__pip">I</span>
+{{- else }}
+                <span class="dice__number">{{ $numeral }}</span>
+{{- if $swords }}
+                <span class="dice__swords">{{ range seq $swords }}×{{ end }}</span>
+{{- end }}
+{{- end }}
+            </span>
+            <span class="dice__label">{{ $type.label }}</span>
+        </li>
+{{- end }}
+{{- end }}
+{{- end }}
+{{- end }}
+    </ul>
+{{- if $scratch.Get "count" }}
+    <p class="dice__summary">
+        <span class="dice__total dice__total--success">{{ $scratch.Get "successes" }}&nbsp;{{ cond (eq ($scratch.Get "successes") 1) "success" "successes" }}</span>
+        <span class="dice__total dice__total--bane">{{ $scratch.Get "banes" }}&nbsp;{{ cond (eq ($scratch.Get "banes") 1) "bane" "banes" }}</span>
+    </p>
+{{- end }}
+</div>
