@@ -97,6 +97,7 @@
         }
         .dice__sword { margin-bottom: 0.65rem; }
         .dice__pip { bottom: 0.4rem; font-size: 0.85rem; left: 50%; transform: translateX(-50%); }
+        .dice__sword + .dice__pip { bottom: 0.6rem; font-size: 1rem; }
         .dice__skull + .dice__pip { top: auto; bottom: 0.5rem; left: 0.55rem; transform: none; }
     }
     .dice__die--base { --dice-bg: var(--dice-base-bg); --dice-fg: var(--dice-base-fg); }
