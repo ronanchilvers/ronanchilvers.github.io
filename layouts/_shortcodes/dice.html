@@ -4,7 +4,7 @@
   Each dice param is a space or comma separated list of rolled values, e.g.
   base="6 3 1" skill="6 2" d12="10". Base is white, skill is red, gear is black,
   d8 is green, d10 is blue and d12 is orange. Swords (successes) and skulls
-  (banes) are totalled beneath the pool. Banes count on base and gear dice only.
+  (banes) are totalled beneath the pool. Only base and gear dice show skulls on 1.
 */ -}}
 {{- $title := .Get "title" -}}
 {{- $types := slice
@@ -48,7 +48,7 @@
             <span class="dice__face">
 {{- if and (eq $type.sides 6) (eq $v 6) }}
                 {{ $sword | safeHTML }}<span class="dice__pip">6</span>
-{{- else if and (eq $type.sides 6) (eq $v 1) }}
+{{- else if and (eq $type.sides 6) (eq $v 1) $type.bane }}
                 {{ $skull | safeHTML }}<span class="dice__pip">I</span>
 {{- else }}
                 <span class="dice__number">{{ $numeral }}</span>
