@@ -105,13 +105,28 @@
     .dice__die--d8 { --dice-bg: var(--dice-d8-bg); --dice-fg: var(--dice-d8-fg); }
     .dice__die--d10 { --dice-bg: var(--dice-d10-bg); --dice-fg: var(--dice-d10-fg); }
     .dice__die--d12 { --dice-bg: var(--dice-d12-bg); --dice-fg: var(--dice-d12-fg); }
-    .dice__die--d8 .dice__face {
-        clip-path: polygon(50% 0, 100% 90%, 0 90%);
-        padding-top: 1rem;
+    .dice__polyhedron {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.4));
     }
-    .dice__die--d10 .dice__face {
-        clip-path: polygon(50% 0, 100% 40%, 80% 100%, 20% 100%, 0 40%);
-        padding-top: 0.4rem;
+    .dice__die--d8, .dice__die--d10 {
+        .dice__face {
+            background: none;
+            box-shadow: none;
+        }
+        .dice__number {
+            position: absolute;
+            top: 1.125rem;
+            font-size: 1.2rem;
+        }
+        .dice__swords {
+            top: 2.375rem;
+            bottom: auto;
+            font-size: 0.6rem;
+        }
     }
     .dice__die--d12 .dice__face {
         clip-path: polygon(50% 0, 97% 35%, 79% 92%, 21% 92%, 3% 35%);

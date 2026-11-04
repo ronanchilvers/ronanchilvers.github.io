@@ -46,6 +46,24 @@
 {{- $numeral := cond (eq $v 1) "I" (string $v) }}
         <li class="dice__die dice__die--{{ $type.key }}{{ if $swords }} dice__die--success{{ end }}{{ if $bane }} dice__die--bane{{ end }}" title="{{ $type.label }}: {{ $v }}">
             <span class="dice__face">
+{{- if eq $type.sides 8 }}
+                <svg class="dice__polyhedron" viewBox="0 0 64 64" aria-hidden="true">
+                    <path fill="var(--dice-bg)" d="M32 2 59 29 54 48 32 62 10 48 5 29Z"/>
+                    <path fill="#fff" opacity=".18" d="M32 2 5 29 10 48Z"/>
+                    <path fill="#000" opacity=".18" d="M32 2 59 29 54 48Z"/>
+                    <path fill="#000" opacity=".28" d="M10 48 32 62 54 48Z"/>
+                    <path fill="none" stroke="currentColor" stroke-width=".7" opacity=".4" d="M32 2 10 48H54Z"/>
+                </svg>
+{{- else if eq $type.sides 10 }}
+                <svg class="dice__polyhedron" viewBox="0 0 64 64" aria-hidden="true">
+                    <path fill="var(--dice-bg)" d="M32 2 60 25 56 45 32 62 8 45 4 25Z"/>
+                    <path fill="#fff" opacity=".18" d="M32 2 4 25 8 45 10 40Z"/>
+                    <path fill="#000" opacity=".18" d="M32 2 60 25 56 45 54 40Z"/>
+                    <path fill="#000" opacity=".3" d="M10 40 8 45 32 62 32 56Z"/>
+                    <path fill="#000" opacity=".4" d="M54 40 56 45 32 62 32 56Z"/>
+                    <path fill="none" stroke="currentColor" stroke-width=".7" opacity=".4" d="M32 2 10 40 32 56 54 40ZM32 56V62"/>
+                </svg>
+{{- end }}
 {{- if and (eq $type.sides 6) (eq $v 6) }}
                 {{ $sword | safeHTML }}<span class="dice__pip">6</span>
 {{- else if and (eq $type.sides 6) (eq $v 1) $type.bane }}
