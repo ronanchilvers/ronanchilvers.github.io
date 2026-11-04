@@ -63,6 +63,16 @@
                     <path fill="#000" opacity=".4" d="M54 40 56 45 32 62 32 56Z"/>
                     <path fill="none" stroke="currentColor" stroke-width=".7" opacity=".4" d="M32 2 10 40 32 56 54 40ZM32 56V62"/>
                 </svg>
+{{- else if eq $type.sides 12 }}
+                <svg class="dice__polyhedron" viewBox="0 0 64 64" aria-hidden="true">
+                    <path fill="var(--dice-bg)" d="M32 2 49 7 61 23 61 42 49 56 32 62 15 56 3 42 3 23 15 7Z"/>
+                    <path fill="#fff" opacity=".18" d="M12 25 32 10 32 2 15 7 3 23Z"/>
+                    <path fill="#fff" opacity=".08" d="M52 25 32 10 32 2 49 7 61 23Z"/>
+                    <path fill="#000" opacity=".18" d="M52 25 61 23 61 42 49 56 45 48Z"/>
+                    <path fill="#000" opacity=".3" d="M45 48 49 56 32 62 15 56 19 48Z"/>
+                    <path fill="#000" opacity=".1" d="M19 48 15 56 3 42 3 23 12 25Z"/>
+                    <path fill="none" stroke="currentColor" stroke-width=".7" opacity=".4" d="M32 10 52 25 45 48 19 48 12 25ZM32 10V2M52 25 61 23M45 48 49 56M19 48 15 56M12 25 3 23"/>
+                </svg>
 {{- end }}
 {{- if and (eq $type.sides 6) (eq $v 6) }}
                 {{ $sword | safeHTML }}<span class="dice__pip">6</span>

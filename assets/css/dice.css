@@ -112,7 +112,7 @@
         height: 100%;
         filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.4));
     }
-    .dice__die--d8, .dice__die--d10 {
+    .dice__die--d8, .dice__die--d10, .dice__die--d12 {
         .dice__face {
             background: none;
             box-shadow: none;
@@ -127,9 +127,6 @@
             bottom: auto;
             font-size: 0.6rem;
         }
-    }
-    .dice__die--d12 .dice__face {
-        clip-path: polygon(50% 0, 97% 35%, 79% 92%, 21% 92%, 3% 35%);
     }
     .dice__summary {
         display: flex;
