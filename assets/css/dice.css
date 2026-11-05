@@ -105,7 +105,7 @@
         color: var(--dice-ink-color);
     }
     /* Six-sided dice: rounded cube face with a dashed chain-style inner frame. */
-    .dice__die--base, .dice__die--skill, .dice__die--gear {
+    .dice__die--base, .dice__die--skill, .dice__die--gear, .dice__die--d6 {
         .dice__face {
             border-radius: 0.5rem;
             &::before {
@@ -122,7 +122,7 @@
         .dice__sword + .dice__pip { bottom: 0.6rem; font-size: 1.1rem; }
         .dice__skull + .dice__pip { top: auto; bottom: 0.5rem; left: 0.8rem; transform: none; }
     }
-    .dice__die--base { --dice-bg: var(--dice-base-bg); --dice-fg: var(--dice-base-fg); }
+    .dice__die--base, .dice__die--d6 { --dice-bg: var(--dice-base-bg); --dice-fg: var(--dice-base-fg); }
     .dice__die--skill { --dice-bg: var(--dice-skill-bg); --dice-fg: var(--dice-skill-fg); }
     .dice__die--gear { --dice-bg: var(--dice-gear-bg); --dice-fg: var(--dice-gear-fg); }
     .dice__die--d8 { --dice-bg: var(--dice-d8-bg); --dice-fg: var(--dice-d8-fg); }
