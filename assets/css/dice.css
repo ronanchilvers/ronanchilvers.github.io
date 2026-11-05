@@ -1,7 +1,7 @@
 :root {
     --dice-ink-color: rgb(35, 28, 19);
     --dice-accent-color: rgb(139, 37, 16);
-    --dice-bg: #fff;
+    --dice-bg: #f8f2e4;
     --dice-fg: #30302e;
 }
 .dice {
@@ -69,6 +69,29 @@
         height: 4.5rem;
         color: var(--dice-fg);
     }
+    &.dice--fl {
+        --dice-bg: #fff;
+        .dice__die--skill {
+            --dice-bg: #801c1e;
+            --dice-fg: #fff;
+        }
+        .dice__die--gear {
+            --dice-bg: #1c1c1e;
+            --dice-fg: #fff;
+        }
+        .dice__die--d8 {
+            --dice-bg: #4c7d31;
+            --dice-fg: #fff;
+        }
+        .dice__die--d10 {
+            --dice-bg: #2b8ecd;
+            --dice-fg: #fff;
+        }
+        .dice__die--d12 {
+            --dice-bg: #e57a1f;
+            --dice-fg: #1e140c;
+        }
+    }
     .dice__polyhedron {
         display: block;
         width: 100%;
@@ -94,6 +117,22 @@
         stroke: none;
         font-family: Georgia, "Times New Roman", serif;
         font-size: 18px;
+        font-weight: normal;
+        text-anchor: middle;
+        dominant-baseline: central;
+    }
+    .dice__number--success, .dice__number--bane {
+        font-size: 12px;
+    }
+    .dice__swords, .dice__skull {
+        fill: currentColor;
+        stroke: none;
+    }
+    .dice__crosses {
+        fill: currentColor;
+        stroke: none;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 8px;
         font-weight: bold;
         text-anchor: middle;
         dominant-baseline: central;
