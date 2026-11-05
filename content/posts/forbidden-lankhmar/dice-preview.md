@@ -8,7 +8,7 @@ tags:
   - testing
 categories: []
 ---
-Three base dice, two skill dice and a d12:
+Three base dice, two skill dice and a gear die:
 
 {{< dice system="fl" title="Climb the wall" base="6 3 1" skill="6 1" gear="3">}}
 
@@ -23,3 +23,7 @@ Standard polyhedral dice show plain results with no swords, skulls or totals:
 The system attribute can also be omitted for standard dice:
 
 {{< dice title="Stealth check" d6="4 2" d8="6" >}}
+
+The full polyhedral set, using the values in the design reference:
+
+{{< dice title="Polyhedral dice" d20="20" d12="12" d10="9" d100="90" d8="8" d6="6" d4="4" >}}

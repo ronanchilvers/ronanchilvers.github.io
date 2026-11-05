@@ -1,18 +1,8 @@
 :root {
     --dice-ink-color: rgb(35, 28, 19);
     --dice-accent-color: rgb(139, 37, 16);
-    --dice-base-bg: rgb(246, 242, 232);
-    --dice-base-fg: rgb(20, 16, 12);
-    --dice-skill-bg: rgb(128, 28, 30);
-    --dice-skill-fg: rgb(250, 240, 232);
-    --dice-gear-bg: rgb(28, 28, 30);
-    --dice-gear-fg: rgb(246, 242, 232);
-    --dice-d8-bg: rgb(76, 125, 49);
-    --dice-d8-fg: rgb(250, 250, 245);
-    --dice-d10-bg: rgb(43, 142, 205);
-    --dice-d10-fg: rgb(247, 214, 38);
-    --dice-d12-bg: rgb(229, 122, 31);
-    --dice-d12-fg: rgb(30, 20, 12);
+    --dice-bg: #fff;
+    --dice-fg: #30302e;
 }
 .dice {
     margin: 2rem 0;
@@ -74,84 +64,44 @@
         &::before { content: none; }
     }
     .dice__face {
-        --dice-face-color: var(--dice-bg);
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 4rem;
-        height: 4rem;
+        display: block;
+        width: 4.5rem;
+        height: 4.5rem;
         color: var(--dice-fg);
-        background: var(--dice-bg);
-        font-family: Georgia, "Times New Roman", serif;
-        font-weight: bold;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.45), inset 0 -3px 5px rgba(0, 0, 0, 0.25), inset 0 2px 3px rgba(255, 255, 255, 0.25);
+    }
+    .dice__polyhedron {
+        display: block;
+        width: 100%;
+        height: 100%;
+        overflow: visible;
+        stroke: currentColor;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+    }
+    .dice__outline {
+        fill: var(--dice-bg);
+        stroke-width: 2;
+    }
+    .dice__facet, .dice__bevel {
+        fill: none;
+        stroke-width: 1;
+    }
+    .dice__bevel {
+        stroke-width: 0.6;
     }
     .dice__number {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 1.9rem;
-        line-height: 1;
+        fill: currentColor;
+        stroke: none;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 18px;
+        font-weight: bold;
+        text-anchor: middle;
+        dominant-baseline: central;
     }
-    .dice__swords { position: absolute; bottom: 0.2rem; font-size: 0.8rem; letter-spacing: 0.1em; line-height: 1; }
-    .dice__sword, .dice__skull { width: 2.6rem; height: 2.6rem; }
-    .dice__sword { width: 3.3rem; height: 3.3rem; }
-    .dice__pip { position: absolute; font-size: 1rem; line-height: 1; }
     .dice__label {
         font-size: 0.75rem;
         font-variant: small-caps;
         color: var(--dice-ink-color);
-    }
-    /* Six-sided dice: rounded cube face with a dashed chain-style inner frame. */
-    .dice__die--base, .dice__die--skill, .dice__die--gear, .dice__die--d6 {
-        .dice__face {
-            border-radius: 0.5rem;
-            &::before {
-                content: "";
-                position: absolute;
-                inset: 0.3rem;
-                border: 3px dotted var(--dice-fg);
-                border-radius: 0.25rem;
-                opacity: 0.85;
-            }
-        }
-        .dice__sword { margin-bottom: 0.35rem; }
-        .dice__pip { bottom: 0.4rem; font-size: 1rem; left: 50%; transform: translateX(-50%); }
-        .dice__sword + .dice__pip { bottom: 0.6rem; font-size: 1.1rem; }
-        .dice__skull + .dice__pip { top: auto; bottom: 0.5rem; left: 0.8rem; transform: none; }
-    }
-    .dice__die--base, .dice__die--d6 { --dice-bg: var(--dice-base-bg); --dice-fg: var(--dice-base-fg); }
-    .dice__die--skill { --dice-bg: var(--dice-skill-bg); --dice-fg: var(--dice-skill-fg); }
-    .dice__die--gear { --dice-bg: var(--dice-gear-bg); --dice-fg: var(--dice-gear-fg); }
-    .dice__die--d8 { --dice-bg: var(--dice-d8-bg); --dice-fg: var(--dice-d8-fg); }
-    .dice__die--d10 { --dice-bg: var(--dice-d10-bg); --dice-fg: var(--dice-d10-fg); }
-    .dice__die--d12 { --dice-bg: var(--dice-d12-bg); --dice-fg: var(--dice-d12-fg); }
-    .dice__polyhedron {
-        position: absolute;
-        inset: 0;
-        width: 100%;
-        height: 100%;
-        filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.4));
-    }
-    .dice__die--d8, .dice__die--d10, .dice__die--d12 {
-        .dice__face {
-            background: none;
-            box-shadow: none;
-        }
-        .dice__number {
-            position: absolute;
-            top: 1.125rem;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 1.2rem;
-        }
-        .dice__swords {
-            top: 2.375rem;
-            bottom: auto;
-            font-size: 0.6rem;
-        }
     }
     .dice__summary {
         display: flex;
