@@ -160,6 +160,7 @@
         margin: 0 0 0 auto;
         color: var(--dice-accent-color);
         font-weight: bold;
+        font-variant: small-caps;
     }
 }
 @media (max-width: 480px) {
