@@ -10,7 +10,7 @@ categories: []
 ---
 Three base dice, two skill dice and a d12:
 
-{{< dice title="Climb the wall" base="6 3 1" skill="6 1" d12="10" >}}
+{{< dice title="Climb the wall" base="6 3 1" skill="6 1" gear="3">}}
 
 A pool with gear and the other artifact dice:
 

@@ -29,17 +29,32 @@
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35), inset 0 0 30px rgba(179, 140, 54, 0.12);
     letter-spacing: normal;
     line-height: 1.5;
-    .dice__title {
-        display: block;
-        width: 100%;
+    .dice__header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        gap: 0.25rem 1.5rem;
         margin: 0 0 0.75rem;
-        padding-bottom: 0.2rem;
-        border-bottom: 1px solid var(--dice-accent-color);
-        color: var(--dice-accent-color);
-        font-family: Georgia, "Times New Roman", serif;
-        font-size: 1.5rem;
-        font-variant: small-caps;
+        &::after {
+            content: "";
+            display: block;
+            flex: 0 0 100%;
+            height: 6px;
+            margin-top: 1rem;
+            background-color: var(--dice-accent-color);
+            clip-path: polygon(0 0, 100% 50%, 0 100%);
+        }
+    }
+    .dice__title {
+        margin: 0;
         text-align: left;
+        text-shadow: none;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 2rem;
+        font-weight: bold;
+        font-variant: small-caps;
+        line-height: 1.15;
+        color: var(--dice-accent-color);
     }
     .dice__pool {
         display: flex;
@@ -72,7 +87,14 @@
         font-weight: bold;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.45), inset 0 -3px 5px rgba(0, 0, 0, 0.25), inset 0 2px 3px rgba(255, 255, 255, 0.25);
     }
-    .dice__number { font-size: 1.9rem; line-height: 1; }
+    .dice__number {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.9rem;
+        line-height: 1;
+    }
     .dice__swords { position: absolute; bottom: 0.2rem; font-size: 0.8rem; letter-spacing: 0.1em; line-height: 1; }
     .dice__sword, .dice__skull { width: 2.6rem; height: 2.6rem; }
     .dice__sword { width: 3.3rem; height: 3.3rem; }
@@ -95,7 +117,7 @@
                 opacity: 0.85;
             }
         }
-        .dice__sword { margin-bottom: 0.65rem; }
+        .dice__sword { margin-bottom: 0.35rem; }
         .dice__pip { bottom: 0.4rem; font-size: 1rem; left: 50%; transform: translateX(-50%); }
         .dice__sword + .dice__pip { bottom: 0.6rem; font-size: 1.1rem; }
         .dice__skull + .dice__pip { top: auto; bottom: 0.5rem; left: 0.8rem; transform: none; }
@@ -121,6 +143,8 @@
         .dice__number {
             position: absolute;
             top: 1.125rem;
+            left: 50%;
+            transform: translateX(-50%);
             font-size: 1.2rem;
         }
         .dice__swords {
@@ -133,9 +157,7 @@
         display: flex;
         flex-wrap: wrap;
         gap: 0.5rem 1.5rem;
-        margin: 1rem 0 0;
-        padding-top: 0.5rem;
-        border-top: 1px solid var(--dice-accent-color);
+        margin: 0 0 0 auto;
         color: var(--dice-accent-color);
         font-weight: bold;
     }
