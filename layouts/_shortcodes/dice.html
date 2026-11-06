@@ -1,0 +1,137 @@
+{{- /*
+  Dice pool result.
+  Params (all optional): system, base, skill, gear, d4, d6, d8, d10,
+  d12, d20, d100, title. Each dice param accepts a space or comma separated
+  list of rolled values, e.g. d6="6 3 1" d20="17" d100="90".
+  All systems use polyhedral dice with numeric results.
+  system="fl" (Forbidden Lands) uses white base dice, red skill dice and black
+  gear dice, green d8s, blue d10s and orange d12s, and shows success/bane
+  totals in the header. Sixes on base, skill and gear dice have crossed swords
+  beneath a smaller numeral. Ones on base and gear dice have a skull beside
+  a smaller numeral. Artifact d8/d10/d12 successes appear as small crosses
+  beneath the numeral.
+  system="standard" (the default) uses aged-bone coloured dice and omits
+  these totals.
+*/ -}}
+{{- $title := .Get "title" -}}
+{{- $system := .Get "system" | default "standard" | lower -}}
+{{- if not (in (slice "fl" "standard") $system) -}}
+{{- errorf "dice shortcode: unknown system %q (expected \"fl\" or \"standard\")" $system -}}
+{{- end -}}
+{{- $fl := eq $system "fl" -}}
+{{- $types := slice
+    (dict "key" "base" "label" "Base" "sides" 6 "bane" true)
+    (dict "key" "skill" "label" "Skill" "sides" 6 "bane" false)
+    (dict "key" "gear" "label" "Gear" "sides" 6 "bane" true)
+    (dict "key" "d4" "label" "d4" "sides" 4 "bane" false)
+    (dict "key" "d6" "label" "d6" "sides" 6 "bane" false)
+    (dict "key" "d8" "label" "d8" "sides" 8 "bane" false)
+    (dict "key" "d10" "label" "d10" "sides" 10 "bane" false)
+    (dict "key" "d12" "label" "d12" "sides" 12 "bane" false)
+    (dict "key" "d20" "label" "d20" "sides" 20 "bane" false)
+    (dict "key" "d100" "label" "d100" "sides" 100 "bane" false) -}}
+{{- $rolled := slice -}}
+{{- $successes := 0 -}}
+{{- $banes := 0 -}}
+{{- range $types -}}
+{{- $type := . -}}
+{{- with $.Get $type.key -}}
+{{- range (split (replace . "," " ") " ") -}}
+{{- $raw := strings.TrimSpace . -}}
+{{- if $raw -}}
+{{- $v := int $raw -}}
+{{- $swords := 0 -}}
+{{- if and $fl (in (slice 6 8 10 12) $type.sides) (ge $v 6) -}}
+{{- if eq $type.sides 6 }}{{ $swords = 1 -}}
+{{- else }}{{ $swords = sub (div $v 2) 2 | int }}{{ if gt $swords 4 }}{{ $swords = 4 }}{{ end }}{{ if lt $swords 1 }}{{ $swords = 1 }}{{ end }}
+{{- if eq $v 6 }}{{ $swords = 1 }}{{ end -}}
+{{- end -}}
+{{- end -}}
+{{- $bane := and $fl $type.bane (eq $v 1) -}}
+{{- $successes = add $successes $swords -}}
+{{- if $bane }}{{ $banes = add $banes 1 }}{{ end -}}
+{{- $rolled = $rolled | append (dict "type" $type "v" $v "successes" $swords) -}}
+{{- end -}}
+{{- end -}}
+{{- end -}}
+{{- end -}}
+<div class="dice{{ if $fl }} dice--fl{{ end }}" role="group"{{ with $title }} aria-label="{{ . }}"{{ end }}>
+    <div class="dice__header">
+{{- with $title }}
+        <h4 class="dice__title">{{ . }}</h4>
+{{- end }}
+{{- if and $rolled $fl }}
+        <p class="dice__summary">
+            <span class="dice__total dice__total--success">{{ $successes }}&nbsp;{{ cond (eq $successes 1) "success" "successes" }}</span>
+            <span class="dice__total dice__total--bane">{{ $banes }}&nbsp;{{ cond (eq $banes 1) "bane" "banes" }}</span>
+        </p>
+{{- end }}
+    </div>
+    <ul class="dice__pool">
+{{- range $rolled }}
+{{- $type := .type -}}
+{{- $v := .v -}}
+{{- $artifactSuccesses := 0 -}}
+{{- if in (slice 8 10 12) $type.sides }}{{ $artifactSuccesses = .successes }}{{ end -}}
+        <li class="dice__die dice__die--{{ $type.key }}" title="{{ $type.label }}: {{ $v }}">
+            <span class="dice__face">
+                <svg class="dice__polyhedron" viewBox="0 0 80 80" aria-hidden="true">
+{{- if eq $type.sides 4 }}
+                    <path class="dice__outline" d="M39 13 43 15 67 60 61 70H8Z"/>
+                    <path class="dice__facet" d="M39 13 61 70"/>
+                    <text class="dice__number" x="37" y="48">{{ $v }}</text>
+{{- else if eq $type.sides 6 }}
+                    <path class="dice__outline" d="M20 18H66V62L61 69H14V25Z"/>
+                    <path class="dice__facet" d="M14 25H61V69M61 25 66 18"/>
+                    <path class="dice__bevel" d="M18 28H58V65"/>
+{{- if and $fl (in (slice "base" "skill" "gear") $type.key) (eq $v 6) }}
+                    <text class="dice__number dice__number--success" x="38" y="38">{{ $v }}</text>
+                    <g class="dice__swords" transform="translate(38 52)">
+                        <g transform="rotate(-45)">
+                            <path d="M0 -14 1.3 -10V5H4V7H1.2V10H-1.2V7H-4V5H-1.3V-10Z"/>
+                            <circle cx="0" cy="11" r="1.6"/>
+                        </g>
+                        <g transform="rotate(45)">
+                            <path d="M0 -14 1.3 -10V5H4V7H1.2V10H-1.2V7H-4V5H-1.3V-10Z"/>
+                            <circle cx="0" cy="11" r="1.6"/>
+                        </g>
+                    </g>
+{{- else if and $fl $type.bane (eq $v 1) }}
+                    <text class="dice__number dice__number--bane" x="26" y="56">{{ $v }}</text>
+                    <g class="dice__skull">
+                        <path fill-rule="evenodd" d="M42 35C35 35 31 39 31 45c0 4 2 7 5 9v5h12v-5c3-2 5-5 5-9 0-6-4-10-11-10ZM37 41.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm10 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM42 48l2 3h-4ZM38 55h1v4h-1Zm3.5 0h1v4h-1Zm3.5 0h1v4h-1Z"/>
+                    </g>
+{{- else }}
+                    <text class="dice__number" x="38" y="45">{{ $v }}</text>
+{{- end }}
+{{- else if eq $type.sides 8 }}
+                    <path class="dice__outline" d="M40 4 72 31V59L40 77 8 59V31Z"/>
+                    <path class="dice__facet" d="M40 4 12 58H68ZM8 59 12 58M68 58 72 59"/>
+                    <path class="dice__bevel" d="M40 4 18 55M40 4 64 55M18 61 40 73 64 61"/>
+                    <text class="dice__number" x="40" y="{{ cond (gt $artifactSuccesses 0) 35 40 }}">{{ $v }}</text>
+{{- else if in (slice 10 100) $type.sides }}
+                    <path class="dice__outline" d="M40 9 73 42 75 50 40 71 5 50 7 42Z"/>
+                    <path class="dice__facet" d="M40 9 20 49 40 61 60 49ZM5 50 20 49M60 49 75 50M40 61V71"/>
+                    <path class="dice__bevel" d="M40 9 12 46M40 9 68 46M9 54 40 68 71 54"/>
+                    <text class="dice__number" x="40" y="{{ cond (gt $artifactSuccesses 0) 35 40 }}">{{ $v }}</text>
+{{- else if eq $type.sides 12 }}
+                    <path class="dice__outline" d="M40 5 61 12 74 31 74 53 60 70 39 76 19 70 7 52 8 31 20 13Z"/>
+                    <path class="dice__facet" d="M40 25 57 36 51 57 29 59 23 37ZM40 25 41 13 40 5M57 36 68 32 74 31M51 57 60 65 60 70M29 59 21 65 19 70M23 37 14 32 8 31"/>
+                    <path class="dice__bevel" d="M41 13 54 30M14 32 20 23M68 32 64 22M60 65 67 54M21 65 14 54M33 63 48 62"/>
+                    <text class="dice__number" x="40" y="{{ cond (gt $artifactSuccesses 0) 38 43 }}">{{ $v }}</text>
+{{- else if eq $type.sides 20 }}
+                    <path class="dice__outline" d="M40 4 72 22V58L40 76 8 58V22Z"/>
+                    <path class="dice__facet" d="M40 14 14 57H66ZM40 4V14L8 22M40 14 72 22M14 57 8 22M66 57 72 22M14 57 40 76 66 57M8 58 14 57M66 57 72 58"/>
+                    <path class="dice__bevel" d="M12 25 15 51M68 25 65 51M20 61 40 71 60 61"/>
+                    <text class="dice__number" x="40" y="42">{{ $v }}</text>
+{{- end }}
+{{- if $artifactSuccesses }}
+                    <text class="dice__crosses" x="40" y="{{ cond (eq $type.sides 12) 51 49 }}">{{ range seq $artifactSuccesses }}×{{ end }}</text>
+{{- end }}
+                </svg>
+            </span>
+            <span class="dice__label">{{ $type.label }}</span>
+        </li>
+{{- end }}
+    </ul>
+</div>

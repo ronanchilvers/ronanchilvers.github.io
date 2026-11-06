@@ -1,0 +1,157 @@
+:root {
+    --dice-ink-color: rgb(35, 28, 19);
+    --dice-accent-color: rgb(139, 37, 16);
+    --dice-bg: #f8f2e4;
+    --dice-fg: #30302e;
+}
+.dice {
+    margin: 2rem 0;
+    padding: 1.25rem 1.5rem;
+    color: var(--dice-ink-color);
+    background:
+        url("/images/stat-block-texture.png") center top / max(100%, 850px) auto no-repeat,
+        radial-gradient(ellipse at top left, rgba(203, 161, 65, 0.3), transparent 55%),
+        radial-gradient(ellipse at bottom right, rgba(203, 161, 65, 0.18), transparent 55%),
+        var(--statblock-background-color, rgb(249, 241, 207));
+    border: 1px solid var(--statblock-border-color, rgb(135, 103, 49));
+    border-block-width: 6px;
+    border-image: linear-gradient(to bottom, #5a451d, #e7ce85 35%, #b28b43 70%, #5a451d) 6 1;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35), inset 0 0 30px rgba(179, 140, 54, 0.12);
+    letter-spacing: normal;
+    line-height: 1.5;
+    .dice__header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        gap: 0.25rem 1.5rem;
+        margin: 0 0 0.75rem;
+        &::after {
+            content: "";
+            display: block;
+            flex: 0 0 100%;
+            height: 6px;
+            margin-top: 1rem;
+            background-color: var(--dice-accent-color);
+            clip-path: polygon(0 0, 100% 50%, 0 100%);
+        }
+    }
+    .dice__title {
+        margin: 0;
+        text-align: left;
+        text-shadow: none;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 2rem;
+        font-weight: bold;
+        font-variant: small-caps;
+        line-height: 1.15;
+        color: var(--dice-accent-color);
+    }
+    .dice__pool {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.9rem;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .dice__die {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.25rem;
+        margin: 0;
+        padding: 0;
+        &::before { content: none; }
+    }
+    .dice__face {
+        display: block;
+        width: 4.5rem;
+        height: 4.5rem;
+        color: var(--dice-fg);
+    }
+    &.dice--fl {
+        --dice-bg: #fff;
+        .dice__die--skill {
+            --dice-bg: #801c1e;
+            --dice-fg: #fff;
+        }
+        .dice__die--gear {
+            --dice-bg: #1c1c1e;
+            --dice-fg: #fff;
+        }
+        .dice__die--d8 {
+            --dice-bg: #4c7d31;
+            --dice-fg: #fff;
+        }
+        .dice__die--d10 {
+            --dice-bg: #2b8ecd;
+            --dice-fg: #fff;
+        }
+        .dice__die--d12 {
+            --dice-bg: #e57a1f;
+            --dice-fg: #1e140c;
+        }
+    }
+    .dice__polyhedron {
+        display: block;
+        width: 100%;
+        height: 100%;
+        overflow: visible;
+        stroke: currentColor;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+    }
+    .dice__outline {
+        fill: var(--dice-bg);
+        stroke-width: 2;
+    }
+    .dice__facet, .dice__bevel {
+        fill: none;
+        stroke-width: 1;
+    }
+    .dice__bevel {
+        stroke-width: 0.6;
+    }
+    .dice__number {
+        fill: currentColor;
+        stroke: none;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 18px;
+        font-weight: normal;
+        text-anchor: middle;
+        dominant-baseline: central;
+    }
+    .dice__number--success, .dice__number--bane {
+        font-size: 12px;
+    }
+    .dice__swords, .dice__skull {
+        fill: currentColor;
+        stroke: none;
+    }
+    .dice__crosses {
+        fill: currentColor;
+        stroke: none;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 8px;
+        font-weight: bold;
+        text-anchor: middle;
+        dominant-baseline: central;
+    }
+    .dice__label {
+        font-size: 0.75rem;
+        font-variant: small-caps;
+        color: var(--dice-ink-color);
+    }
+    .dice__summary {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem 1.5rem;
+        margin: 0 0 0 auto;
+        color: var(--dice-accent-color);
+        font-weight: bold;
+        font-variant: small-caps;
+    }
+}
+@media (max-width: 480px) {
+    .dice { padding: 1rem; }
+}

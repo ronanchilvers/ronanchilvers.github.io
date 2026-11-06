@@ -28,6 +28,7 @@ css:
   - css/alerts.css
   - css/timeline.css
   - css/statblock.css
+  - css/dice.css
   - css/social.css
   - css/echothread.css
   # - css/related.css
