@@ -6,6 +6,7 @@ summary: I recently started putting together a set of tables that I could use
   for random events. Mythic's random event tables are a great resource, but I
   wanted to create something that was a bit more specific and gave me a more
   immediate path to follow.
+description: "I recently started putting together a set of tables that I could use for random events."
 slug: random-event-tables
 tags:
   - random-tables

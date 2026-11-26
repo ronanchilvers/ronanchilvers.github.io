@@ -4,6 +4,7 @@
 import argparse
 from collections import defaultdict
 from datetime import datetime
+from html import unescape
 from html.parser import HTMLParser
 import json
 from pathlib import Path
@@ -11,6 +12,8 @@ import re
 import sys
 from urllib.parse import unquote, urljoin, urlsplit
 import xml.etree.ElementTree as ET
+
+DESCRIPTION_LIMIT = 160
 
 
 class Page(HTMLParser):
@@ -104,6 +107,9 @@ def validate(root, environment):
         def meta(name):
             """Return a metadata value after reporting absent or duplicate tags."""
             return page.meta[name][0] if page.meta[name] else ""
+
+        require(len(unescape(meta("description"))) <= DESCRIPTION_LIMIT,
+                f"description must not exceed {DESCRIPTION_LIMIT} characters")
 
         require(meta("og:title") == page.title == meta("twitter:title"), "social titles disagree with page title")
         require(meta("og:description") == meta("description") == meta("twitter:description"), "social descriptions disagree")

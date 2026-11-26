@@ -2,6 +2,7 @@
 date: 2025-06-21 00:02:00
 title: Journal Entry Two
 summary: Man it's cold!!! I must have fallen asleep last night. The fire's almost out and it looks like the snow really came down during the night as there are 6 foot drifts outside.
+description: "Man it’s cold!!! I must have fallen asleep last night."
 draft: false
 tags:
   - wretched-and-alone

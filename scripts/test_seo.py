@@ -3,6 +3,7 @@
 
 import json
 from pathlib import Path
+import re
 import shutil
 import subprocess
 import tempfile
@@ -144,6 +145,19 @@ class SearchMetadataTest(unittest.TestCase):
         file.write_text(file.read_text().replace("name=description", "name=removed-description"))
         errors, _ = validate(output, "production")
         self.assertTrue(any("expected one non-empty description" in error for error in errors))
+
+    def test_build_check_rejects_long_descriptions(self):
+        """Prove the deployment gate fails when a description exceeds the limit."""
+        output = self.root / "verbose"
+        shutil.copytree(self.root / "production", output)
+        file = output / "2025" / "03" / "seo-test-minimal" / "index.html"
+        lengthy = "Isolated pages need concise search snippets to avoid truncation. " * 3
+        text, count = re.subn(r'(name=description content=(["\']))[^"\']*\2',
+                              rf"\g<1>{lengthy}\g<2>", file.read_text())
+        self.assertEqual(count, 1)
+        file.write_text(text)
+        errors, _ = validate(output, "production")
+        self.assertTrue(any("description must not exceed 160 characters" in error for error in errors))
 
 
 if __name__ == "__main__":
