@@ -8,7 +8,7 @@ author:
   name: Ronan
   url: /about/
 navigation:
-  show_related: false
+  show_related: true
   show_next: true
 social:
   bluesky: "ronanchilvers.bsky.social"
@@ -31,8 +31,8 @@ css:
   - css/dice.css
   - css/social.css
   - css/echothread.css
-  # - css/related.css
-  - css/next-previous.css
+  - css/related.css
+  # - css/next-previous.css
 analytics:
   ga4_id: false
   gtm_id: false

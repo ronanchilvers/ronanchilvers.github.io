@@ -2,6 +2,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 {{ partial "seo/head.html" . }}
+{{- range .AlternativeOutputFormats }}
+<link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}"{{ with .Name }} title="{{ . }}"{{ end }}>
+{{- end }}
 <link
     rel="preconnect"
     href="https://fonts.googleapis.com">
