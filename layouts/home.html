@@ -1,7 +1,15 @@
 {{ define "main" }}
+{{- $hero := resources.Get "images/home-300x300.png" }}
+{{- $heroWebp := false }}
+{{- with $hero }}
+    {{- $heroWebp = .Process "webp q90" }}
+{{- end }}
 <section class="home">
     <figure class="figure-round">
-        <img src="/images/home-300x300.png" alt="By Lantern Light" width="300" height="300" fetchpriority="high" />
+        <picture>
+            {{- with $heroWebp }}<source srcset="{{ .RelPermalink }}" type="image/webp">{{ end }}
+            <img src="{{ $hero.RelPermalink }}" alt="By Lantern Light" width="{{ $hero.Width }}" height="{{ $hero.Height }}" fetchpriority="high" />
+        </picture>
     </figure>
     <div>
         {{ .Content }}

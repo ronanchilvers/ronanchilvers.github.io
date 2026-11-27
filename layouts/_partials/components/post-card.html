@@ -9,6 +9,14 @@
 {{- $category := false }}
 {{- with $post.GetTerms "categories" }}{{ $category = index . 0 }}{{ end }}
 {{- $imagePath := partial "components/post-image.html" (dict "page" $post "kind" "thumbnail") }}
+{{- $webp := false }}
+{{- if $imagePath }}
+    {{- with resources.Get (strings.TrimPrefix "/" $imagePath) }}
+        {{- if eq .ResourceType "image" }}
+            {{- $webp = .Process "webp q85" }}
+        {{- end }}
+    {{- end }}
+{{- end }}
 {{- $dateMachine := $post.Date | time.Format "2006-01-02T15:04:05-07:00" }}
 {{- $dateHuman := $post.Date | time.Format ":date_long" }}
 <div class="card{{ if $features.smallCards }} card--small{{ end }}">
@@ -16,7 +24,7 @@
     <figure class="card-image">
         <a class="card-title" href="{{ $post.RelPermalink }}">{{ $post.Title }}</a>
         {{- $size := images.Config (printf "static%s" $imagePath) }}
-        <a class="card-image-link" href="{{ $post.RelPermalink }}"><img{{ if $features.highPriority }} fetchpriority="high"{{ else }} loading="lazy"{{ end }} src="{{ $imagePath }}" alt="{{ $post.Title }}" width="{{ $size.Width }}" height="{{ $size.Height }}" decoding="async"></a>
+        <a class="card-image-link" href="{{ $post.RelPermalink }}">{{ if $webp }}<picture><source srcset="{{ $webp.RelPermalink }}" type="image/webp">{{ end }}<img{{ if $features.highPriority }} fetchpriority="high"{{ else }} loading="lazy"{{ end }} src="{{ $imagePath }}" alt="{{ $post.Title }}" width="{{ $size.Width }}" height="{{ $size.Height }}" decoding="async">{{ if $webp }}</picture>{{ end }}</a>
     </figure>
 {{- end }}
     <div class="card-content">
