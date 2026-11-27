@@ -2,6 +2,7 @@
 date: 2025-06-20 12:00:00
 title: Mountaintop Isolation - First Look
 summary: One of my favourite radio shows from the dim and distant past was [Nightfall](https://archive.org/details/CBC_NightfallOTR), creepy and disturbing stories of all sorts that used the power of radio and imagination to tell terrifying tales. 
+description: "One of my favourite old radio shows was Nightfall, creepy and disturbing stories that used the power of imagination to tell terrifying tales."
 draft: false
 tags:
   - wretched-and-alone
