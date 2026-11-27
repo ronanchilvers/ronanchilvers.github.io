@@ -75,6 +75,7 @@ categories: []
 - The custom sitemap includes indexable HTML pages only. Feeds remain available but are excluded from the sitemap.
 - Category and tag display titles and introductions live in `content/categories/<term>/_index.md` and `content/tags/<term>/_index.md`. Preserve directory names when changing display titles to retain existing URLs.
 - Pages CMS uses `static` as its media input and `/` as the public output. Social image overrides use public paths such as `/images/home.png`, not `/static/images/home.png`.
+- `static` is also mounted as an asset root (see `module.mounts` in `config/_default/hugo.yaml`) so templates can generate processed variants (e.g. WebP) of static images via `resources.Get`. Keep the PNG originals in `static` for CMS compatibility and as `<picture>` fallbacks.
 - Local images require intrinsic width and height. Content images and archive cards are lazy-loaded; prominent homepage images remain eager.
 
 ## Callout Blocks

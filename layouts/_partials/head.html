@@ -32,9 +32,13 @@
     integrity="{{ $processed.Data.Integrity }}" />
 {{- end }}
 {{- end }}
-<link rel="preload" fetchpriority="high" as="image" href="/images/home-64x64.png" type="image/png">
+{{- with resources.Get "images/home-64x64.png" }}
+<link rel="preload" fetchpriority="high" as="image" href="{{ (.Process "webp q90").RelPermalink }}" type="image/webp">
+{{- end }}
 {{ if .IsHome }}
-<link rel="preload" fetchpriority="high" as="image" href="/images/home-300x300.png" type="image/png">
+{{- with resources.Get "images/home-300x300.png" }}
+<link rel="preload" fetchpriority="high" as="image" href="{{ (.Process "webp q90").RelPermalink }}" type="image/webp">
+{{- end }}
 {{ end }}
 <link
     rel="stylesheet"

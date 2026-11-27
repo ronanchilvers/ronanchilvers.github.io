@@ -10,3 +10,14 @@ frontmatter:
     - publishDate
 permalinks:
   posts: "/:year/:month/:slug/"
+# Mount static alongside assets so Hugo can process images
+# (eg WebP variants) while still publishing the original files.
+module:
+  mounts:
+    - source: assets
+      target: assets
+    - source: static
+      target: static
+    - source: static
+      target: assets
+
