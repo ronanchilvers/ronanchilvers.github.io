@@ -2,6 +2,7 @@
 date: 2025-06-23 12:00:00
 title: Journal Entry Five
 summary: I'm really hungry. Just been rooting about in the cupboards and found a few things. A packet of stale biscuits (ate them - they were ok, better than nothing) and a deck of cards.
+description: "I’m really hungry. Just been rooting about in the cupboards and found a few things."
 draft: false
 tags:
   - wretched-and-alone

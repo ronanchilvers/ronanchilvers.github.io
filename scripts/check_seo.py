@@ -4,6 +4,7 @@
 import argparse
 from collections import defaultdict
 from datetime import datetime
+from html import unescape
 from html.parser import HTMLParser
 import json
 from pathlib import Path
@@ -11,6 +12,8 @@ import re
 import sys
 from urllib.parse import unquote, urljoin, urlsplit
 import xml.etree.ElementTree as ET
+
+DESCRIPTION_LIMIT = 160
 
 
 class Page(HTMLParser):
@@ -69,9 +72,11 @@ def local_file(root, url):
 
 
 def validate(root, environment):
-    """Return validation failures and counts for a complete Hugo build."""
+    """Return validation failures, counts and warnings for a complete Hugo build."""
     errors = []
+    warnings = []
     pages = {}
+    titles = {}
     images = 0
     for file in sorted(root.rglob("*.html")):
         if re.fullmatch(r"google[0-9a-f]+\.html", file.name):
@@ -87,14 +92,23 @@ def validate(root, environment):
 
         require(bool(page.title), "missing title")
         require(len(page.headings) == 1 and bool(page.headings[0]), "expected one non-empty h1")
-        require(len(page.canonicals) == 1, "expected one canonical link")
-        canonical = page.canonicals[0] if page.canonicals else ""
-        parsed = urlsplit(canonical)
-        require(parsed.scheme == "https" and bool(parsed.netloc), "canonical must be absolute HTTPS")
-        require(not parsed.query and not parsed.fragment, "canonical must not contain a query or fragment")
-        require(local_file(root, canonical) == file, "canonical does not identify this page")
-        require(canonical not in pages, "duplicate canonical URL")
-        pages[canonical] = page
+        titles.setdefault(page.title, []).append(label)
+        noindex = any("noindex" in {token.strip() for token in value.lower().split(",")}
+                      for value in page.meta["robots"])
+        if noindex:
+            require(not page.canonicals, "noindex pages must not emit a canonical link")
+        else:
+            require(len(page.canonicals) == 1, "expected one canonical link")
+        url = page.meta["og:url"][0] if page.meta["og:url"] else ""
+        parsed = urlsplit(url)
+        if not noindex:
+            require(parsed.scheme == "https" and bool(parsed.netloc), "Open Graph URL must be absolute HTTPS")
+            require(not parsed.query and not parsed.fragment, "page URL must not contain a query or fragment")
+            require(local_file(root, url) == file, "Open Graph URL does not identify this page")
+            require(url == (page.canonicals[0] if page.canonicals else ""),
+                    "Open Graph URL disagrees with canonical")
+        require(url not in pages, "duplicate page URL")
+        pages[url] = page
 
         for name in ("description", "og:title", "og:description", "og:url", "og:type",
                      "og:image", "og:image:alt", "twitter:card", "twitter:title",
@@ -105,19 +119,19 @@ def validate(root, environment):
             """Return a metadata value after reporting absent or duplicate tags."""
             return page.meta[name][0] if page.meta[name] else ""
 
+        require(len(unescape(meta("description"))) <= DESCRIPTION_LIMIT,
+                f"description must not exceed {DESCRIPTION_LIMIT} characters")
+
         require(meta("og:title") == page.title == meta("twitter:title"), "social titles disagree with page title")
         require(meta("og:description") == meta("description") == meta("twitter:description"), "social descriptions disagree")
-        require(meta("og:url") == canonical, "Open Graph URL disagrees with canonical")
         require(meta("og:image") == meta("twitter:image"), "social images disagree")
-        noindex = any("noindex" in {token.strip() for token in value.lower().split(",")}
-                      for value in page.meta["robots"])
         if environment == "development" or file.name == "404.html" or parsed.path == "/error/":
             require(noindex, "page must be noindex")
 
         for image in page.images:
             images += 1
             require("alt" in image, "image is missing alternative text")
-            source = urljoin(canonical, image.get("src", ""))
+            source = urljoin(url, image.get("src", ""))
             if urlsplit(source).netloc == parsed.netloc:
                 image_file = local_file(root, source)
                 require(image_file.is_file(), f"image does not exist: {source}")
@@ -129,6 +143,10 @@ def validate(root, environment):
         require(image_url.scheme in ("http", "https") and bool(image_url.netloc), "preview image must be an absolute URL")
         if image_url.netloc == parsed.netloc:
             require(local_file(root, meta("og:image")).is_file(), "preview image does not exist")
+            for key in ("og:image:width", "og:image:height"):
+                values = page.meta[key]
+                require(len(values) == 1 and values[0].isdigit() and int(values[0]) > 0,
+                        f"local preview images require {key}")
 
         expected_type = "BlogPosting" if meta("og:type") == "article" else "WebSite" if parsed.path == "/" else None
         require(len(page.schemas) == (1 if expected_type else 0), "unexpected structured-data block count")
@@ -137,12 +155,12 @@ def validate(root, environment):
                 schema = json.loads(raw)
                 require(schema.get("@context") == "https://schema.org", "invalid schema context")
                 require(schema.get("@type") == expected_type, "incorrect schema type")
-                require(schema.get("url") == canonical, "schema URL disagrees with canonical")
+                require(schema.get("url") == url, "schema URL disagrees with page URL")
                 require(schema.get("description") == meta("description"), "schema description disagrees")
                 if expected_type == "BlogPosting":
                     require(bool(schema.get("headline")), "missing article headline")
                     require(schema.get("image") == meta("og:image"), "schema image disagrees")
-                    require(schema.get("mainEntityOfPage") == canonical, "article page URL disagrees")
+                    require(schema.get("mainEntityOfPage") == url, "article page URL disagrees")
                     author = schema.get("author", {})
                     require(bool(author.get("name")) and bool(author.get("url")), "missing article author")
                     for key in ("datePublished", "dateModified"):
@@ -155,7 +173,7 @@ def validate(root, environment):
     home = next((url for url in pages if urlsplit(url).path == "/"), "")
     for url in pages:
         if urlsplit(url).netloc != urlsplit(home).netloc:
-            errors.append(f"{url}: canonical host disagrees with homepage")
+            errors.append(f"{url}: page URL host disagrees with homepage")
     namespace = {"s": "http://www.sitemaps.org/schemas/sitemap/0.9"}
     try:
         sitemap = ET.parse(root / "sitemap.xml")
@@ -181,7 +199,9 @@ def validate(root, environment):
         errors.append(f"robots.txt: {error}")
     if not pages:
         errors.append("no generated pages found")
-    return errors, (len(pages), images, len(urls))
+    warnings.extend(f"duplicate page title '{title}': {', '.join(files)}"
+                    for title, files in sorted(titles.items()) if len(files) > 1)
+    return errors, (len(pages), images, len(urls)), warnings
 
 
 def main():
@@ -190,7 +210,9 @@ def main():
     parser.add_argument("directory", type=Path, help="Hugo output directory")
     parser.add_argument("--environment", choices=("production", "development"), default="production")
     args = parser.parse_args()
-    errors, counts = validate(args.directory.resolve(), args.environment)
+    errors, counts, warnings = validate(args.directory.resolve(), args.environment)
+    if warnings:
+        print("\n".join(f"warning: {warning}" for warning in warnings), file=sys.stderr)
     if errors:
         print("\n".join(errors), file=sys.stderr)
         return 1

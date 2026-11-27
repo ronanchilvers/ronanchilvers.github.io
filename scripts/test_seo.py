@@ -3,6 +3,7 @@
 
 import json
 from pathlib import Path
+import re
 import shutil
 import subprocess
 import tempfile
@@ -46,6 +47,7 @@ class SearchMetadataTest(unittest.TestCase):
                 "categories": ["Twelve Duchies"],
             },
             "noindex": {"title": "Private search listing", "noindex": True},
+            "duplicate": {"title": "Summary fallback"},
         }
         posts = content / "posts" / "seo-test"
         posts.mkdir()
@@ -83,7 +85,7 @@ class SearchMetadataTest(unittest.TestCase):
         """Check every page and image in both generated environments."""
         for environment in ("production", "development"):
             with self.subTest(environment=environment):
-                errors, _ = validate(self.root / environment, environment)
+                errors, _, _ = validate(self.root / environment, environment)
                 self.assertEqual(errors, [])
 
     def test_editorial_overrides_and_escaping(self):
@@ -114,7 +116,9 @@ class SearchMetadataTest(unittest.TestCase):
         """Publish a post with only required fields using safe image defaults."""
         page = self.page("minimal")
         self.assertTrue(page.meta["description"][0].startswith("An isolated adventure"))
-        self.assertEqual(page.meta["og:image"], ["https://artifakt.co.uk/images/home.png"])
+        self.assertEqual(page.meta["og:image"], ["https://artifakt.co.uk/images/home-social.jpg"])
+        self.assertEqual(page.meta["og:image:width"], ["1200"])
+        self.assertEqual(page.meta["og:image:height"], ["628"])
         self.assertEqual(page.images[1]["width"], "1024")
         self.assertEqual(page.images[1]["loading"], "lazy")
 
@@ -129,8 +133,10 @@ class SearchMetadataTest(unittest.TestCase):
         """Exclude opted-out posts while keeping category and tag URLs discoverable."""
         page = self.page("noindex")
         self.assertEqual(page.meta["robots"], ["noindex, follow"])
+        self.assertEqual(page.canonicals, [])
+        url = page.meta["og:url"][0]
         sitemap = (self.root / "production" / "sitemap.xml").read_text()
-        self.assertNotIn(page.canonicals[0], sitemap)
+        self.assertNotIn(url, sitemap)
         self.assertIn("https://artifakt.co.uk/categories/twelve-duchies/", sitemap)
         self.assertIn("https://artifakt.co.uk/tags/ose/", sitemap)
         self.assertNotIn("/posts/index.xml", sitemap)
@@ -142,8 +148,30 @@ class SearchMetadataTest(unittest.TestCase):
         shutil.copytree(self.root / "production", output)
         file = output / "2025" / "03" / "seo-test-minimal" / "index.html"
         file.write_text(file.read_text().replace("name=description", "name=removed-description"))
-        errors, _ = validate(output, "production")
+        errors, _, _ = validate(output, "production")
         self.assertTrue(any("expected one non-empty description" in error for error in errors))
+
+    def test_build_check_rejects_long_descriptions(self):
+        """Prove the deployment gate fails when a description exceeds the limit."""
+        output = self.root / "verbose"
+        shutil.copytree(self.root / "production", output)
+        file = output / "2025" / "03" / "seo-test-minimal" / "index.html"
+        lengthy = "Isolated pages need concise search snippets to avoid truncation. " * 3
+        text, count = re.subn(r'(name=description content=(["\']))[^"\']*\2',
+                              rf"\g<1>{lengthy}\g<2>", file.read_text())
+        self.assertEqual(count, 1)
+        file.write_text(text)
+        errors, _, _ = validate(output, "production")
+        self.assertTrue(any("description must not exceed 160 characters" in error for error in errors))
+
+    def test_duplicate_title_warning(self):
+        """Report duplicate page titles as warnings without failing the build."""
+        errors, _, warnings = validate(self.root / "production", "production")
+        self.assertFalse(any("duplicate" in error for error in errors))
+        self.assertTrue(any("seo-test-summary/index.html" in warning
+                            and "seo-test-duplicate/index.html" in warning
+                            and "duplicate page title" in warning
+                            for warning in warnings))
 
 
 if __name__ == "__main__":

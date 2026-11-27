@@ -2,6 +2,7 @@
 date: 2025-06-21 00:01:00
 title: Journal Entry One
 summary: Wow! This place is amazing! It took a while to get here - snow on the roads and it's pretty remote. Google maps took me the wrong way and I ended up at a gate on a cliff - had to find my own way for the last hour or so.
+description: "Wow! This place is amazing! It took a while to get here - snow on the roads and it’s pretty remote."
 draft: false
 tags:
   - wretched-and-alone

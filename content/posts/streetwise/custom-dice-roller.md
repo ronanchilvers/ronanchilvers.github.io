@@ -11,6 +11,7 @@ summary: The Year Zero Engine is very flexible and I like the fact that it uses
   six sided dice, the most common size. However, once you get an attribute and a
   skill going with possibly a modifier or two you can rapidly end up rolling a
   _lot_ of them!
+description: "The Year Zero Engine is very flexible and I like the fact that it uses six sided dice, the most common size."
 ---
 The Year Zero Engine is very flexible and I like the fact that it uses six sided dice, the most common size. However, once you get an attribute and a skill going with possibly a modifier or two you can rapidly end up rolling a _lot_ of them! In our first play test, being able to roll lots of dice easily was a sticking point, especially given the Streetwise Scene Strain mechanic (rather like Stress in [Alien RPG]) where rolling Banes (1s) can add dice to future pools for everyone.
 

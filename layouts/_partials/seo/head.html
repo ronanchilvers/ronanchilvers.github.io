@@ -2,9 +2,10 @@
 {{- $seo := partial "seo/resolve.html" . }}
 <title>{{ $seo.title }}</title>
 <meta name="description" content="{{ $seo.description }}">
-<link rel="canonical" href="{{ $seo.canonical }}">
 {{- if $seo.noindex }}
 <meta name="robots" content="noindex, follow">
+{{- else }}
+<link rel="canonical" href="{{ $seo.canonical }}">
 {{- end }}
 <meta property="og:title" content="{{ $seo.title }}">
 <meta property="og:description" content="{{ $seo.description }}">
@@ -15,6 +16,10 @@
 <meta property="og:type" content="{{ if and .IsPage (eq .Type "posts") }}article{{ else }}website{{ end }}">
 <meta property="og:image" content="{{ $seo.image }}">
 <meta property="og:image:alt" content="{{ $seo.imageAlt }}">
+{{- if and $seo.imageWidth $seo.imageHeight }}
+<meta property="og:image:width" content="{{ $seo.imageWidth }}">
+<meta property="og:image:height" content="{{ $seo.imageHeight }}">
+{{- end }}
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ $seo.title }}">
 <meta name="twitter:description" content="{{ $seo.description }}">

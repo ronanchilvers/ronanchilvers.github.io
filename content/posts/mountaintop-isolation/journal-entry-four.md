@@ -2,6 +2,7 @@
 date: 2025-06-23 11:00:00
 title: Journal Entry Four
 summary: It's 6:23am and I'm freezing. I managed to keep the fire going but the wind from the bust roof was howling through the cabin all night and I just couldn't get warm.
+description: "It’s 6:23am and I’m freezing."
 draft: false
 tags:
   - wretched-and-alone
